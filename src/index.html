@@ -4,14 +4,37 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>SolaraSites — Webs que eclipsan a las demás</title>
-  <meta name="description"
-    content="SolaraSites: Diseño y desarrollo de páginas web premium — minimalistas, responsivas y enfocadas a convertir visitantes en clientes.">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@600;700&display=swap"
-    rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="/public/logoV1.png" type="image/png">
 
+  <!-- 🔑 SEO Básico -->
+  <title>SolaraSites — Diseño y desarrollo de páginas web en Colombia</title>
+  <meta name="description" content="SolaraSites: Creamos páginas web minimalistas, rápidas y profesionales que convierten visitantes en clientes. Diseño web, landing pages, sitios corporativos y e-commerce en Colombia.">
+
+  <!-- 📱 Social Media / Open Graph -->
+  <meta property="og:title" content="SolaraSites — Webs que eclipsan a las demás">
+  <meta property="og:description" content="Diseño y desarrollo de páginas web premium, minimalistas y efectivas. Haz que tu negocio brille online con SolaraSites.">
+  <meta property="og:image" content="../public/logoV2.png">
+  <meta property="og:url" content="https://www.solarasites.vercel.app">
+  <meta property="og:type" content="website">
+
+  <!-- 🐦 Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SolaraSites — Webs que eclipsan a las demás">
+  <meta name="twitter:description" content="Diseño web minimalista y profesional que convierte visitantes en clientes.">
+  <meta name="twitter:image" content="./../public/logoV2.png">
+
+  <!-- 📌 SEO Técnico -->
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="SolaraSites">
+  <meta name="keywords" content="diseño web Colombia, páginas web profesionales, landing page, desarrollo web, e-commerce, SEO técnico, páginas corporativas">
+
+  <!-- ⚡ Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- 🎨 Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
@@ -33,6 +56,7 @@
   </script>
 </head>
 
+
 <body class="antialiased overflow-x-hidden bg-gradient-to-b from-bgMain to-[#07070a] text-[#e6eef6] font-sans">
 
   <!-- HEADER -->
@@ -40,13 +64,15 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
       <a href="#" class="flex items-center gap-3" aria-label="SolaraSites — Inicio">
         <!-- LOGO: uses logoV2.png only; no text label to avoid duplication -->
-        <img src="public/logoV2.png" alt="SolaraSites logo" class="w-[40px] h-[40px] sm:w-[44px] sm:h-[44px] object-contain drop-shadow-[0_12px_30px_rgba(255,140,41,0.12)]">
+        <img src="/../public/logoV2.png" alt="SolaraSites logo"
+          class="w-[40px] h-[40px] sm:w-[104px] sm:h-[44px] object-contain drop-shadow-[0_12px_30px_rgba(255,140,41,0.12)]">
       </a>
       <a href="#" class="flex items-center gap-3" aria-label="SolaraSites — Inicio">
-  <span class="text-lg sm:text-xl font-display font-semibold bg-gradient-to-r from-solaraOrange to-solaraGold bg-clip-text text-transparent tracking-tight">
-    Solara Sytes
-  </span>
-</a>
+        <span
+          class="text-lg sm:text-xl font-display font-semibold bg-gradient-to-r from-solaraOrange to-solaraGold bg-clip-text text-transparent tracking-tight">
+          Solara Sites
+        </span>
+      </a>
 
       <nav class="hidden md:flex items-center gap-6 text-sm text-gray-300">
         <a href="#services" class="hover:text-white">Servicios</a>
@@ -54,6 +80,7 @@
         <a href="#pricing" class="hover:text-white">Precios</a>
         <a href="#process" class="hover:text-white">Proceso</a>
         <a href="#contact" class="hover:text-white">Contacto</a>
+        <a href="#faq" class="hover:text-white">FAQ</a>
         <a href="https://wa.me/+573184961233" target="_blank"
           class="ml-4 inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-solaraOrange to-solaraGold rounded-full text-black font-semibold shadow-lg transition-transform hover:-translate-y-1 hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-solaraOrange"
           aria-label="Contactar por WhatsApp">
@@ -70,7 +97,9 @@
       </nav>
 
       <div class="md:hidden">
-        <button id="menuBtn" class="p-2 rounded-md bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md" aria-label="Abrir menú">
+        <button id="menuBtn"
+          class="p-2 rounded-md bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md"
+          aria-label="Abrir menú">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
             <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
               stroke-linejoin="round" class="text-gray-200" />
@@ -80,31 +109,36 @@
     </div>
 
     <!-- Mobile menu -->
-<div id="mobileMenu" class="hidden md:hidden bg-[#060608]/80 bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md">
-  <div class="px-4 sm:px-6 py-4 flex flex-col gap-3">
-    <a href="#services" class="py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Servicios</a>
-    <a href="#portfolio" class="py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Portafolio</a>
-    <a href="#pricing" class="py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Precios</a>
-    <a href="#process" class="py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Proceso</a>
-    <a href="#contact" class="py-2" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Contacto</a>
+    <div id="mobileMenu"
+      class="hidden md:hidden bg-[#060608]/80 bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md">
+      <div class="px-4 sm:px-6 py-4 flex flex-col gap-3">
+        <a href="#services" class="py-2"
+          onclick="document.getElementById('mobileMenu').classList.add('hidden')">Servicios</a>
+        <a href="#portfolio" class="py-2"
+          onclick="document.getElementById('mobileMenu').classList.add('hidden')">Portafolio</a>
+        <a href="#pricing" class="py-2"
+          onclick="document.getElementById('mobileMenu').classList.add('hidden')">Precios</a>
+        <a href="#process" class="py-2"
+          onclick="document.getElementById('mobileMenu').classList.add('hidden')">Proceso</a>
+        <a href="#contact" class="py-2"
+          onclick="document.getElementById('mobileMenu').classList.add('hidden')">Contacto</a>
 
-    <!-- Botón WhatsApp corregido -->
-    <a href="https://wa.me/+573184961233"
-       target="_blank"
-       class="flex items-center justify-center gap-2 py-2 font-semibold bg-gradient-to-r from-solaraOrange to-solaraGold text-black text-center rounded-full hover:scale-105 transition-transform"
-       onclick="document.getElementById('mobileMenu').classList.add('hidden')">
-      <svg class="w-5 h-5" viewBox="0 0 256 259" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <path
-          d="m67.663 221.823 4.185 2.093c17.44 10.463 36.971 15.346 56.503 15.346 61.385 0 111.609-50.224 111.609-111.609 0-29.297-11.859-57.897-32.785-78.824-20.927-20.927-48.83-32.785-78.824-32.785-61.385 0-111.61 50.224-110.912 112.307 0 20.926 6.278 41.156 16.741 58.594l2.79 4.186-11.16 41.156 41.853-10.464Z"
-          fill="#00E676" />
-        <path
-          d="M219.033 37.668C195.316 13.254 162.531 0 129.048 0 57.898 0 .698 57.897 1.395 128.35c0 22.322 6.278 43.947 16.742 63.478L0 258.096l67.663-17.439c18.834 10.464 39.76 15.347 60.688 15.347 70.453 0 127.653-57.898 127.653-128.35 0-34.181-13.254-66.269-36.97-89.986ZM129.048 234.38c-18.834 0-37.668-4.882-53.712-14.648l-4.185-2.093-40.458 10.463 10.463-39.76-2.79-4.186C7.673 134.63 22.322 69.058 72.546 38.365c50.224-30.692 115.097-16.043 145.79 34.181 30.692 50.224 16.043 115.097-34.18 145.79-16.045 10.463-35.576 16.043-55.108 16.043Zm61.385-77.428-7.673-3.488s-11.16-4.883-18.136-8.371c-.698 0-1.395-.698-2.093-.698-2.093 0-3.488.698-4.883 1.396 0 0-.697.697-10.463 11.858-.698 1.395-2.093 2.093-3.488 2.093h-.698c-.697 0-2.092-.698-2.79-1.395l-3.488-1.395c-7.673-3.488-14.648-7.674-20.229-13.254-1.395-1.395-3.488-2.79-4.883-4.185-4.883-4.883-9.766-10.464-13.253-16.742l-.698-1.395c-.697-.698-.697-1.395-1.395-2.79 0-1.395 0-2.79.698-3.488 0 0 2.79-3.488 4.882-5.58 1.396-1.396 2.093-3.488 3.488-4.883 1.395-2.093 2.093-4.883 1.395-6.976-.697-3.488-9.068-22.322-11.16-26.507-1.396-2.093-2.79-2.79-4.883-3.488H83.01c-1.396 0-2.79.698-4.186.698l-.698.697c-1.395.698-2.79 2.093-4.185 2.79-1.395 1.396-2.093 2.79-3.488 4.186-4.883 6.278-7.673 13.951-7.673 21.624 0 5.58 1.395 11.161 3.488 16.044l.698 2.093c6.278 13.253 14.648 25.112 25.81 35.575l2.79 2.79c2.092 2.093 4.185 3.488 5.58 5.58 14.649 12.557 31.39 21.625 50.224 26.508 2.093.697 4.883.697 6.976 1.395h6.975c3.488 0 7.673-1.395 10.464-2.79 2.092-1.395 3.487-1.395 4.882-2.79l1.396-1.396c1.395-1.395 2.79-2.092 4.185-3.487 1.395-1.395 2.79-2.79 3.488-4.186 1.395-2.79 2.092-6.278 2.79-9.765v-4.883s-.698-.698-2.093-1.395Z"
-          fill="#FFF" />
-      </svg>
-      WhatsApp
-    </a>
-  </div>
-</div>
+        <!-- Botón WhatsApp corregido -->
+        <a href="https://wa.me/+573184961233" target="_blank"
+          class="flex items-center justify-center gap-2 py-2 font-semibold bg-gradient-to-r from-solaraOrange to-solaraGold text-black text-center rounded-full hover:scale-105 transition-transform"
+          onclick="document.getElementById('mobileMenu').classList.add('hidden')">
+          <svg class="w-5 h-5" viewBox="0 0 256 259" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path
+              d="m67.663 221.823 4.185 2.093c17.44 10.463 36.971 15.346 56.503 15.346 61.385 0 111.609-50.224 111.609-111.609 0-29.297-11.859-57.897-32.785-78.824-20.927-20.927-48.83-32.785-78.824-32.785-61.385 0-111.61 50.224-110.912 112.307 0 20.926 6.278 41.156 16.741 58.594l2.79 4.186-11.16 41.156 41.853-10.464Z"
+              fill="#00E676" />
+            <path
+              d="M219.033 37.668C195.316 13.254 162.531 0 129.048 0 57.898 0 .698 57.897 1.395 128.35c0 22.322 6.278 43.947 16.742 63.478L0 258.096l67.663-17.439c18.834 10.464 39.76 15.347 60.688 15.347 70.453 0 127.653-57.898 127.653-128.35 0-34.181-13.254-66.269-36.97-89.986ZM129.048 234.38c-18.834 0-37.668-4.882-53.712-14.648l-4.185-2.093-40.458 10.463 10.463-39.76-2.79-4.186C7.673 134.63 22.322 69.058 72.546 38.365c50.224-30.692 115.097-16.043 145.79 34.181 30.692 50.224 16.043 115.097-34.18 145.79-16.045 10.463-35.576 16.043-55.108 16.043Zm61.385-77.428-7.673-3.488s-11.16-4.883-18.136-8.371c-.698 0-1.395-.698-2.093-.698-2.093 0-3.488.698-4.883 1.396 0 0-.697.697-10.463 11.858-.698 1.395-2.093 2.093-3.488 2.093h-.698c-.697 0-2.092-.698-2.79-1.395l-3.488-1.395c-7.673-3.488-14.648-7.674-20.229-13.254-1.395-1.395-3.488-2.79-4.883-4.185-4.883-4.883-9.766-10.464-13.253-16.742l-.698-1.395c-.697-.698-.697-1.395-1.395-2.79 0-1.395 0-2.79.698-3.488 0 0 2.79-3.488 4.882-5.58 1.396-1.396 2.093-3.488 3.488-4.883 1.395-2.093 2.093-4.883 1.395-6.976-.697-3.488-9.068-22.322-11.16-26.507-1.396-2.093-2.79-2.79-4.883-3.488H83.01c-1.396 0-2.79.698-4.186.698l-.698.697c-1.395.698-2.79 2.093-4.185 2.79-1.395 1.396-2.093 2.79-3.488 4.186-4.883 6.278-7.673 13.951-7.673 21.624 0 5.58 1.395 11.161 3.488 16.044l.698 2.093c6.278 13.253 14.648 25.112 25.81 35.575l2.79 2.79c2.092 2.093 4.185 3.488 5.58 5.58 14.649 12.557 31.39 21.625 50.224 26.508 2.093.697 4.883.697 6.976 1.395h6.975c3.488 0 7.673-1.395 10.464-2.79 2.092-1.395 3.487-1.395 4.882-2.79l1.396-1.396c1.395-1.395 2.79-2.092 4.185-3.487 1.395-1.395 2.79-2.79 3.488-4.186 1.395-2.79 2.092-6.278 2.79-9.765v-4.883s-.698-.698-2.093-1.395Z"
+              fill="#FFF" />
+          </svg>
+          WhatsApp
+        </a>
+      </div>
+    </div>
 
   </header>
 
@@ -114,7 +148,9 @@
       <div class="grid lg:grid-cols-2 gap-12 items-center">
         <div class="space-y-6">
           <h1 class="text-white font-display text-[1.6rem] sm:text-5xl md:text-6xl leading-tight font-extrabold">
-            Webs que <span class="bg-gradient-to-r from-[#FF9C3C] via-[#FFD77A] via-40% to-[#8EC6FF] bg-clip-text text-transparent">eclipsan</span> a las demás.
+            Webs que <span
+              class="bg-gradient-to-r from-[#FF9C3C] via-[#FFD77A] via-40% to-[#8EC6FF] bg-clip-text text-transparent">eclipsan</span>
+            a las demás.
           </h1>
           <p class="text-gray-300 max-w-xl text-lg">
             Creamos páginas premium, rápidas y enfocadas en conversiones — diseño minimalista, integraciones reales y
@@ -149,9 +185,11 @@
         </div>
 
         <div class="relative">
-          <div class="rounded-2xl overflow-hidden bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md p-6 shadow-2xl w-full">
+          <div
+            class="rounded-2xl overflow-hidden bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md p-6 shadow-2xl w-full">
             <div class="bg-gradient-to-br from-[#0b0b0d] to-[#0f1214] rounded-xl p-6">
-              <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between text-sm text-gray-300 mb-4 gap-2 sm:gap-0">
+              <div
+                class="flex flex-col sm:flex-row items-start sm:items-center justify-between text-sm text-gray-300 mb-4 gap-2 sm:gap-0">
                 <div class="flex items-center gap-3">
                   <span class="w-2 h-2 rounded-full bg-solaraOrange block"></span>
                   <span>Demo: Piquitours eventos</span>
@@ -164,14 +202,18 @@
                 <div class="flex flex-col sm:flex-row gap-4">
                   <!-- screenshot 1: cuadrada -->
                   <div class="flex-1 flex items-center justify-center">
-                    <div class="w-full aspect-square bg-gradient-to-br from-[#0b0b0d] to-[#121214] rounded-lg border border-white/4 overflow-hidden flex items-center justify-center">
-                      <img src="./public/landing.png" alt="Vista landing" class="w-full h-full object-cover rounded-lg">
+                    <div
+                      class="w-full aspect-square bg-gradient-to-br from-[#0b0b0d] to-[#121214] rounded-lg border border-white/4 overflow-hidden flex items-center justify-center">
+                      <img src="/../public/landing.png" alt="Vista landing"
+                        class="w-full h-full object-cover rounded-lg">
                     </div>
                   </div>
                   <!-- screenshot 2: larga horizontal -->
                   <div class="flex-1 flex items-center justify-center">
-                    <div class="w-full aspect-[3/2] bg-gradient-to-br from-[#0b0b0d] to-[#121214] rounded-lg border border-white/4 overflow-hidden flex items-center justify-center">
-                      <img src="./public/catalogo.png" alt="Vista catálogo" class="w-full h-full object-cover rounded-lg">
+                    <div
+                      class="w-full aspect-[3/2] bg-gradient-to-br from-[#0b0b0d] to-[#121214] rounded-lg border border-white/4 overflow-hidden flex items-center justify-center">
+                      <img src="/../public/catalogo.png" alt="Vista catálogo"
+                        class="w-full h-full object-cover rounded-lg">
                     </div>
                   </div>
                 </div>
@@ -302,7 +344,8 @@
         </div>
 
 
-        <div class="bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md p-6 rounded-2xl">
+        <div
+          class="bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md p-6 rounded-2xl">
           <div class="flex items-center gap-3">
             <div
               class="w-12 h-12 rounded-lg flex items-center justify-center bg-gradient-to-br from-solaraBlue to-solaraGold text-black font-bold">
@@ -335,7 +378,8 @@
 
         </div>
 
-        <div class="bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md p-6 rounded-2xl">
+        <div
+          class="bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md p-6 rounded-2xl">
           <div class="flex items-center gap-3">
             <div
               class="w-12 h-12 rounded-lg flex items-center justify-center bg-gradient-to-br from-[#9B59FF] to-solaraGold text-black font-bold">
@@ -379,8 +423,9 @@
       </div>
 
       <div class="grid md:grid-cols-3 gap-6">
-        <article class="rounded-2xl overflow-hidden bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md">
-          <div class="h-44 bg-[url('public/landing.png')] bg-cover bg-center"></div>
+        <article
+          class="rounded-2xl overflow-hidden bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md">
+          <div class="h-44 bg-[url('/../public/landing.png')] bg-cover bg-center"></div>
           <div class="p-5">
             <h3 class="text-white font-semibold">Piquitours y eventos</h3>
             <p class="text-gray-400 text-sm mt-2">Landing + catálogo. +40% en pedidos online.</p>
@@ -410,11 +455,12 @@
                 </svg>
                 Tailwind
               </div>
-              <a class="text-sm text-solaraBlue hover:underline" href="#">Ver demo</a>
+              <a class="text-sm text-solaraBlue hover:underline" href="https://www.piquitoursyeventos.com/"
+                target="_blank" rel="noopener noreferrer">Ver demo</a>
             </div>
           </div>
         </article>
-
+        <!-- 
         <article class="rounded-2xl overflow-hidden bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md">
           <div class="h-44 bg-[url('/demo-agencia.jpg')] bg-cover bg-center"></div>
           <div class="p-5">
@@ -513,7 +559,7 @@
               <a class="text-sm text-solaraBlue hover:underline" href="#">Ver demo</a>
             </div>
           </div>
-        </article>
+        </article> -->
       </div>
     </section>
 
@@ -528,7 +574,8 @@
 
       <div class="grid md:grid-cols-3 gap-6">
         <!-- Plan A -->
-        <div class="p-6 rounded-2xl bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md">
+        <div
+          class="p-6 rounded-2xl bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md">
           <div class="text-gray-300">Landing / Básico</div>
           <div class="text-4xl font-bold text-white mt-4">COP 350.000</div>
           <ul class="mt-4 text-gray-300 space-y-2 text-sm">
@@ -557,7 +604,8 @@
         </div>
 
         <!-- Plan B -->
-        <div class="p-6 rounded-2xl bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md">
+        <div
+          class="p-6 rounded-2xl bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md">
           <div class="text-gray-300">Web Corporativa</div>
           <div class="text-4xl font-bold text-white mt-4">COP 850.000</div>
           <ul class="mt-4 text-gray-300 space-y-2 text-sm">
@@ -587,7 +635,8 @@
         </div>
 
         <!-- Plan C -->
-        <div class="p-6 rounded-2xl bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md">
+        <div
+          class="p-6 rounded-2xl bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md">
           <div class="text-gray-300">App / E-commerce</div>
           <div class="text-4xl font-bold text-white mt-4">COP 900.000+</div>
           <ul class="mt-4 text-gray-300 space-y-2 text-sm">
@@ -601,15 +650,15 @@
               class="block text-center px-4 py-3 rounded-full bg-gradient-to-r from-solaraBlue to-solaraGold text-black font-semibold hover:scale-105 transition-transform flex items-center justify-center gap-2">
               <span>Solicitar</span>
               <span class="inline-flex items-center justify-center"></span>
-                <svg viewBox="0 0 256 259" width="22" height="22" class="align-middle"
-                  xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                  <path
-                    d="m67.663 221.823 4.185 2.093c17.44 10.463 36.971 15.346 56.503 15.346 61.385 0 111.609-50.224 111.609-111.609 0-29.297-11.859-57.897-32.785-78.824-20.927-20.927-48.83-32.785-78.824-32.785-61.385 0-111.61 50.224-110.912 112.307 0 20.926 6.278 41.156 16.741 58.594l2.79 4.186-11.16 41.156 41.853-10.464Z"
-                    fill="#00E676" />
-                  <path
-                    d="M219.033 37.668C195.316 13.254 162.531 0 129.048 0 57.898 0 .698 57.897 1.395 128.35c0 22.322 6.278 43.947 16.742 63.478L0 258.096l67.663-17.439c18.834 10.464 39.76 15.347 60.688 15.347 70.453 0 127.653-57.898 127.653-128.35 0-34.181-13.254-66.269-36.97-89.986ZM129.048 234.38c-18.834 0-37.668-4.882-53.712-14.648l-4.185-2.093-40.458 10.463 10.463-39.76-2.79-4.186C7.673 134.63 22.322 69.058 72.546 38.365c50.224-30.692 115.097-16.043 145.79 34.181 30.692 50.224 16.043 115.097-34.18 145.79-16.045 10.463-35.576 16.043-55.108 16.043Zm61.385-77.428-7.673-3.488s-11.16-4.883-18.136-8.371c-.698 0-1.395-.698-2.093-.698-2.093 0-3.488.698-4.883 1.396 0 0-.697.697-10.463 11.858-.698 1.395-2.093 2.093-3.488 2.093h-.698c-.697 0-2.092-.698-2.79-1.395l-3.488-1.395c-7.673-3.488-14.648-7.674-20.229-13.254-1.395-1.395-3.488-2.79-4.883-4.185-4.883-4.883-9.766-10.464-13.253-16.742l-.698-1.395c-.697-.698-.697-1.395-1.395-2.79 0-1.395 0-2.79.698-3.488 0 0 2.79-3.488 4.882-5.58 1.396-1.396 2.093-3.488 3.488-4.883 1.395-2.093 2.093-4.883 1.395-6.976-.697-3.488-9.068-22.322-11.16-26.507-1.396-2.093-2.79-2.79-4.883-3.488H83.01c-1.396 0-2.79.698-4.186.698l-.698.697c-1.395.698-2.79 2.093-4.185 2.79-1.395 1.396-2.093 2.79-3.488 4.186-4.883 6.278-7.673 13.951-7.673 21.624 0 5.58 1.395 11.161 3.488 16.044l.698 2.093c6.278 13.253 14.648 25.112 25.81 35.575l2.79 2.79c2.092 2.093 4.185 3.488 5.58 5.58 14.649 12.557 31.39 21.625 50.224 26.508 2.093.697 4.883.697 6.976 1.395h6.975c3.488 0 7.673-1.395 10.464-2.79 2.092-1.395 3.487-1.395 4.882-2.79l1.396-1.396c1.395-1.395 2.79-2.092 4.185-3.487 1.395-1.395 2.79-2.79 3.488-4.186 1.395-2.79 2.092-6.278 2.79-9.765v-4.883s-.698-.698-2.093-1.395Z"
-                    fill="#FFF" />
-                </svg>
+              <svg viewBox="0 0 256 259" width="22" height="22" class="align-middle" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true">
+                <path
+                  d="m67.663 221.823 4.185 2.093c17.44 10.463 36.971 15.346 56.503 15.346 61.385 0 111.609-50.224 111.609-111.609 0-29.297-11.859-57.897-32.785-78.824-20.927-20.927-48.83-32.785-78.824-32.785-61.385 0-111.61 50.224-110.912 112.307 0 20.926 6.278 41.156 16.741 58.594l2.79 4.186-11.16 41.156 41.853-10.464Z"
+                  fill="#00E676" />
+                <path
+                  d="M219.033 37.668C195.316 13.254 162.531 0 129.048 0 57.898 0 .698 57.897 1.395 128.35c0 22.322 6.278 43.947 16.742 63.478L0 258.096l67.663-17.439c18.834 10.464 39.76 15.347 60.688 15.347 70.453 0 127.653-57.898 127.653-128.35 0-34.181-13.254-66.269-36.97-89.986ZM129.048 234.38c-18.834 0-37.668-4.882-53.712-14.648l-4.185-2.093-40.458 10.463 10.463-39.76-2.79-4.186C7.673 134.63 22.322 69.058 72.546 38.365c50.224-30.692 115.097-16.043 145.79 34.181 30.692 50.224 16.043 115.097-34.18 145.79-16.045 10.463-35.576 16.043-55.108 16.043Zm61.385-77.428-7.673-3.488s-11.16-4.883-18.136-8.371c-.698 0-1.395-.698-2.093-.698-2.093 0-3.488.698-4.883 1.396 0 0-.697.697-10.463 11.858-.698 1.395-2.093 2.093-3.488 2.093h-.698c-.697 0-2.092-.698-2.79-1.395l-3.488-1.395c-7.673-3.488-14.648-7.674-20.229-13.254-1.395-1.395-3.488-2.79-4.883-4.185-4.883-4.883-9.766-10.464-13.253-16.742l-.698-1.395c-.697-.698-.697-1.395-1.395-2.79 0-1.395 0-2.79.698-3.488 0 0 2.79-3.488 4.882-5.58 1.396-1.396 2.093-3.488 3.488-4.883 1.395-2.093 2.093-4.883 1.395-6.976-.697-3.488-9.068-22.322-11.16-26.507-1.396-2.093-2.79-2.79-4.883-3.488H83.01c-1.396 0-2.79.698-4.186.698l-.698.697c-1.395.698-2.79 2.093-4.185 2.79-1.395 1.396-2.093 2.79-3.488 4.186-4.883 6.278-7.673 13.951-7.673 21.624 0 5.58 1.395 11.161 3.488 16.044l.698 2.093c6.278 13.253 14.648 25.112 25.81 35.575l2.79 2.79c2.092 2.093 4.185 3.488 5.58 5.58 14.649 12.557 31.39 21.625 50.224 26.508 2.093.697 4.883.697 6.976 1.395h6.975c3.488 0 7.673-1.395 10.464-2.79 2.092-1.395 3.487-1.395 4.882-2.79l1.396-1.396c1.395-1.395 2.79-2.092 4.185-3.487 1.395-1.395 2.79-2.79 3.488-4.186 1.395-2.79 2.092-6.278 2.79-9.765v-4.883s-.698-.698-2.093-1.395Z"
+                  fill="#FFF" />
+              </svg>
               </span>
             </a>
           </div>
@@ -628,7 +677,8 @@
 
       <div class="grid md:grid-cols-4 gap-6">
         <!-- STEP 1 -->
-        <div class="bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md p-6 rounded-2xl text-center transition duration-200 hover:-translate-y-[6px] hover:shadow-[0_18px_40px_rgba(0,0,0,0.6)]">
+        <div
+          class="bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md p-6 rounded-2xl text-center transition duration-200 hover:-translate-y-[6px] hover:shadow-[0_18px_40px_rgba(0,0,0,0.6)]">
           <div
             class="mx-auto w-16 h-16 rounded-full flex items-center justify-center bg-gradient-to-br from-solaraOrange to-solaraGold text-black text-2xl font-bold">
             1</div>
@@ -639,7 +689,8 @@
         </div>
 
         <!-- STEP 2 -->
-        <div class="bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md p-6 rounded-2xl text-center transition duration-200 hover:-translate-y-[6px] hover:shadow-[0_18px_40px_rgba(0,0,0,0.6)]">
+        <div
+          class="bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md p-6 rounded-2xl text-center transition duration-200 hover:-translate-y-[6px] hover:shadow-[0_18px_40px_rgba(0,0,0,0.6)]">
           <div
             class="mx-auto w-16 h-16 rounded-full flex items-center justify-center bg-gradient-to-br from-solaraBlue to-solaraGold text-black text-2xl font-bold">
             2</div>
@@ -650,7 +701,8 @@
         </div>
 
         <!-- STEP 3 -->
-        <div class="bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md p-6 rounded-2xl text-center transition duration-200 hover:-translate-y-[6px] hover:shadow-[0_18px_40px_rgba(0,0,0,0.6)]">
+        <div
+          class="bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md p-6 rounded-2xl text-center transition duration-200 hover:-translate-y-[6px] hover:shadow-[0_18px_40px_rgba(0,0,0,0.6)]">
           <div
             class="mx-auto w-16 h-16 rounded-full flex items-center justify-center bg-gradient-to-br from-[#9B59FF] to-solaraGold text-black text-2xl font-bold">
             3</div>
@@ -661,7 +713,8 @@
         </div>
 
         <!-- STEP 4 -->
-        <div class="bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md p-6 rounded-2xl text-center transition duration-200 hover:-translate-y-[6px] hover:shadow-[0_18px_40px_rgba(0,0,0,0.6)]">
+        <div
+          class="bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md p-6 rounded-2xl text-center transition duration-200 hover:-translate-y-[6px] hover:shadow-[0_18px_40px_rgba(0,0,0,0.6)]">
           <div
             class="mx-auto w-16 h-16 rounded-full flex items-center justify-center bg-gradient-to-br from-solaraGold to-solaraBlue text-black text-2xl font-bold">
             ✓</div>
@@ -687,17 +740,20 @@
       </div>
 
       <div class="grid md:grid-cols-3 gap-6">
-        <blockquote class="bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md p-6 rounded-2xl">
+        <blockquote
+          class="bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md p-6 rounded-2xl">
           <p class="text-gray-200">"SolaraSites nos dio diseño y velocidad. Profesionales y ágiles."</p>
           <footer class="mt-4 text-sm text-gray-400">— Piquitours y eventos</footer>
         </blockquote>
 
-        <blockquote class="bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md p-6 rounded-2xl">
+        <blockquote
+          class="bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md p-6 rounded-2xl">
           <p class="text-gray-200">"Entrega puntual y resultados claros. Recomendados."</p>
           <footer class="mt-4 text-sm text-gray-400">— Agencia Local</footer>
         </blockquote>
 
-        <blockquote class="bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md p-6 rounded-2xl">
+        <blockquote
+          class="bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md p-6 rounded-2xl">
           <p class="text-gray-200">"Integraron pagos y reservas sin problemas."</p>
           <footer class="mt-4 text-sm text-gray-400">— Gimnasio Potencia</footer>
         </blockquote>
@@ -732,7 +788,9 @@
           </div>
         </div>
 
-        <form id="contactForm" class="bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md p-6 rounded-2xl" onsubmit="handleSubmit(event)">
+        <form id="contactForm"
+          class="bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md p-6 rounded-2xl"
+          onsubmit="handleSubmit(event)">
           <label class="block text-sm text-gray-300">Tu nombre</label>
           <input required class="mt-1 w-full rounded-md bg-transparent border border-white/6 p-3 text-white"
             placeholder="Ej: Carlos Perez" id="name">
@@ -758,11 +816,38 @@
       </div>
     </section>
 
+    <!-- FAQ -->
+    <section id="faq" class="max-w-7xl mx-auto px-6 py-12">
+      <h3 class="font-display text-2xl text-white mb-6">Preguntas frecuentes</h3>
+      <div class="grid md:grid-cols-2 gap-4">
+        <details class="glass p-4 rounded-lg">
+          <summary class="cursor-pointer font-semibold">¿Cuánto tiempo toma un proyecto?</summary>
+          <div class="mt-2 text-gray-300 text-sm">Depende del alcance: landing 3–5 días, web corporativa 7–14 días,
+            proyectos avanzados según alcance.</div>
+        </details>
+        <details class="glass p-4 rounded-lg">
+          <summary class="cursor-pointer font-semibold">¿Aceptan pagos por Nequi y Daviplata?</summary>
+          <div class="mt-2 text-gray-300 text-sm">Sí. Inicialmente Nequi/Daviplata; luego podemos integrar PayU,
+            MercadoPago o Stripe.</div>
+        </details>
+        <details class="glass p-4 rounded-lg">
+          <summary class="cursor-pointer font-semibold">¿Necesito host propio?</summary>
+          <div class="mt-2 text-gray-300 text-sm">Ofrecemos despliegue en Vercel/Netlify o en tu hosting. Asesoramos la
+            mejor opción.</div>
+        </details>
+        <details class="glass p-4 rounded-lg">
+          <summary class="cursor-pointer font-semibold">¿Puedo ver demos?</summary>
+          <div class="mt-2 text-gray-300 text-sm">Sí — en la sección de portafolio hay demos y ejemplos. Pide acceso vía
+            WhatsApp.</div>
+        </details>
+      </div>
+    </section>
+
     <!-- FOOTER -->
     <footer class="border-t border-white/4 mt-12">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 py-8 flex flex-col md:flex-row justify-between items-center gap-4">
         <div class="flex items-center gap-3">
-          <img src="public/logoV2.png" alt="SolaraSites logo" class="w-10 h-10 object-contain">
+          <img src="/../public/logoV2.png" alt="SolaraSites logo" class="w-10 h-10 object-contain">
           <div>
             <div class="text-white font-semibold">SolaraSites</div>
             <div class="text-xs text-gray-400">Webs que eclipsan a las demás</div>
@@ -785,6 +870,11 @@
             
             LinkedIn
           </a> -->
+          <a href="https://www.instagram.com/SolaraSites" target="_blank"
+            class="flex items-center gap-2 hover:text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" fill="url(#facebook__a)" height="20" width="20"><defs><linearGradient x1="50%" x2="50%" y1="97.078%" y2="0%" id="facebook__a"><stop offset="0%" stop-color="#0062E0"/><stop offset="100%" stop-color="#19AFFF"/></linearGradient></defs><path d="M15 35.8C6.5 34.3 0 26.9 0 18 0 8.1 8.1 0 18 0s18 8.1 18 18c0 8.9-6.5 16.3-15 17.8l-1-.8h-4l-1 .8z"/><path fill="#FFF" d="m25 23 .8-5H21v-3.5c0-1.4.5-2.5 2.7-2.5H26V7.4c-1.3-.2-2.7-.4-4-.4-4.1 0-7 2.5-7 7v4h-4.5v5H15v12.7c1 .2 2 .3 3 .3s2-.1 3-.3V23h4z"/></svg>
+            <span>Instagram</span>
+          </a>
         </div>
       </div>
     </footer>
