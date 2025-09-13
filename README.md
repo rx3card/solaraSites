@@ -37,6 +37,6 @@ Nuestro propósito es que cada proyecto transmita **profesionalismo y confianza*
 
 ---
 
-✨ **SolaraSites**: Webs que eclipsan a la competencia.
+✨ **SolaraSites**: Webs que eclipsan a la competencia...
 
 ---
