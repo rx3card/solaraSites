@@ -1,0 +1,2346 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="icon" href="logoV2.png" type="image/png">
+
+  <!-- 🔑 SEO Básico -->
+  <title>SolaraSites — Diseño y desarrollo de páginas web en Colombia</title>
+  <meta name="description" content="SolaraSites: Creamos páginas web minimalistas, rápidas y profesionales que convierten visitantes en clientes. Diseño web, landing pages, sitios corporativos y e-commerce en Colombia.">
+  <link rel="canonical" href="https://solarasites.vercel.app/">
+  <meta name="theme-color" content="#060608">
+
+  <!-- 📱 Social Media / Open Graph -->
+  <meta property="og:title" content="SolaraSites — Webs que eclipsan a las demás">
+  <meta property="og:description" content="Diseño y desarrollo de páginas web premium, minimalistas y efectivas. Haz que tu negocio brille online con SolaraSites.">
+  <meta property="og:image" content="https://solarasites.vercel.app/logoV2.png">
+  <meta property="og:url" content="https://solarasites.vercel.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SolaraSites">
+  <meta property="og:locale" content="es_CO">
+  <meta property="og:image:alt" content="Logotipo de SolaraSites">
+
+  <!-- 🐦 Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SolaraSites — Webs que eclipsan a las demás">
+  <meta name="twitter:description" content="Diseño web minimalista y profesional que convierte visitantes en clientes.">
+  <meta name="twitter:image" content="https://solarasites.vercel.app/logoV2.png">
+  <meta name="twitter:image:alt" content="Logotipo de SolaraSites">
+
+  <!-- 📌 SEO Técnico -->
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="SolaraSites">
+  <meta name="keywords" content="diseño web Colombia, páginas web profesionales, landing page, desarrollo web, e-commerce, SEO técnico, páginas corporativas">
+  <meta name="language" content="es-CO">
+  <link rel="alternate" href="https://solarasites.vercel.app/" hreflang="es-CO">
+  <link rel="alternate" href="https://solarasites.vercel.app/" hreflang="x-default">
+  <link rel="apple-touch-icon" href="/logoV2.png" sizes="180x180">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+
+  <!-- ⚡ Performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- 🎨 Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            solaraOrange: '#FF8C29',
+            solaraGold: '#FFC65D',
+            solaraBlue: '#5FB4FF',
+            solaraPurple: '#A855F7',
+            solaraPink: '#EC4899',
+            solaraGreen: '#10B981',
+            bgMain: '#060608',
+            surface: '#0f1113',
+            surfaceLight: '#1a1c1f'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'Segoe UI', 'Roboto', '"Helvetica Neue"', 'Arial'],
+            display: ['Poppins', 'Inter', 'sans-serif']
+          },
+          animation: {
+            'float': 'float 3s ease-in-out infinite',
+            'glow': 'glow 2s ease-in-out infinite alternate',
+            'slide-up': 'slideUp 0.5s ease-out',
+            'fade-in': 'fadeIn 0.6s ease-out'
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-10px)' }
+            },
+            glow: {
+              '0%': { boxShadow: '0 0 20px rgba(255, 140, 41, 0.3)' },
+              '100%': { boxShadow: '0 0 30px rgba(255, 140, 41, 0.6)' }
+            },
+            slideUp: {
+              '0%': { transform: 'translateY(20px)', opacity: '0' },
+              '100%': { transform: 'translateY(0)', opacity: '1' }
+            },
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' }
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <!-- JSON-LD Schema: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "SolaraSites",
+    "url": "https://solarasites.vercel.app/",
+    "logo": "https://solarasites.vercel.app/logoV2.png",
+    "sameAs": [
+      "https://www.instagram.com/SolaraSites"
+    ]
+  }
+  </script>
+  <!-- JSON-LD Schema: Service with Offers (Pricing) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Diseño y desarrollo web",
+    "provider": {
+      "@type": "Organization",
+      "name": "SolaraSites",
+      "url": "https://solarasites.vercel.app/"
+    },
+    "areaServed": {
+      "@type": "Country",
+      "name": "Colombia"
+    },
+    "offers": {
+      "@type": "OfferCatalog",
+      "name": "Planes de desarrollo web",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "name": "Landing / Básico",
+          "price": "350000",
+          "priceCurrency": "COP",
+          "url": "https://solarasites.vercel.app/#pricing",
+          "availability": "https://schema.org/InStock"
+        },
+        {
+          "@type": "Offer",
+          "name": "Web Corporativa",
+          "price": "850000",
+          "priceCurrency": "COP",
+          "url": "https://solarasites.vercel.app/#pricing",
+          "availability": "https://schema.org/InStock"
+        },
+        {
+          "@type": "Offer",
+          "name": "App / E-commerce",
+          "price": "900000",
+          "priceCurrency": "COP",
+          "url": "https://solarasites.vercel.app/#pricing",
+          "availability": "https://schema.org/PreOrder"
+        }
+      ]
+    }
+  }
+  </script>
+  <!-- JSON-LD Schema: Organization & WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "SolaraSites",
+    "url": "https://solarasites.vercel.app/",
+    "logo": "https://solarasites.vercel.app/logoV2.png",
+    "sameAs": [
+      "https://www.instagram.com/SolaraSites"
+    ],
+    "founder": {
+      "@type": "Person",
+      "name": "SolaraSites"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "SolaraSites",
+    "url": "https://solarasites.vercel.app/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://solarasites.vercel.app/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+  <!-- JSON-LD Schema: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Cuánto tiempo toma un proyecto?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Depende del alcance: landing 3–5 días, web corporativa 7–14 días, proyectos avanzados según alcance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Aceptan pagos por Nequi y Daviplata?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. Inicialmente Nequi/Daviplata; luego podemos integrar PayU, MercadoPago o Stripe."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Necesito host propio?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ofrecemos despliegue en Vercel/Netlify o en tu hosting. Asesoramos la mejor opción."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Puedo ver demos?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí — en la sección de portafolio hay demos y ejemplos. Pide acceso vía WhatsApp."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+
+<body class="antialiased overflow-x-hidden bg-gradient-to-b from-bgMain to-[#07070a] text-[#e6eef6] font-sans">
+
+  <!-- HEADER -->
+  <header id="siteHeader" class="fixed w-full z-50 top-0 left-0 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3" aria-label="SolaraSites — Inicio">
+        <!-- LOGO: uses logoV2.png only; no text label to avoid duplication -->
+        <img src="logoV2.png" alt="SolaraSites logo"
+          class="w-[40px] h-[40px] sm:w-[104px] sm:h-[44px] object-contain drop-shadow-[0_12px_30px_rgba(255,140,41,0.12)]">
+      </a>
+      <a href="#" class="flex items-center gap-3" aria-label="SolaraSites — Inicio">
+        <span
+          class="text-lg sm:text-xl font-display font-semibold bg-gradient-to-r from-solaraOrange to-solaraGold bg-clip-text text-transparent tracking-tight">
+          Solara Sites
+        </span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm text-gray-300">
+        <a href="#services" class="hover:text-white">Servicios</a>
+        <a href="#portfolio" class="hover:text-white">Portafolio</a>
+        <a href="#pricing" class="hover:text-white">Precios</a>
+        <a href="#process" class="hover:text-white">Proceso</a>
+        <a href="#contact" class="hover:text-white">Contacto</a>
+        <a href="#faq" class="hover:text-white">FAQ</a>
+        <a href="https://wa.me/+573184961233" target="_blank"
+          class="group ml-4 relative inline-flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-solaraOrange via-solaraGold to-solaraOrange rounded-full text-black font-bold shadow-lg shadow-solaraOrange/30 hover:shadow-xl hover:shadow-solaraOrange/50 hover:-translate-y-0.5 hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-solaraGold" style="background-size: 200% 100%; background-position: 0% 0%;" onmouseover="this.style.backgroundPosition='100% 0%'" onmouseout="this.style.backgroundPosition='0% 0%'"
+          aria-label="Contactar por WhatsApp">
+          <svg class="w-5 h-5" viewBox="0 0 256 259" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path
+              d="m67.663 221.823 4.185 2.093c17.44 10.463 36.971 15.346 56.503 15.346 61.385 0 111.609-50.224 111.609-111.609 0-29.297-11.859-57.897-32.785-78.824-20.927-20.927-48.83-32.785-78.824-32.785-61.385 0-111.61 50.224-110.912 112.307 0 20.926 6.278 41.156 16.741 58.594l2.79 4.186-11.16 41.156 41.853-10.464Z"
+              fill="#00E676" />
+            <path
+              d="M219.033 37.668C195.316 13.254 162.531 0 129.048 0 57.898 0 .698 57.897 1.395 128.35c0 22.322 6.278 43.947 16.742 63.478L0 258.096l67.663-17.439c18.834 10.464 39.76 15.347 60.688 15.347 70.453 0 127.653-57.898 127.653-128.35 0-34.181-13.254-66.269-36.97-89.986ZM129.048 234.38c-18.834 0-37.668-4.882-53.712-14.648l-4.185-2.093-40.458 10.463 10.463-39.76-2.79-4.186C7.673 134.63 22.322 69.058 72.546 38.365c50.224-30.692 115.097-16.043 145.79 34.181 30.692 50.224 16.043 115.097-34.18 145.79-16.045 10.463-35.576 16.043-55.108 16.043Zm61.385-77.428-7.673-3.488s-11.16-4.883-18.136-8.371c-.698 0-1.395-.698-2.093-.698-2.093 0-3.488.698-4.883 1.396 0 0-.697.697-10.463 11.858-.698 1.395-2.093 2.093-3.488 2.093h-.698c-.697 0-2.092-.698-2.79-1.395l-3.488-1.395c-7.673-3.488-14.648-7.674-20.229-13.254-1.395-1.395-3.488-2.79-4.883-4.185-4.883-4.883-9.766-10.464-13.253-16.742l-.698-1.395c-.697-.698-.697-1.395-1.395-2.79 0-1.395 0-2.79.698-3.488 0 0 2.79-3.488 4.882-5.58 1.396-1.396 2.093-3.488 3.488-4.883 1.395-2.093 2.093-4.883 1.395-6.976-.697-3.488-9.068-22.322-11.16-26.507-1.396-2.093-2.79-2.79-4.883-3.488H83.01c-1.396 0-2.79.698-4.186.698l-.698.697c-1.395.698-2.79 2.093-4.185 2.79-1.395 1.396-2.093 2.79-3.488 4.186-4.883 6.278-7.673 13.951-7.673 21.624 0 5.58 1.395 11.161 3.488 16.044l.698 2.093c6.278 13.253 14.648 25.112 25.81 35.575l2.79 2.79c2.092 2.093 4.185 3.488 5.58 5.58 14.649 12.557 31.39 21.625 50.224 26.508 2.093.697 4.883.697 6.976 1.395h6.975c3.488 0 7.673-1.395 10.464-2.79 2.092-1.395 3.487-1.395 4.882-2.79l1.396-1.396c1.395-1.395 2.79-2.092 4.185-3.487 1.395-1.395 2.79-2.79 3.488-4.186 1.395-2.79 2.092-6.278 2.79-9.765v-4.883s-.698-.698-2.093-1.395Z"
+              fill="#FFF" />
+          </svg>
+          <span class="hidden sm:inline">WhatsApp</span>
+        </a>
+      </nav>
+
+      <div class="md:hidden">
+        <button id="menuBtn"
+          class="p-2 rounded-md bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md"
+          aria-label="Abrir menú">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+            <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+              stroke-linejoin="round" class="text-gray-200" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu"
+      class="hidden md:hidden bg-[#060608]/80 bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md">
+      <div class="px-4 sm:px-6 py-4 flex flex-col gap-3">
+        <a href="#services" class="py-2"
+          onclick="document.getElementById('mobileMenu').classList.add('hidden')">Servicios</a>
+        <a href="#portfolio" class="py-2"
+          onclick="document.getElementById('mobileMenu').classList.add('hidden')">Portafolio</a>
+        <a href="#pricing" class="py-2"
+          onclick="document.getElementById('mobileMenu').classList.add('hidden')">Precios</a>
+        <a href="#process" class="py-2"
+          onclick="document.getElementById('mobileMenu').classList.add('hidden')">Proceso</a>
+        <a href="#contact" class="py-2"
+          onclick="document.getElementById('mobileMenu').classList.add('hidden')">Contacto</a>
+
+        <!-- Botón WhatsApp corregido -->
+        <a href="https://wa.me/+573184961233" target="_blank"
+          class="flex items-center justify-center gap-2 px-4 py-2 text-sm sm:px-5 sm:py-2.5 sm:text-base font-semibold bg-gradient-to-r from-solaraOrange to-solaraGold text-black text-center rounded-full hover:scale-105 transition-transform"
+          onclick="document.getElementById('mobileMenu').classList.add('hidden')">
+          <svg class="w-5 h-5" viewBox="0 0 256 259" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path
+              d="m67.663 221.823 4.185 2.093c17.44 10.463 36.971 15.346 56.503 15.346 61.385 0 111.609-50.224 111.609-111.609 0-29.297-11.859-57.897-32.785-78.824-20.927-20.927-48.83-32.785-78.824-32.785-61.385 0-111.61 50.224-110.912 112.307 0 20.926 6.278 41.156 16.741 58.594l2.79 4.186-11.16 41.156 41.853-10.464Z"
+              fill="#00E676" />
+            <path
+              d="M219.033 37.668C195.316 13.254 162.531 0 129.048 0 57.898 0 .698 57.897 1.395 128.35c0 22.322 6.278 43.947 16.742 63.478L0 258.096l67.663-17.439c18.834 10.464 39.76 15.347 60.688 15.347 70.453 0 127.653-57.898 127.653-128.35 0-34.181-13.254-66.269-36.97-89.986ZM129.048 234.38c-18.834 0-37.668-4.882-53.712-14.648l-4.185-2.093-40.458 10.463 10.463-39.76-2.79-4.186C7.673 134.63 22.322 69.058 72.546 38.365c50.224-30.692 115.097-16.043 145.79 34.181 30.692 50.224 16.043 115.097-34.18 145.79-16.045 10.463-35.576 16.043-55.108 16.043Zm61.385-77.428-7.673-3.488s-11.16-4.883-18.136-8.371c-.698 0-1.395-.698-2.093-.698-2.093 0-3.488.698-4.883 1.396 0 0-.697.697-10.463 11.858-.698 1.395-2.093 2.093-3.488 2.093h-.698c-.697 0-2.092-.698-2.79-1.395l-3.488-1.395c-7.673-3.488-14.648-7.674-20.229-13.254-1.395-1.395-3.488-2.79-4.883-4.185-4.883-4.883-9.766-10.464-13.253-16.742l-.698-1.395c-.697-.698-.697-1.395-1.395-2.79 0-1.395 0-2.79.698-3.488 0 0 2.79-3.488 4.882-5.58 1.396-1.396 2.093-3.488 3.488-4.883 1.395-2.093 2.093-4.883 1.395-6.976-.697-3.488-9.068-22.322-11.16-26.507-1.396-2.093-2.79-2.79-4.883-3.488H83.01c-1.396 0-2.79.698-4.186.698l-.698.697c-1.395.698-2.79 2.093-4.185 2.79-1.395 1.396-2.093 2.79-3.488 4.186-4.883 6.278-7.673 13.951-7.673 21.624 0 5.58 1.395 11.161 3.488 16.044l.698 2.093c6.278 13.253 14.648 25.112 25.81 35.575l2.79 2.79c2.092 2.093 4.185 3.488 5.58 5.58 14.649 12.557 31.39 21.625 50.224 26.508 2.093.697 4.883.697 6.976 1.395h6.975c3.488 0 7.673-1.395 10.464-2.79 2.092-1.395 3.487-1.395 4.882-2.79l1.396-1.396c1.395-1.395 2.79-2.092 4.185-3.487 1.395-1.395 2.79-2.79 3.488-4.186 1.395-2.79 2.092-6.278 2.79-9.765v-4.883s-.698-.698-2.093-1.395Z"
+              fill="#FFF" />
+          </svg>
+          WhatsApp
+        </a>
+      </div>
+    </div>
+
+  </header>
+
+  <main class="pt-20 pb-24 md:pb-0">
+    <!-- HERO -->
+    <section class="relative min-h-screen flex items-center overflow-hidden">
+      <!-- Fondo animado espectacular -->
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent via-solaraOrange/5 to-transparent"></div>
+      <div class="absolute top-0 left-1/4 w-96 h-96 bg-solaraOrange/20 rounded-full blur-[120px] animate-float"></div>
+      <div class="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-solaraBlue/20 rounded-full blur-[150px] animate-float" style="animation-delay: 2s;"></div>
+      <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-solaraPurple/10 rounded-full blur-[180px] animate-pulse"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 py-32 lg:py-40 relative z-10 w-full">
+      <div class="grid lg:grid-cols-2 gap-16 items-center">
+        <div class="space-y-8 animate-fade-in">
+          <!-- Badge superior -->
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-solaraOrange/20 to-solaraGold/20 border border-solaraOrange/40 backdrop-blur-md">
+            <svg class="w-5 h-5 text-solaraOrange" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+            </svg>
+            <span class="text-sm font-bold bg-gradient-to-r from-solaraOrange to-solaraGold bg-clip-text text-transparent">#1 en Desarrollo Web Profesional</span>
+          </div>
+          
+          <!-- Título espectacular -->
+          <div class="space-y-4">
+            <h1 class="text-white font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.1] font-black tracking-tight">
+              Tu <span class="relative inline-block">
+                <span class="bg-gradient-to-r from-solaraOrange via-solaraGold to-solaraBlue bg-clip-text text-transparent animate-glow">Sitio Web</span>
+                <div class="absolute -bottom-2 left-0 right-0 h-2 bg-gradient-to-r from-solaraOrange/40 via-solaraGold/40 to-solaraBlue/40 blur-xl"></div>
+              </span>
+              <br/>que <span class="bg-gradient-to-r from-solaraBlue via-solaraPurple to-solaraPink bg-clip-text text-transparent">convierte</span>
+            </h1>
+            <p class="text-gray-300 text-lg md:text-xl leading-relaxed max-w-2xl">
+              Diseño <strong class="text-white font-semibold">premium</strong>, velocidad <strong class="text-white font-semibold">ultrarápida</strong> y optimizado para <strong class="text-solaraOrange font-semibold">vender más</strong>. 
+              Así de simple.
+            </p>
+          </div>
+
+          <!-- Métricas y Social Proof -->
+          <div class="grid grid-cols-3 gap-4">
+            <div class="bg-gradient-to-br from-white/[0.08] to-white/[0.02] border border-white/[0.1] rounded-2xl p-4 backdrop-blur-md">
+              <div class="text-3xl font-bold bg-gradient-to-r from-solaraOrange to-solaraGold bg-clip-text text-transparent">20+</div>
+              <div class="text-xs text-gray-400 mt-1">Proyectos exitosos</div>
+            </div>
+            <div class="bg-gradient-to-br from-white/[0.08] to-white/[0.02] border border-white/[0.1] rounded-2xl p-4 backdrop-blur-md">
+              <div class="text-3xl font-bold bg-gradient-to-r from-solaraBlue to-solaraPurple bg-clip-text text-transparent">7d</div>
+              <div class="text-xs text-gray-400 mt-1">Entrega promedio</div>
+            </div>
+            <div class="bg-gradient-to-br from-white/[0.08] to-white/[0.02] border border-white/[0.1] rounded-2xl p-4 backdrop-blur-md">
+              <div class="flex items-center gap-1">
+                <span class="text-3xl font-bold text-yellow-400">4.9</span>
+                <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+              </div>
+              <div class="text-xs text-gray-400 mt-1">Valoración clientes</div>
+            </div>
+          </div>
+
+          <!-- CTAs -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+            <a href="https://wa.me/+573184961233?text=Hola%20SolaraSites,%20quiero%20una%20web" target="_blank"
+              class="group relative inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-bold rounded-xl bg-gradient-to-r from-solaraOrange to-solaraGold text-black overflow-hidden transition-all hover:scale-105 hover:shadow-2xl hover:shadow-solaraOrange/50">
+              <!-- WhatsApp SVG icon, sized and aligned -->
+              <svg viewBox="0 0 256 259" width="22" height="22" class="inline-block align-middle"
+                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path
+                  d="m67.663 221.823 4.185 2.093c17.44 10.463 36.971 15.346 56.503 15.346 61.385 0 111.609-50.224 111.609-111.609 0-29.297-11.859-57.897-32.785-78.824-20.927-20.927-48.83-32.785-78.824-32.785-61.385 0-111.61 50.224-110.912 112.307 0 20.926 6.278 41.156 16.741 58.594l2.79 4.186-11.16 41.156 41.853-10.464Z"
+                  fill="#00E676" />
+                <path
+                  d="M219.033 37.668C195.316 13.254 162.531 0 129.048 0 57.898 0 .698 57.897 1.395 128.35c0 22.322 6.278 43.947 16.742 63.478L0 258.096l67.663-17.439c18.834 10.464 39.76 15.347 60.688 15.347 70.453 0 127.653-57.898 127.653-128.35 0-34.181-13.254-66.269-36.97-89.986ZM129.048 234.38c-18.834 0-37.668-4.882-53.712-14.648l-4.185-2.093-40.458 10.463 10.463-39.76-2.79-4.186C7.673 134.63 22.322 69.058 72.546 38.365c50.224-30.692 115.097-16.043 145.79 34.181 30.692 50.224 16.043 115.097-34.18 145.79-16.045 10.463-35.576 16.043-55.108 16.043Zm61.385-77.428-7.673-3.488s-11.16-4.883-18.136-8.371c-.698 0-1.395-.698-2.093-.698-2.093 0-3.488.698-4.883 1.396 0 0-.697.697-10.463 11.858-.698 1.395-2.093 2.093-3.488 2.093h-.698c-.697 0-2.092-.698-2.79-1.395l-3.488-1.395c-7.673-3.488-14.648-7.674-20.229-13.254-1.395-1.395-3.488-2.79-4.883-4.185-4.883-4.883-9.766-10.464-13.253-16.742l-.698-1.395c-.697-.698-.697-1.395-1.395-2.79 0-1.395 0-2.79.698-3.488 0 0 2.79-3.488 4.882-5.58 1.396-1.396 2.093-3.488 3.488-4.883 1.395-2.093 2.093-4.883 1.395-6.976-.697-3.488-9.068-22.322-11.16-26.507-1.396-2.093-2.79-2.79-4.883-3.488H83.01c-1.396 0-2.79.698-4.186.698l-.698.697c-1.395.698-2.79 2.093-4.185 2.79-1.395 1.396-2.093 2.79-3.488 4.186-4.883 6.278-7.673 13.951-7.673 21.624 0 5.58 1.395 11.161 3.488 16.044l.698 2.093c6.278 13.253 14.648 25.112 25.81 35.575l2.79 2.79c2.092 2.093 4.185 3.488 5.58 5.58 14.649 12.557 31.39 21.625 50.224 26.508 2.093.697 4.883.697 6.976 1.395h6.975c3.488 0 7.673-1.395 10.464-2.79 2.092-1.395 3.487-1.395 4.882-2.79l1.396-1.396c1.395-1.395 2.79-2.092 4.185-3.487 1.395-1.395 2.79-2.79 3.488-4.186 1.395-2.79 2.092-6.278 2.79-9.765v-4.883s-.698-.698-2.093-1.395Z"
+                  fill="#FFF" />
+              </svg>
+              <span class="relative z-10">🚀 Empezar mi proyecto</span>
+              <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+              </svg>
+              <div class="absolute inset-0 bg-gradient-to-r from-solaraGold to-solaraOrange opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            </a>
+
+            <a href="#pricing"
+              class="group inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-semibold rounded-xl border-2 border-white/20 bg-white/5 backdrop-blur-md text-white hover:bg-white/10 hover:border-white/40 transition-all">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/>
+              </svg>
+              Ver planes y precios
+            </a>
+          </div>
+
+          <!-- Trust indicators -->
+          <div class="flex flex-wrap items-center gap-6 pt-4">
+            <div class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-solaraGreen" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <span class="text-gray-300 text-sm">Entrega garantizada</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-solaraGreen" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <span class="text-gray-300 text-sm">Soporte 14 días</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-5 h-5 text-solaraGreen" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <span class="text-gray-300 text-sm">Revisión ilimitada</span>
+            </div>
+          </div>
+
+          <div class="mt-6 flex items-start gap-3 p-4 rounded-xl bg-gradient-to-r from-solaraOrange/10 to-solaraGold/10 border border-solaraOrange/20">
+            <svg class="w-5 h-5 text-solaraOrange flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clip-rule="evenodd"/>
+            </svg>
+            <div class="text-sm">
+              <p class="text-gray-200 font-semibold">Pago inicial flexible: Nequi / Daviplata</p>
+              <p class="text-gray-400 mt-1">Después integramos PayU, MercadoPago o Stripe según tu necesidad</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Columna derecha: Visual impactante -->
+        <div class="relative lg:pl-8">
+          <!-- Tarjeta principal con imagen -->
+          <div class="relative bg-gradient-to-br from-white/[0.08] to-white/[0.02] border border-white/[0.15] rounded-3xl p-6 backdrop-blur-xl shadow-2xl overflow-hidden">
+            <!-- Badge flotante -->
+            <div class="absolute top-10 left-1/2 -translate-x-1/2 z-20">
+              <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gradient-to-r from-solaraGreen/30 to-solaraGreen/20 border border-solaraGreen/50 backdrop-blur-md shadow-lg">
+                <span class="w-2 h-2 rounded-full bg-solaraGreen animate-pulse"></span>
+                <span class="text-xs font-bold text-solaraGreen whitespace-nowrap">En producción</span>
+              </div>
+            </div>
+            
+            <div class="bg-gradient-to-br from-[#0a0a0b] to-[#0f1214] rounded-2xl p-5 relative z-10">
+              <div class="flex items-center justify-between text-sm text-gray-300 mb-4">
+                <div class="flex items-center gap-3">
+                  <div class="w-3 h-3 rounded-full bg-gradient-to-r from-solaraOrange to-solaraGold"></div>
+                  <span class="font-semibold">Piquitours eventos</span>
+                </div>
+                <span class="text-xs text-gray-500 bg-white/5 px-3 py-1 rounded-full">7 días</span>
+              </div>
+
+              <div class="bg-[#060608] border border-white/3 rounded-lg p-6">
+                <div class="text-sm text-gray-300 mb-4">Landing limpia + catálogo</div>
+                <div class="flex flex-col sm:flex-row gap-4">
+                  <!-- screenshot 1: cuadrada -->
+                  <div class="flex-1 flex items-center justify-center">
+                    <div
+                      class="w-full aspect-square bg-gradient-to-br from-[#0b0b0d] to-[#121214] rounded-lg border border-white/4 overflow-hidden flex items-center justify-center">
+                      <img src="landing.png" alt="Vista landing" loading="lazy"
+                        class="w-full h-full object-cover rounded-lg">
+                    </div>
+                  </div>
+                  <!-- screenshot 2: larga horizontal -->
+                  <div class="flex-1 flex items-center justify-center">
+                    <div
+                      class="w-full aspect-[3/2] bg-gradient-to-br from-[#0b0b0d] to-[#121214] rounded-lg border border-white/4 overflow-hidden flex items-center justify-center">
+                      <img src="catalogo.png" alt="Vista catálogo" loading="lazy"
+                        class="w-full h-full object-cover rounded-lg">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              
+              <!-- Tecnologías usadas -->
+              <div class="flex flex-wrap gap-3 items-center pt-4 border-t border-white/10">
+                <div class="text-xs text-gray-400 font-semibold">Stack:</div>
+                <!-- ICON CHIPS: React, Tailwind, Next.js, Stripe -->
+                <!-- React -->
+                <span class="flex items-center gap-2 text-xs">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="inline-block align-middle">
+                    <circle cx="12" cy="12" r="2.5" fill="#58C4DC" />
+                    <ellipse cx="12" cy="12" rx="9" ry="3.5" stroke="#58C4DC" stroke-width="1.3" />
+                    <ellipse cx="12" cy="12" rx="9" ry="3.5" stroke="#58C4DC" stroke-width="1.3"
+                      transform="rotate(60 12 12)" />
+                    <ellipse cx="12" cy="12" rx="9" ry="3.5" stroke="#58C4DC" stroke-width="1.3"
+                      transform="rotate(120 12 12)" />
+                  </svg>
+                  <span class="text-xs">React</span>
+                </span>
+                <!-- Tailwind -->
+                <span class="flex items-center gap-2 px-2 py-1 rounded bg-white/4 text-xs">
+                  <svg width="18" height="12" viewBox="0 0 54 33" fill="none" class="inline-block align-middle">
+                    <g clip-path="url(#tailwindcss__a)"></g>
+                    <path fill="#38bdf8" fill-rule="evenodd"
+                      d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z"
+                      clip-rule="evenodd" />
+                    </g>
+                    <defs>
+                      <clipPath id="tailwindcss__a">
+                        <rect width="54" height="32.4" fill="#fff" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <span class="text-xs">Tailwind</span>
+                </span>
+                <!-- Next.js -->
+                <span class="flex items-center gap-2 px-2 py-1 rounded bg-white/4 text-xs">
+                  <svg width="16" height="16" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <mask id="nextjs_icon_dark__mask0_408_139" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
+                      y="0" width="180" height="180">
+                      <circle cx="90" cy="90" r="90" fill="black" />
+                    </mask>
+                    <g mask="url(#nextjs_icon_dark__mask0_408_139)">
+                      <circle cx="90" cy="90" r="87" fill="black" stroke="white" stroke-width="6" />
+                      <path
+                        d="M149.508 157.52L69.142 54H54V125.97H66.1136V69.3836L139.999 164.845C143.333 162.614 146.509 160.165 149.508 157.52Z"
+                        fill="url(#nextjs_icon_dark__paint0_linear_408_139)" />
+                      <rect x="115" y="54" width="12" height="72"
+                        fill="url(#nextjs_icon_dark__paint1_linear_408_139)" />
+                    </g>
+                    <defs>
+                      <linearGradient id="nextjs_icon_dark__paint0_linear_408_139" x1="109" y1="116.5" x2="144.5"
+                        y2="160.5" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="white" />
+                        <stop offset="1" stop-color="white" stop-opacity="0" />
+                      </linearGradient>
+                      <linearGradient id="nextjs_icon_dark__paint1_linear_408_139" x1="121" y1="54" x2="120.799"
+                        y2="106.875" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="white" />
+                        <stop offset="1" stop-color="white" stop-opacity="0" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                  <span class="text-xs">Next.js</span>
+                </span>
+                <!-- Stripe -->
+                <span class="flex items-center gap-2 px-2 py-1 rounded bg-white/4 text-xs">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                  </svg>
+                  <span class="text-xs">Pagos</span>
+                </span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Efectos visuales decorativos -->
+          <div class="absolute -right-12 -bottom-12 w-64 h-64 bg-gradient-to-tr from-solaraOrange/30 to-transparent rounded-full blur-3xl pointer-events-none"></div>
+          <div class="absolute -left-8 top-20 w-40 h-40 bg-gradient-to-bl from-solaraBlue/20 to-transparent rounded-full blur-2xl pointer-events-none"></div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- GARANTIA BAND -->
+    <section id="guarantee" class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="rounded-2xl bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md p-4 sm:p-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 sm:gap-3 text-center sm:text-left">
+        <div class="text-white font-semibold flex items-center gap-2 text-sm sm:text-base">
+          <span class="inline-flex items-center justify-center w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-gradient-to-br from-solaraOrange to-solaraGold text-black flex-shrink-0">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" class="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12l4 4 10-10" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </span>
+          <span>Garantía 72h: si el prototipo no te convence, te devolvemos el anticipo.</span>
+        </div>
+        <div class="text-xs sm:text-sm text-gray-300">Incluye soporte de 14 días post-entrega.</div>
+      </div>
+    </section>
+
+    <!-- STATS BAND -->
+    <section id="stats" class="max-w-7xl mx-auto px-4 sm:px-6 py-10">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+        <div class="group rounded-xl bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md p-5 hover:border-solaraOrange/30 transition-all hover:-translate-y-1">
+          <div class="text-3xl font-extrabold bg-gradient-to-r from-solaraOrange to-solaraGold bg-clip-text text-transparent">20+</div>
+          <div class="text-sm text-gray-400 group-hover:text-gray-300 transition-colors">Proyectos</div>
+        </div>
+        <div class="group rounded-xl bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md p-5 hover:border-solaraBlue/30 transition-all hover:-translate-y-1">
+          <div class="text-3xl font-extrabold bg-gradient-to-r from-solaraBlue to-solaraPurple bg-clip-text text-transparent">7 días</div>
+          <div class="text-sm text-gray-400 group-hover:text-gray-300 transition-colors">Entrega promedio</div>
+        </div>
+        <div class="group rounded-xl bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md p-5 hover:border-solaraGreen/30 transition-all hover:-translate-y-1">
+          <div class="text-3xl font-extrabold bg-gradient-to-r from-solaraGreen to-solaraBlue bg-clip-text text-transparent">95%</div>
+          <div class="text-sm text-gray-400 group-hover:text-gray-300 transition-colors">Satisfacción</div>
+        </div>
+        <div class="group rounded-xl bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md p-5 hover:border-solaraPurple/30 transition-all hover:-translate-y-1">
+          <div class="text-3xl font-extrabold bg-gradient-to-r from-solaraPurple to-solaraPink bg-clip-text text-transparent">100</div>
+          <div class="text-sm text-gray-400 group-hover:text-gray-300 transition-colors">Lighthouse Perf</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASOS DE ÉXITO -->
+    <section id="success-cases" class="max-w-7xl mx-auto px-4 sm:px-6 py-16">
+      <div class="text-center mb-12">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gradient-to-r from-solaraPurple/20 to-solaraPink/20 border border-solaraPurple/30 text-solaraPurple text-sm font-semibold mb-4">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+          </svg>
+          <span>Resultados Reales</span>
+        </div>
+        <h2 class="font-display text-3xl md:text-4xl text-white font-bold">Casos de Éxito</h2>
+        <p class="text-gray-400 max-w-2xl mx-auto mt-3 text-lg">Nuestros clientes no solo obtienen un sitio web, obtienen resultados medibles</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Caso 1: Piquitours -->
+        <div class="group relative rounded-2xl bg-gradient-to-br from-white/[0.05] to-white/[0.02] border border-white/[0.08] backdrop-blur-md p-6 hover:border-solaraOrange/40 transition-all hover:-translate-y-2 hover:shadow-2xl hover:shadow-solaraOrange/10">
+          <div class="absolute top-4 right-4 w-12 h-12 rounded-full bg-gradient-to-br from-solaraOrange to-solaraGold flex items-center justify-center text-black font-bold text-xl">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+            </svg>
+          </div>
+          
+          <div class="mb-4">
+            <h3 class="text-xl font-bold text-white mb-2">Piquitours y Eventos</h3>
+            <p class="text-sm text-gray-400">Landing + Catálogo de Eventos</p>
+          </div>
+
+          <div class="space-y-4 mb-6">
+            <div class="flex items-center justify-between p-3 rounded-lg bg-white/5">
+              <span class="text-sm text-gray-400">Pedidos online</span>
+              <span class="text-xl font-bold text-solaraGreen">+40%</span>
+            </div>
+            <div class="flex items-center justify-between p-3 rounded-lg bg-white/5">
+              <span class="text-sm text-gray-400">Tiempo de carga</span>
+              <span class="text-xl font-bold text-solaraBlue">0.8s</span>
+            </div>
+            <div class="flex items-center justify-between p-3 rounded-lg bg-white/5">
+              <span class="text-sm text-gray-400">Tiempo de entrega</span>
+              <span class="text-xl font-bold text-solaraPurple">7 días</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-2 py-1 rounded-full bg-[#58C4DC]/20 text-[#58C4DC] text-xs font-semibold">React</span>
+            <span class="px-2 py-1 rounded-full bg-[#38bdf8]/20 text-[#38bdf8] text-xs font-semibold">Tailwind</span>
+            <span class="px-2 py-1 rounded-full bg-white/10 text-gray-300 text-xs font-semibold">SEO</span>
+          </div>
+
+          <a href="https://www.piquitoursyeventos.com/" target="_blank" class="inline-flex items-center gap-2 text-sm text-solaraOrange font-semibold hover:gap-3 transition-all">
+            Ver sitio en vivo
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Caso 2: E-commerce -->
+        <div class="group relative rounded-2xl bg-gradient-to-br from-white/[0.05] to-white/[0.02] border border-white/[0.08] backdrop-blur-md p-6 hover:border-solaraBlue/40 transition-all hover:-translate-y-2 hover:shadow-2xl hover:shadow-solaraBlue/10">
+          <div class="absolute top-4 right-4 w-12 h-12 rounded-full bg-gradient-to-br from-solaraBlue to-solaraPurple flex items-center justify-center text-black font-bold text-xl">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          
+          <div class="mb-4">
+            <h3 class="text-xl font-bold text-white mb-2">Tienda Online Premium</h3>
+            <p class="text-sm text-gray-400">E-commerce con Pagos Integrados</p>
+          </div>
+
+          <div class="space-y-4 mb-6">
+            <div class="flex items-center justify-between p-3 rounded-lg bg-white/5">
+              <span class="text-sm text-gray-400">Conversiones</span>
+              <span class="text-xl font-bold text-solaraGreen">+65%</span>
+            </div>
+            <div class="flex items-center justify-between p-3 rounded-lg bg-white/5">
+              <span class="text-sm text-gray-400">Valor promedio</span>
+              <span class="text-xl font-bold text-solaraGold">+32%</span>
+            </div>
+            <div class="flex items-center justify-between p-3 rounded-lg bg-white/5">
+              <span class="text-sm text-gray-400">ROI primer mes</span>
+              <span class="text-xl font-bold text-solaraPink">280%</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-2 py-1 rounded-full bg-white/10 text-gray-300 text-xs font-semibold">Next.js</span>
+            <span class="px-2 py-1 rounded-full bg-[#4945FF]/20 text-[#9593FF] text-xs font-semibold">Stripe</span>
+            <span class="px-2 py-1 rounded-full bg-solaraGreen/20 text-solaraGreen text-xs font-semibold">Optimizado</span>
+          </div>
+
+          <div class="inline-flex items-center gap-2 text-sm text-solaraBlue font-semibold">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/>
+            </svg>
+            Proyecto confidencial
+          </div>
+        </div>
+
+        <!-- Caso 3: Landing Page -->
+        <div class="group relative rounded-2xl bg-gradient-to-br from-white/[0.05] to-white/[0.02] border border-white/[0.08] backdrop-blur-md p-6 hover:border-solaraPurple/40 transition-all hover:-translate-y-2 hover:shadow-2xl hover:shadow-solaraPurple/10">
+          <div class="absolute top-4 right-4 w-12 h-12 rounded-full bg-gradient-to-br from-solaraPurple to-solaraPink flex items-center justify-center text-black font-bold text-xl">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          
+          <div class="mb-4">
+            <h3 class="text-xl font-bold text-white mb-2">Agencia de Marketing</h3>
+            <p class="text-sm text-gray-400">Landing de Alta Conversión</p>
+          </div>
+
+          <div class="space-y-4 mb-6">
+            <div class="flex items-center justify-between p-3 rounded-lg bg-white/5">
+              <span class="text-sm text-gray-400">Leads generados</span>
+              <span class="text-xl font-bold text-solaraGreen">+120%</span>
+            </div>
+            <div class="flex items-center justify-between p-3 rounded-lg bg-white/5">
+              <span class="text-sm text-gray-400">Tasa de rebote</span>
+              <span class="text-xl font-bold text-solaraBlue">-45%</span>
+            </div>
+            <div class="flex items-center justify-between p-3 rounded-lg bg-white/5">
+              <span class="text-sm text-gray-400">Lighthouse Score</span>
+              <span class="text-xl font-bold text-solaraGold">98/100</span>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="px-2 py-1 rounded-full bg-[#58C4DC]/20 text-[#58C4DC] text-xs font-semibold">React</span>
+            <span class="px-2 py-1 rounded-full bg-white/10 text-gray-300 text-xs font-semibold">Analytics</span>
+            <span class="px-2 py-1 rounded-full bg-solaraOrange/20 text-solaraOrange text-xs font-semibold">A/B Testing</span>
+          </div>
+
+          <div class="inline-flex items-center gap-2 text-sm text-solaraPurple font-semibold">
+            Entregado en 5 días
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA de casos de éxito -->
+      <div class="mt-12 text-center">
+        <p class="text-gray-300 mb-4">¿Quieres ver tu proyecto aquí con resultados reales?</p>
+        <a href="#contact" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-solaraPurple to-solaraPink text-white font-semibold hover:-translate-y-1 transition-all shadow-lg shadow-solaraPurple/30">
+          Empezar mi proyecto
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+          </svg>
+        </a>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="relative py-24 overflow-hidden">
+      <!-- Fondo decorativo -->
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent via-solaraOrange/5 to-transparent"></div>
+      <div class="absolute inset-0" style="background-image: radial-gradient(circle at 20% 50%, rgba(255, 107, 0, 0.08) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(0, 153, 255, 0.08) 0%, transparent 50%);"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+        <!-- Header de sección - Más compacto -->
+        <div class="text-center mb-12">
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-solaraOrange/20 to-solaraBlue/20 border border-solaraOrange/30 mb-4">
+            <svg class="w-4 h-4 text-solaraOrange" fill="currentColor" viewBox="0 0 20 20"><path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z"/></svg>
+            <span class="text-xs font-bold bg-gradient-to-r from-solaraOrange to-solaraGold bg-clip-text text-transparent">🚀 SOLUCIONES QUE CONVIERTEN</span>
+          </div>
+          <h2 class="font-display text-3xl md:text-5xl text-white mb-3 leading-tight">
+            Tu negocio merece <span class="bg-gradient-to-r from-solaraOrange via-solaraGold to-solaraBlue bg-clip-text text-transparent">destacar en línea</span>
+          </h2>
+          <p class="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">
+            Diseño premium, velocidad extrema y resultados medibles. <strong class="text-white">Todo en un solo lugar.</strong>
+          </p>
+        </div>
+
+        <!-- Grid de servicios - Bento Box Layout -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- SERVICIO 1: Landing - Tarjeta vertical -->
+          <div class="group relative bg-gradient-to-br from-white/[0.05] to-white/[0.01] border border-white/[0.08] rounded-2xl overflow-hidden hover:border-solaraOrange/50 hover:-translate-y-2 transition-all duration-500 hover:shadow-2xl hover:shadow-solaraOrange/20">
+            <!-- Imagen arriba -->
+            <div class="relative w-full aspect-[4/3] overflow-hidden bg-gradient-to-br from-[#0b0b0d] to-[#121214]">
+              <img src="images/services/Landing_Basic_WebSite.png" alt="Landing Básico" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+              <!-- Badge en la imagen -->
+              <div class="absolute top-4 left-4 px-3 py-1.5 rounded-full bg-gradient-to-r from-solaraOrange/90 to-solaraGold/90 backdrop-blur-md">
+                <span class="text-xs font-bold text-black">⚡ 3-5 DÍAS</span>
+              </div>
+            </div>
+            
+            <!-- Contenido abajo -->
+            <div class="p-6 space-y-4">
+              <div>
+                <h3 class="text-2xl font-display text-white mb-2">Landing Page</h3>
+                <p class="text-gray-400 text-sm">Tu vitrina digital lista para vender</p>
+              </div>
+
+              <div class="space-y-2">
+                <div class="flex items-center gap-2 text-sm text-gray-300">
+                  <svg class="w-4 h-4 text-solaraGold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  Diseño premium
+                </div>
+                <div class="flex items-center gap-2 text-sm text-gray-300">
+                  <svg class="w-4 h-4 text-solaraGold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  SEO optimizado
+                </div>
+                <div class="flex items-center gap-2 text-sm text-gray-300">
+                  <svg class="w-4 h-4 text-solaraGold" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  Responsive
+                </div>
+              </div>
+
+              <div class="pt-4 border-t border-white/10">
+                <div class="flex items-center justify-between mb-3">
+                  <div class="text-3xl font-bold bg-gradient-to-r from-solaraOrange to-solaraGold bg-clip-text text-transparent">$350K</div>
+                  <span class="text-xs text-gray-500">Pago único</span>
+                </div>
+                <a href="https://wa.me/+573184961233?text=Hola,%20quiero%20una%20Landing%20Page" target="_blank" rel="noopener noreferrer" 
+                  class="block text-center px-4 py-2.5 rounded-xl bg-gradient-to-r from-solaraOrange to-solaraGold text-black font-bold hover:scale-105 transition-all text-sm">
+                  Comenzar ahora
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- SERVICIO 2: Web Corporativa - Tarjeta vertical -->
+          <div class="group relative bg-gradient-to-br from-white/[0.05] to-white/[0.01] border border-white/[0.08] rounded-2xl overflow-hidden hover:border-solaraBlue/50 hover:-translate-y-2 transition-all duration-500 hover:shadow-2xl hover:shadow-solaraBlue/20">
+            <!-- Imagen arriba -->
+            <div class="relative w-full aspect-[4/3] overflow-hidden bg-gradient-to-br from-[#0b0b0d] to-[#121214]">
+              <img src="images/services/Corporate_Website.png" alt="Web Corporativa" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+              <!-- Badge en la imagen -->
+              <div class="absolute top-4 left-4 px-3 py-1.5 rounded-full bg-gradient-to-r from-solaraBlue/90 to-solaraPurple/90 backdrop-blur-md">
+                <span class="text-xs font-bold text-white">⭐ POPULAR</span>
+              </div>
+            </div>
+            
+            <!-- Contenido abajo -->
+            <div class="p-6 space-y-4">
+              <div>
+                <h3 class="text-2xl font-display text-white mb-2">Web Corporativa</h3>
+                <p class="text-gray-400 text-sm">Sitio completo con blog y CMS</p>
+              </div>
+
+              <div class="space-y-2">
+                <div class="flex items-center gap-2 text-sm text-gray-300">
+                  <svg class="w-4 h-4 text-solaraBlue" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  Múltiples páginas
+                </div>
+                <div class="flex items-center gap-2 text-sm text-gray-300">
+                  <svg class="w-4 h-4 text-solaraBlue" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  Blog + CMS
+                </div>
+                <div class="flex items-center gap-2 text-sm text-gray-300">
+                  <svg class="w-4 h-4 text-solaraBlue" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  SEO avanzado
+                </div>
+              </div>
+
+              <div class="pt-4 border-t border-white/10">
+                <div class="flex items-center justify-between mb-3">
+                  <div class="text-3xl font-bold bg-gradient-to-r from-solaraBlue to-solaraPurple bg-clip-text text-transparent">$850K</div>
+                  <span class="text-xs text-gray-500">Pago único</span>
+                </div>
+                <a href="https://wa.me/+573184961233?text=Hola,%20quiero%20una%20Web%20Corporativa" target="_blank" rel="noopener noreferrer" 
+                  class="block text-center px-4 py-2.5 rounded-xl bg-gradient-to-r from-solaraBlue to-solaraPurple text-white font-bold hover:scale-105 transition-all text-sm">
+                  Comenzar ahora
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- SERVICIO 3: E-commerce/App - Tarjeta vertical -->
+          <div class="group relative bg-gradient-to-br from-white/[0.05] to-white/[0.01] border border-white/[0.08] rounded-2xl overflow-hidden hover:border-solaraPurple/50 hover:-translate-y-2 transition-all duration-500 hover:shadow-2xl hover:shadow-solaraPurple/20">
+            <!-- Imagen arriba -->
+            <div class="relative w-full aspect-[4/3] overflow-hidden bg-gradient-to-br from-[#0b0b0d] to-[#121214]">
+              <img src="images/services/App_Ecommerce.png" alt="App E-commerce" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+              <!-- Badge en la imagen -->
+              <div class="absolute top-4 left-4 px-3 py-1.5 rounded-full bg-gradient-to-r from-solaraPurple/90 to-solaraPink/90 backdrop-blur-md">
+                <span class="text-xs font-bold text-white">🚀 ENTERPRISE</span>
+              </div>
+            </div>
+            
+            <!-- Contenido abajo -->
+            <div class="p-6 space-y-4">
+              <div>
+                <h3 class="text-2xl font-display text-white mb-2">E-commerce / App</h3>
+                <p class="text-gray-400 text-sm">Tienda online o app a medida</p>
+              </div>
+
+              <div class="space-y-2">
+                <div class="flex items-center gap-2 text-sm text-gray-300">
+                  <svg class="w-4 h-4 text-solaraPurple" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  Usuarios y roles
+                </div>
+                <div class="flex items-center gap-2 text-sm text-gray-300">
+                  <svg class="w-4 h-4 text-solaraPurple" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  Pagos integrados
+                </div>
+                <div class="flex items-center gap-2 text-sm text-gray-300">
+                  <svg class="w-4 h-4 text-solaraPurple" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  Dashboard admin
+                </div>
+              </div>
+
+              <div class="pt-4 border-t border-white/10">
+                <div class="flex items-center justify-between mb-3">
+                  <div class="text-3xl font-bold bg-gradient-to-r from-solaraPurple to-solaraPink bg-clip-text text-transparent">$900K+</div>
+                  <span class="text-xs text-gray-500">Variable</span>
+                </div>
+                <a href="https://wa.me/+573184961233?text=Hola,%20quiero%20un%20E-commerce%20o%20App" target="_blank" rel="noopener noreferrer" 
+                  class="block text-center px-4 py-2.5 rounded-xl bg-gradient-to-r from-solaraPurple to-solaraPink text-white font-bold hover:scale-105 transition-all text-sm">
+                  Consultar proyecto
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+
+    <!-- WHY US -->
+    <section id="why-us" class="relative py-24 overflow-hidden">
+      <!-- Fondo decorativo -->
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent via-solaraBlue/5 to-transparent"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+        <!-- Header -->
+        <div class="text-center mb-16">
+          <div class="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-solaraBlue/20 to-solaraPurple/20 border border-solaraBlue/30 mb-6">
+            <span class="text-sm font-semibold bg-gradient-to-r from-solaraBlue to-solaraPurple bg-clip-text text-transparent">✨ NUESTRA DIFERENCIA</span>
+          </div>
+          <h2 class="font-display text-4xl md:text-5xl text-white mb-4">
+            ¿Por qué elegir <span class="bg-gradient-to-r from-solaraBlue via-solaraPurple to-solaraPink bg-clip-text text-transparent">SolaraSites</span>?
+          </h2>
+          <p class="text-gray-400 text-lg max-w-3xl mx-auto">
+            No solo diseñamos: construimos activos digitales que venden. Cada proyecto está optimizado para conversiones, velocidad y posicionamiento.
+          </p>
+        </div>
+
+        <!-- Grid de beneficios -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Beneficio 1 -->
+          <div class="group relative bg-gradient-to-br from-white/[0.05] to-white/[0.02] border border-white/[0.08] rounded-2xl p-6 hover:border-solaraOrange/40 transition-all duration-300 hover:-translate-y-2">
+            <div class="absolute inset-0 bg-gradient-to-br from-solaraOrange/0 to-solaraGold/0 group-hover:from-solaraOrange/10 group-hover:to-solaraGold/10 rounded-2xl transition-all duration-300"></div>
+            <div class="relative z-10">
+              <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-solaraOrange to-solaraGold flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                </svg>
+              </div>
+              <h4 class="text-xl font-bold text-white mb-3">Enfoque en conversión</h4>
+              <p class="text-gray-400 text-sm leading-relaxed">Copy persuasivo, CTAs estratégicos y diseño orientado a resultados desde el día 1.</p>
+              <div class="mt-4 pt-4 border-t border-white/10">
+                <span class="text-2xl font-bold bg-gradient-to-r from-solaraOrange to-solaraGold bg-clip-text text-transparent">+40%</span>
+                <p class="text-xs text-gray-500 mt-1">Mejora promedio en conversiones</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Beneficio 2 -->
+          <div class="group relative bg-gradient-to-br from-white/[0.05] to-white/[0.02] border border-white/[0.08] rounded-2xl p-6 hover:border-solaraBlue/40 transition-all duration-300 hover:-translate-y-2">
+            <div class="absolute inset-0 bg-gradient-to-br from-solaraBlue/0 to-solaraPurple/0 group-hover:from-solaraBlue/10 group-hover:to-solaraPurple/10 rounded-2xl transition-all duration-300"></div>
+            <div class="relative z-10">
+              <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-solaraBlue to-solaraPurple flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                </svg>
+              </div>
+              <h4 class="text-xl font-bold text-white mb-3">Velocidad real</h4>
+              <p class="text-gray-400 text-sm leading-relaxed">Core Web Vitals optimizados, recursos comprimidos y carga ultrarrrápida en móviles.</p>
+              <div class="mt-4 pt-4 border-t border-white/10">
+                <span class="text-2xl font-bold bg-gradient-to-r from-solaraBlue to-solaraPurple bg-clip-text text-transparent">&lt;2s</span>
+                <p class="text-xs text-gray-500 mt-1">Tiempo de carga promedio</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Beneficio 3 -->
+          <div class="group relative bg-gradient-to-br from-white/[0.05] to-white/[0.02] border border-white/[0.08] rounded-2xl p-6 hover:border-solaraGold/40 transition-all duration-300 hover:-translate-y-2">
+            <div class="absolute inset-0 bg-gradient-to-br from-solaraGold/0 to-solaraOrange/0 group-hover:from-solaraGold/10 group-hover:to-solaraOrange/10 rounded-2xl transition-all duration-300"></div>
+            <div class="relative z-10">
+              <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-solaraGold to-solaraOrange flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                </svg>
+              </div>
+              <h4 class="text-xl font-bold text-white mb-3">SEO técnico</h4>
+              <p class="text-gray-400 text-sm leading-relaxed">Metadatos optimizados, schema markup y estructura semántica para posicionar en Google.</p>
+              <div class="mt-4 pt-4 border-t border-white/10">
+                <span class="text-2xl font-bold bg-gradient-to-r from-solaraGold to-solaraOrange bg-clip-text text-transparent">100/100</span>
+                <p class="text-xs text-gray-500 mt-1">Score SEO promedio</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Beneficio 4 -->
+          <div class="group relative bg-gradient-to-br from-white/[0.05] to-white/[0.02] border border-white/[0.08] rounded-2xl p-6 hover:border-solaraPink/40 transition-all duration-300 hover:-translate-y-2">
+            <div class="absolute inset-0 bg-gradient-to-br from-solaraPurple/0 to-solaraPink/0 group-hover:from-solaraPurple/10 group-hover:to-solaraPink/10 rounded-2xl transition-all duration-300"></div>
+            <div class="relative z-10">
+              <div class="w-14 h-14 rounded-xl bg-gradient-to-br from-solaraPurple to-solaraPink flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+                <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192l-3.536 3.536M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"/>
+                </svg>
+              </div>
+              <h4 class="text-xl font-bold text-white mb-3">Soporte cercano</h4>
+              <p class="text-gray-400 text-sm leading-relaxed">Acompañamiento personalizado 14 días post-entrega y asesoría en integraciones.</p>
+              <div class="mt-4 pt-4 border-t border-white/10">
+                <span class="text-2xl font-bold bg-gradient-to-r from-solaraPurple to-solaraPink bg-clip-text text-transparent">24/7</span>
+                <p class="text-xs text-gray-500 mt-1">Soporte inicial incluido</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="portfolio" class="relative py-24 overflow-hidden">
+      <!-- Fondo decorativo -->
+      <div class="absolute inset-0 bg-gradient-to-b from-transparent via-solaraPurple/5 to-transparent"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+        <!-- Header -->
+        <div class="text-center mb-16">
+          <div class="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-solaraPurple/20 to-solaraPink/20 border border-solaraPurple/30 mb-6">
+            <span class="text-sm font-semibold bg-gradient-to-r from-solaraPurple to-solaraPink bg-clip-text text-transparent">🎨 NUESTRO TRABAJO</span>
+          </div>
+          <h2 class="font-display text-4xl md:text-5xl text-white mb-4">
+            Proyectos que <span class="bg-gradient-to-r from-solaraPurple via-solaraPink to-solaraOrange bg-clip-text text-transparent">generan resultados</span>
+          </h2>
+          <p class="text-gray-400 text-lg max-w-3xl mx-auto">
+            Cada proyecto es una historia de éxito. Descubre cómo hemos ayudado a nuestros clientes a crecer en el mundo digital.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Proyecto 1 -->
+          <article class="group relative bg-gradient-to-br from-white/[0.05] to-white/[0.02] border border-white/[0.08] rounded-2xl overflow-hidden hover:border-solaraOrange/40 transition-all duration-300 hover:-translate-y-2">
+            <div class="absolute inset-0 bg-gradient-to-br from-solaraOrange/0 to-solaraGold/0 group-hover:from-solaraOrange/10 group-hover:to-solaraGold/10 transition-all duration-300"></div>
+            
+            <!-- Imagen -->
+            <div class="relative h-56 bg-[url('landing.png')] bg-cover bg-center overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0b] via-transparent to-transparent">
+              </div>
+              <div class="absolute top-4 right-4 flex gap-2">
+                <span class="px-3 py-1 rounded-full bg-solaraOrange/20 border border-solaraOrange/40 backdrop-blur-md text-xs font-bold text-solaraOrange">✅ EN VIVO</span>
+              </div>
+            </div>
+            
+            <!-- Contenido -->
+            <div class="relative z-10 p-6">
+              <div class="flex items-start justify-between mb-3">
+                <div>
+                  <h3 class="text-xl font-bold text-white mb-1">Piquitours y eventos</h3>
+                  <p class="text-gray-400 text-sm">Landing + catálogo dinámico</p>
+                </div>
+              </div>
+              
+              <!-- Métrica destacada -->
+              <div class="bg-gradient-to-r from-solaraOrange/10 to-solaraGold/10 border border-solaraOrange/20 rounded-xl p-4 mb-4">
+                <div class="text-2xl font-bold bg-gradient-to-r from-solaraOrange to-solaraGold bg-clip-text text-transparent">+40%</div>
+                <p class="text-xs text-gray-400">Incremento en pedidos online</p>
+              </div>
+              
+              <!-- Tecnologías -->
+              <div class="flex items-center gap-2 mb-4">
+                <div class="text-xs text-gray-300 flex items-center gap-2 flex-wrap">
+                <!-- small icon + tech -->
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="inline-block align-middle">
+                  <circle cx="12" cy="12" r="2.5" fill="#58C4DC" />
+                  <ellipse cx="12" cy="12" rx="9" ry="3.5" stroke="#58C4DC" stroke-width="1.3" />
+                  <ellipse cx="12" cy="12" rx="9" ry="3.5" stroke="#58C4DC" stroke-width="1.3"
+                    transform="rotate(60 12 12)" />
+                  <ellipse cx="12" cy="12" rx="9" ry="3.5" stroke="#58C4DC" stroke-width="1.3"
+                    transform="rotate(120 12 12)" />
+                </svg>
+                React ·
+                <svg width="18" height="12" viewBox="0 0 54 33" fill="none" class="inline-block align-middle">
+                  <g clip-path="url(#tailwindcss__a)"></g>
+                  <path fill="#38bdf8" fill-rule="evenodd"
+                    d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z"
+                    clip-rule="evenodd" />
+                  </g>
+                  <defs>
+                    <clipPath id="tailwindcss__a">
+                      <rect width="54" height="32.4" fill="#fff" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                Tailwind
+                </div>
+              </div>
+              
+              <!-- Botón -->
+              <a href="https://www.piquitoursyeventos.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-sm font-semibold text-solaraOrange hover:gap-3 transition-all">
+                Ver proyecto en vivo
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </a>
+            </div>
+          </article>
+        
+          <!-- Proyecto 2 -->
+          <article class="group relative bg-gradient-to-br from-white/[0.05] to-white/[0.02] border border-white/[0.08] rounded-2xl overflow-hidden hover:border-solaraBlue/40 transition-all duration-300 hover:-translate-y-2">
+            <div class="absolute inset-0 bg-gradient-to-br from-solaraBlue/0 to-solaraPurple/0 group-hover:from-solaraBlue/10 group-hover:to-solaraPurple/10 transition-all duration-300"></div>
+            
+            <!-- Imagen -->
+            <div class="relative h-56 bg-[url('/demo-agencia.jpg')] bg-cover bg-center overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0b] via-transparent to-transparent">
+                <img src="./premium-store.png" alt="Foto de una tienda onnlie, titulada Premium Store">
+              </div>
+              <div class="absolute top-4 right-4 flex gap-2">
+                <span class="px-3 py-1 rounded-full bg-solaraBlue/20 border border-solaraBlue/40 backdrop-blur-md text-xs font-bold text-solaraBlue">📊 DEMO</span>
+              </div>
+            </div>
+            
+            <!-- Contenido -->
+            <div class="relative z-10 p-6">
+              <div class="flex items-start justify-between mb-3">
+                <div>
+                  <h3 class="text-xl font-bold text-white mb-1">Tienda Online Premium</h3>
+                  <p class="text-gray-400 text-sm">E-commerce con Pagos Integrados</p>
+                </div>
+              </div>
+              
+              <!-- Métrica destacada -->
+              <div class="bg-gradient-to-r from-solaraBlue/10 to-solaraPurple/10 border border-solaraBlue/20 rounded-xl p-4 mb-4">
+                <div class="text-2xl font-bold bg-gradient-to-r from-solaraBlue to-solaraPurple bg-clip-text text-transparent">SEO 95+</div>
+                <p class="text-xs text-gray-400">Optimizado para buscadores</p>
+              </div>
+              
+              <!-- Tecnologías -->
+              <div class="flex items-center gap-2 mb-4">
+                <div class="text-xs text-gray-300 flex items-center gap-2 flex-wrap">
+                <svg width="16" height="16" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <mask id="nextjs_icon_dark__mask0_408_139" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0"
+                    y="0" width="180" height="180">
+                    <circle cx="90" cy="90" r="90" fill="black" />
+                  </mask>
+                  <g mask="url(#nextjs_icon_dark__mask0_408_139)">
+                    <circle cx="90" cy="90" r="87" fill="black" stroke="white" stroke-width="6" />
+                    <path
+                      d="M149.508 157.52L69.142 54H54V125.97H66.1136V69.3836L139.999 164.845C143.333 162.614 146.509 160.165 149.508 157.52Z"
+                      fill="url(#nextjs_icon_dark__paint0_linear_408_139)" />
+                    <rect x="115" y="54" width="12" height="72" fill="url(#nextjs_icon_dark__paint1_linear_408_139)" />
+                  </g>
+                  <defs>
+                    <linearGradient id="nextjs_icon_dark__paint0_linear_408_139" x1="109" y1="116.5" x2="144.5"
+                      y2="160.5" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="white" />
+                      <stop offset="1" stop-color="white" stop-opacity="0" />
+                    </linearGradient>
+                    <linearGradient id="nextjs_icon_dark__paint1_linear_408_139" x1="121" y1="54" x2="120.799"
+                      y2="106.875" gradientUnits="userSpaceOnUse">
+                      <stop stop-color="white" />
+                      <stop offset="1" stop-color="white" stop-opacity="0" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+                Next.js ·
+                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="16" height="16"
+                  style="shape-rendering:geometricPrecision;text-rendering:geometricPrecision;image-rendering:optimizeQuality;fill-rule:evenodd;clip-rule:evenodd"
+                  viewBox="0 0 6.827 6.827">
+                  <defs>
+                    <style>
+                      .fil0 {
+                        fill: #212121;
+                        fill-rule: nonzero
+                      }
+                    </style>
+                  </defs>
+                  <g id="Layer_x0020_1">
+                    <path class="fil0"
+                      d="M1.861 1.978a1.393 1.393 0 0 1 1.975-.013 1.393 1.393 0 0 1 .013 1.976 1.393 1.393 0 0 1-1.976.012 1.393 1.393 0 0 1-.012-1.975zm.986-.203a1.181 1.181 0 0 0-.825 2.026 1.181 1.181 0 0 0 1.675-.01 1.181 1.181 0 0 0-.01-1.674 1.181 1.181 0 0 0-.84-.342z" />
+                    <path class="fil0"
+                      d="M3.844 3.787a.106.106 0 0 0-.145.155L5.26 5.411a.106.106 0 0 0 .146-.155L3.844 3.787zM4.907 1.173a.425.425 0 0 1 .301.729.425.425 0 0 1-.728-.302.425.425 0 0 1 .427-.427zm.15.276a.213.213 0 0 0-.364.151.213.213 0 0 0 .365.15.213.213 0 0 0 0-.3zM2.987 4.907a.425.425 0 0 1 .301.728.425.425 0 0 1-.728-.302.425.425 0 0 1 .427-.426zm.15.275a.213.213 0 0 0-.364.151.213.213 0 0 0 .365.151.213.213 0 0 0 0-.302zM1.173 4.16a.425.425 0 0 1 .302.728.425.425 0 0 1-.728-.301.425.425 0 0 1 .426-.427zm.151.276a.213.213 0 0 0-.364.15.213.213 0 0 0 .364.152.213.213 0 0 0 0-.302zM1.387.853a.425.425 0 0 1 .301.729.425.425 0 0 1-.728-.302.425.425 0 0 1 .427-.427zm.15.276a.213.213 0 0 0-.364.151.213.213 0 0 0 .365.15.213.213 0 0 0 0-.3z" />
+                    <g id="_397663448">
+                      <path id="_397664456" class="fil0"
+                        d="M3.78 2.833v.254h-.239a.72.72 0 0 1-.098.237l.132.131.037.038-.037.038-.142.142-.038.037-.038-.037-.131-.132a.718.718 0 0 1-.237.098v.24h-.307v-.24a.72.72 0 0 1-.237-.098l-.132.132-.038.037-.037-.037-.142-.142-.038-.038.038-.038.132-.131a.715.715 0 0 1-.099-.237H1.89V2.78h.239a.72.72 0 0 1 .099-.237l-.132-.132-.038-.037.038-.038.142-.142.037-.038.038.038.132.132a.718.718 0 0 1 .237-.099v-.239h.307v.239a.72.72 0 0 1 .237.099l.131-.132.038-.038.038.038.142.142.037.038-.037.037-.132.132a.715.715 0 0 1 .098.237h.24v.053zm-.106.147v-.094H3.451l-.007-.045a.61.61 0 0 0-.113-.273l-.027-.037.032-.032.126-.125-.067-.067-.125.125-.033.033-.036-.027a.616.616 0 0 0-.273-.114l-.046-.006V2.095h-.094V2.318l-.045.006a.61.61 0 0 0-.273.113l-.037.028-.032-.033-.126-.125-.066.067.125.125.033.032-.028.037a.616.616 0 0 0-.113.273l-.006.045H1.997v.094H2.22l.006.046a.61.61 0 0 0 .113.273l.028.037-.033.032-.125.125.066.067.126-.126.032-.032.037.027a.616.616 0 0 0 .273.113l.045.007V3.772h.094V3.549l.046-.007A.61.61 0 0 0 3.2 3.43l.037-.027.033.032.125.126.067-.067-.126-.125-.032-.033.027-.036a.616.616 0 0 0 .113-.273l.007-.046H3.674z" />
+                      <path id="_397663520" class="fil0"
+                        d="M2.835 2.479a.453.453 0 0 1 .322.776.453.453 0 0 1-.776-.322.453.453 0 0 1 .454-.454zm.246.208a.347.347 0 0 0-.594.246.347.347 0 0 0 .594.246.347.347 0 0 0 0-.492z" />
+                    </g>
+                    <path class="fil0"
+                      d="m4.666 1.822-.735.424-.053-.092.735-.424zM1.96 3.876l-.498.546-.078-.071.497-.547zM2.933 4.26l.106.746-.105.015-.107-.747zM1.61 1.506l.419.46-.08.072-.417-.461z" />
+                  </g>
+                  <path style="fill:none" d="M0 0h6.827v6.827H0z" />
+                </svg>
+                SEO
+                </div>
+              </div>
+              
+              <!-- Botón -->
+              <a href="#" class="inline-flex items-center gap-2 text-sm font-semibold text-solaraBlue hover:gap-3 transition-all">
+                Proyecto confidencial
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Proyecto 3 -->
+          <article class="group relative bg-gradient-to-br from-white/[0.05] to-white/[0.02] border border-white/[0.08] rounded-2xl overflow-hidden hover:border-solaraPurple/40 transition-all duration-300 hover:-translate-y-2">
+            <div class="absolute inset-0 bg-gradient-to-br from-solaraPurple/0 to-solaraPink/0 group-hover:from-solaraPurple/10 group-hover:to-solaraPink/10 transition-all duration-300"></div>
+            
+            <!-- Imagen -->
+            <div class="relative h-56 bg-[url('/demo-gym.jpg')] bg-cover bg-center overflow-hidden">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0b] via-transparent to-transparent">
+                <img src="./gimnasio-premium-gym.png" alt="Foto de una preview sobre la web gimnasio premium Gym">
+              </div>
+              <div class="absolute top-4 right-4 flex gap-2">
+                <span class="px-3 py-1 rounded-full bg-solaraPurple/20 border border-solaraPurple/40 backdrop-blur-md text-xs font-bold text-solaraPurple">💳 E-COMMERCE</span>
+              </div>
+            </div>
+            
+            <!-- Contenido -->
+            <div class="relative z-10 p-6">
+              <div class="flex items-start justify-between mb-3">
+                <div>
+                  <h3 class="text-xl font-bold text-white mb-1">Gimnasio Potencia</h3>
+                  <p class="text-gray-400 text-sm">Sistema de reservas y pagos</p>
+                </div>
+              </div>
+              
+              <!-- Métrica destacada -->
+              <div class="bg-gradient-to-r from-solaraPurple/10 to-solaraPink/10 border border-solaraPurple/20 rounded-xl p-4 mb-4">
+                <div class="text-2xl font-bold bg-gradient-to-r from-solaraPurple to-solaraPink bg-clip-text text-transparent">Stripe API</div>
+                <p class="text-xs text-gray-400">Pagos integrados y seguros</p>
+              </div>
+              
+              <!-- Tecnologías -->
+              <div class="flex items-center gap-2 mb-4">
+                <div class="text-xs text-gray-300 flex items-center gap-2 flex-wrap">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" class="inline-block align-middle">
+                  <circle cx="12" cy="12" r="2.5" fill="#58C4DC" />
+                  <ellipse cx="12" cy="12" rx="9" ry="3.5" stroke="#58C4DC" stroke-width="1.3" />
+                  <ellipse cx="12" cy="12" rx="9" ry="3.5" stroke="#58C4DC" stroke-width="1.3"
+                    transform="rotate(60 12 12)" />
+                  <ellipse cx="12" cy="12" rx="9" ry="3.5" stroke="#58C4DC" stroke-width="1.3"
+                    transform="rotate(120 12 12)" />
+                </svg>
+                React ·
+                <svg viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  preserveAspectRatio="xMidYMid">
+                  <path fill="#4945FF"
+                    d="M0 88.747c0-41.836 0-62.754 12.997-75.75C25.993 0 46.91 0 88.747 0h78.507c41.835 0 62.752 0 75.75 12.997C256 25.993 256 46.91 256 88.747v78.507c0 41.835 0 62.752-12.997 75.75C230.006 256 209.09 256 167.253 256H88.748c-41.836 0-62.754 0-75.75-12.997C0 230.006 0 209.09 0 167.253V88.748Z" />
+                  <path fill="#FFF"
+                    d="M176.64 77.653H90.453V121.6H134.4v43.946h43.946V79.36c0-.943-.764-1.707-1.706-1.707Z" />
+                  <path fill="#FFF" d="M132.693 121.6h1.707v1.707h-1.707z" />
+                  <path fill="#9593FF"
+                    d="M90.453 121.6h42.24c.943 0 1.707.764 1.707 1.706v42.24H92.16a1.706 1.706 0 0 1-1.707-1.706V121.6ZM134.4 165.546h43.946l-42.49 42.49c-.537.538-1.456.157-1.456-.602v-41.888ZM90.453 121.6H48.566c-.76 0-1.14-.92-.603-1.457l42.49-42.49V121.6Z" />
+                </svg>
+                Stripe
+                </div>
+              </div>
+              
+              <!-- Botón -->
+              <a href="#" class="inline-flex items-center gap-2 text-sm font-semibold text-solaraPurple hover:gap-3 transition-all">
+                Proyecto confidencial
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="relative py-20 overflow-hidden">
+      <!-- Background -->
+      <div class="absolute inset-0 bg-gradient-to-b from-solaraBlue/5 via-transparent to-solaraPurple/5"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+        <div class="text-center mb-16">
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-solaraGold/20 to-solaraOrange/20 border border-solaraGold/30 text-solaraGold text-sm font-semibold mb-6">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            <span>Precios Transparentes • Sin Sorpresas</span>
+          </div>
+          <h2 class="font-display text-4xl md:text-5xl text-white font-bold mb-4">
+            Planes <span class="bg-gradient-to-r from-solaraGold to-solaraOrange bg-clip-text text-transparent">Simples y Claros</span>
+          </h2>
+          <p class="text-gray-300 text-lg max-w-3xl mx-auto leading-relaxed">
+            Elige el plan perfecto para tu negocio. <strong class="text-white">Anticipo recomendado: 30%</strong> • Pago final al entregar
+          </p>
+        </div>
+
+      <div class="grid lg:grid-cols-3 gap-8">
+        <!-- Plan 1: Básico -->
+        <article class="group relative bg-gradient-to-br from-white/[0.05] to-white/[0.02] border-2 border-white/[0.08] backdrop-blur-xl rounded-3xl p-8 hover:border-solaraOrange/40 hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl hover:shadow-solaraOrange/10">
+          <!-- Badge -->
+          <div class="mb-6">
+            <span class="inline-flex items-center gap-1 px-3 py-1 rounded-full bg-solaraOrange/10 border border-solaraOrange/30 text-solaraOrange text-xs font-semibold">
+              <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+              </svg>
+              Ideal para Emprendedores
+            </span>
+          </div>
+          
+          <div class="mb-6">
+            <h3 class="text-2xl font-bold text-white mb-2">Landing Básico</h3>
+            <p class="text-gray-400 text-sm">Perfecto para validar tu idea de negocio</p>
+          </div>
+          
+          <!-- Precio -->
+          <div class="mb-8">
+            <div class="flex items-baseline gap-2">
+              <span class="text-5xl font-bold bg-gradient-to-r from-solaraOrange to-solaraGold bg-clip-text text-transparent">$350k</span>
+              <span class="text-gray-400 text-sm">COP</span>
+            </div>
+            <p class="text-sm text-gray-400 mt-2">Anticipo: $105k (30%)</p>
+          </div>
+          
+          <!-- Características -->
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-solaraGreen flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <div>
+                <span class="text-white font-semibold">Página única profesional</span>
+                <p class="text-gray-400 text-sm">Landing optimizada para conversiones</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-solaraGreen flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <div>
+                <span class="text-white font-semibold">100% Responsive</span>
+                <p class="text-gray-400 text-sm">Perfecta en móvil, tablet y desktop</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-solaraGreen flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <div>
+                <span class="text-white font-semibold">Formulario de contacto</span>
+                <p class="text-gray-400 text-sm">Integración con WhatsApp</p>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-solaraGreen flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+              <div>
+                <span class="text-white font-semibold">SEO Básico</span>
+                <p class="text-gray-400 text-sm">Optimización para buscadores</p>
+              </div>
+            </li>
+          </ul>
+          <a href="https://wa.me/+573184961233?text=Hola%20SolaraSites,%20me%20interesa%20el%20plan%20Landing%20Básico"
+            target="_blank" rel="noopener noreferrer"
+            class="group block w-full text-center px-6 py-4 rounded-2xl bg-gradient-to-r from-solaraOrange via-solaraGold to-solaraOrange text-black font-bold shadow-lg shadow-solaraOrange/30 hover:shadow-xl hover:shadow-solaraOrange/50 hover:-translate-y-1 transition-all duration-300" style="background-size: 200% 100%;">
+            <span class="flex items-center justify-center gap-2">
+              <span>Solicitar Plan</span>
+              <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+              </svg>
+            </span>
+          </a>
+          <p class="text-xs text-gray-400 text-center mt-4">Entrega en 3-5 días</p>
+        </article>
+
+        <!-- Plan 2: Corporativo -->
+        <article class="group relative bg-gradient-to-br from-white/[0.08] to-white/[0.02] border-2 border-solaraBlue/40 backdrop-blur-xl rounded-3xl p-8 hover:border-solaraBlue hover:-translate-y-2 transition-all">
+          <div class="absolute -top-4 left-1/2 -translate-x-1/2">
+            <span class="inline-flex px-4 py-2 rounded-full bg-gradient-to-r from-solaraBlue to-solaraPurple text-white text-sm font-bold">MÁS POPULAR</span>
+          </div>
+          <div class="mb-6 mt-4">
+            <h3 class="text-2xl font-bold text-white">Web Corporativa</h3>
+            <p class="text-gray-400 text-sm">Presencia profesional completa</p>
+          </div>
+          <div class="mb-8">
+            <div class="flex items-baseline gap-2">
+              <span class="text-5xl font-bold bg-gradient-to-r from-solaraBlue to-solaraPurple bg-clip-text text-transparent">$550k</span>
+              <span class="text-gray-400 text-sm">COP</span>
+            </div>
+            <p class="text-sm text-gray-400 mt-2">Anticipo: $255k (30%)</p>
+          </div>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-solaraGreen mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <div><span class="text-white font-semibold">Múltiples secciones</span><p class="text-gray-400 text-sm">Hasta 8 páginas</p></div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-solaraGreen mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <div><span class="text-white font-semibold">Blog integrado</span><p class="text-gray-400 text-sm">Contenido dinámico</p></div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-solaraGreen mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <div><span class="text-white font-semibold">SEO Avanzado</span><p class="text-gray-400 text-sm">Optimización completa</p></div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-solaraGreen mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <div><span class="text-white font-semibold">Panel admin</span><p class="text-gray-400 text-sm">Gestiona tu contenido</p></div>
+            </li>
+          </ul>
+          <a href="https://wa.me/+573184961233?text=Hola%20SolaraSites,%20me%20interesa%20Web%20Corporativa"
+            class="group block w-full text-center px-6 py-4 rounded-2xl bg-gradient-to-r from-solaraBlue via-solaraPurple to-solaraBlue text-white font-bold shadow-lg hover:-translate-y-1 transition-all" style="background-size: 200% 100%;">
+            Solicitar Plan
+          </a>
+          <p class="text-xs text-gray-400 text-center mt-4">Entrega en 7-10 días</p>
+        </article>
+
+        <!-- Plan 3: E-commerce -->
+        <article class="group relative bg-gradient-to-br from-white/[0.05] to-white/[0.02] border-2 border-white/[0.08] backdrop-blur-xl rounded-3xl p-8 hover:border-solaraPurple/40 hover:-translate-y-2 transition-all">
+          <div class="mb-6">
+            <h3 class="text-2xl font-bold text-white">App / E-commerce</h3>
+            <p class="text-gray-400 text-sm">Plataforma completa avanzada</p>
+          </div>
+          <div class="mb-8">
+            <div class="flex items-baseline gap-2">
+              <span class="text-5xl font-bold bg-gradient-to-r from-solaraPurple to-solaraPink bg-clip-text text-transparent">$900k</span>
+              <span class="text-gray-400">+</span>
+            </div>
+            <p class="text-sm text-gray-400 mt-2">Según requerimientos</p>
+          </div>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-solaraGreen mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <div><span class="text-white font-semibold">E-commerce completo</span><p class="text-gray-400 text-sm">Catálogo + carrito</p></div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-solaraGreen mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <div><span class="text-white font-semibold">Pasarelas de pago</span><p class="text-gray-400 text-sm">Stripe, PayU, etc</p></div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-solaraGreen mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <div><span class="text-white font-semibold">Sistema usuarios</span><p class="text-gray-400 text-sm">Login y perfiles</p></div>
+            </li>
+            <li class="flex items-start gap-3">
+              <svg class="w-5 h-5 text-solaraGreen mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+              <div><span class="text-white font-semibold">Dashboard admin</span><p class="text-gray-400 text-sm">Gestión total</p></div>
+            </li>
+          </ul>
+          <a href="https://wa.me/+573184961233?text=Hola%20SolaraSites,%20quiero%20App/E-commerce"
+            target="_blank" rel="noopener noreferrer"
+            class="block w-full text-center px-6 py-4 rounded-2xl bg-gradient-to-r from-solaraPurple to-solaraPink text-white font-bold shadow-lg hover:-translate-y-1 transition-all">
+            Solicitar Cotización
+          </a>
+          <p class="text-xs text-gray-400 text-center mt-4">Entrega en 10-15 días</p>
+        </article>
+      </div>
+      
+      <!-- Nota adicional -->
+      <div class="mt-12 text-center">
+        <p class="text-gray-400">¿No encuentras el plan perfecto? <a href="#contact" class="text-solaraGold hover:underline font-semibold">Contáctanos</a> para una solución personalizada</p>
+      </div>
+    </div>
+    </section>
+
+
+    <!-- PROCESS (diseño espectacular tipo presentación) -->
+    <section id="process" class="relative py-24 overflow-hidden">
+      <!-- Background decorativo -->
+      <div class="absolute inset-0 bg-gradient-to-b from-solaraPurple/5 via-transparent to-solaraOrange/5"></div>
+      <div class="absolute top-1/4 left-0 w-96 h-96 bg-solaraPurple/10 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-1/4 right-0 w-96 h-96 bg-solaraOrange/10 rounded-full blur-3xl"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+        <div class="text-center mb-16">
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-solaraBlue/20 to-solaraPurple/20 border border-solaraBlue/30 text-solaraBlue text-sm font-semibold mb-6">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+            <span>Proceso Ágil y Transparente</span>
+          </div>
+          <h2 class="font-display text-4xl md:text-5xl text-white font-bold mb-4">
+            De la Idea al <span class="bg-gradient-to-r from-solaraOrange via-solaraGold to-solaraBlue bg-clip-text text-transparent">Lanzamiento</span>
+          </h2>
+          <p class="text-gray-300 text-lg max-w-3xl mx-auto leading-relaxed">
+            Nuestro proceso está diseñado para ser <strong class="text-white">transparente, rápido y sin sorpresas</strong>. Cada etapa tiene entregables claros y fechas definidas.
+          </p>
+        </div>
+
+      <!-- Timeline con línea conectora -->
+      <div class="relative">
+        <div class="hidden lg:block absolute top-20 left-0 right-0 h-1 bg-gradient-to-r from-solaraOrange via-solaraBlue via-solaraPurple to-solaraGreen"></div>
+        
+        <div class="grid lg:grid-cols-4 gap-8 lg:gap-6">
+          <!-- PASO 1: Consultoría -->
+          <div class="group relative">
+            <div class="relative bg-gradient-to-br from-white/[0.08] to-white/[0.02] border-2 border-solaraOrange/30 backdrop-blur-xl rounded-3xl p-8 hover:border-solaraOrange hover:-translate-y-3 transition-all duration-300 hover:shadow-2xl hover:shadow-solaraOrange/20">
+              <!-- Número flotante -->
+              <div class="absolute -top-6 left-1/2 -translate-x-1/2">
+                <div class="w-14 h-14 rounded-full bg-gradient-to-br from-solaraOrange to-solaraGold flex items-center justify-center text-black text-xl font-bold shadow-lg shadow-solaraOrange/50 group-hover:scale-110 transition-transform">
+                  01
+                </div>
+              </div>
+              
+              <!-- Icono -->
+              <div class="mt-8 mb-6 flex justify-center">
+                <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-solaraOrange/20 to-solaraGold/20 flex items-center justify-center">
+                  <svg class="w-8 h-8 text-solaraOrange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/>
+                  </svg>
+                </div>
+              </div>
+              
+              <h3 class="text-xl font-bold text-white text-center mb-3">Consultoría & Brief</h3>
+              <p class="text-gray-300 text-sm text-center leading-relaxed mb-6">
+                Llamada de 30-60 min donde entendemos tu negocio, objetivos y público.
+              </p>
+              
+              <!-- Entregables -->
+              <div class="space-y-2 mb-6">
+                <div class="flex items-center gap-2 text-sm text-gray-400">
+                  <svg class="w-4 h-4 text-solaraGreen" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>Brief completo</span>
+                </div>
+                <div class="flex items-center gap-2 text-sm text-gray-400">
+                  <svg class="w-4 h-4 text-solaraGreen" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>Roadmap del proyecto</span>
+                </div>
+              </div>
+              
+              <!-- Timeline -->
+              <div class="pt-4 border-t border-white/10 text-center">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-solaraOrange/10 border border-solaraOrange/30">
+                  <svg class="w-4 h-4 text-solaraOrange" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                  <span class="text-sm font-semibold text-solaraOrange">1 día</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PASO 2: Diseño -->
+          <div class="group relative">
+            <div class="relative bg-gradient-to-br from-white/[0.08] to-white/[0.02] border-2 border-solaraBlue/30 backdrop-blur-xl rounded-3xl p-8 hover:border-solaraBlue hover:-translate-y-3 transition-all duration-300 hover:shadow-2xl hover:shadow-solaraBlue/20">
+              <div class="absolute -top-6 left-1/2 -translate-x-1/2">
+                <div class="w-14 h-14 rounded-full bg-gradient-to-br from-solaraBlue to-solaraPurple flex items-center justify-center text-white text-xl font-bold shadow-lg shadow-solaraBlue/50 group-hover:scale-110 transition-transform">02</div>
+              </div>
+              <div class="mt-8 mb-6 flex justify-center">
+                <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-solaraBlue/20 to-solaraPurple/20 flex items-center justify-center">
+                  <svg class="w-8 h-8 text-solaraBlue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="text-xl font-bold text-white text-center mb-3">Diseño & Prototipo</h3>
+              <p class="text-gray-300 text-sm text-center leading-relaxed mb-6">Creamos mockups interactivos en Figma para que visualices exactamente cómo quedará.</p>
+              <div class="space-y-2 mb-6">
+                <div class="flex items-center gap-2 text-sm text-gray-400">
+                  <svg class="w-4 h-4 text-solaraGreen" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>Prototipo navegable</span>
+                </div>
+                <div class="flex items-center gap-2 text-sm text-gray-400">
+                  <svg class="w-4 h-4 text-solaraGreen" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>Guía de estilos</span>
+                </div>
+              </div>
+              <div class="pt-4 border-t border-white/10 text-center">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-solaraBlue/10 border border-solaraBlue/30">
+                  <svg class="w-4 h-4 text-solaraBlue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                  <span class="text-sm font-semibold text-solaraBlue">2-4 días</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PASO 3: Desarrollo -->
+          <div class="group relative">
+            <div class="relative bg-gradient-to-br from-white/[0.08] to-white/[0.02] border-2 border-solaraPurple/30 backdrop-blur-xl rounded-3xl p-8 hover:border-solaraPurple hover:-translate-y-3 transition-all duration-300 hover:shadow-2xl hover:shadow-solaraPurple/20">
+              <div class="absolute -top-6 left-1/2 -translate-x-1/2">
+                <div class="w-14 h-14 rounded-full bg-gradient-to-br from-solaraPurple to-solaraPink flex items-center justify-center text-white text-xl font-bold shadow-lg shadow-solaraPurple/50 group-hover:scale-110 transition-transform">03</div>
+              </div>
+              <div class="mt-8 mb-6 flex justify-center">
+                <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-solaraPurple/20 to-solaraPink/20 flex items-center justify-center">
+                  <svg class="w-8 h-8 text-solaraPurple" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="text-xl font-bold text-white text-center mb-3">Desarrollo</h3>
+              <p class="text-gray-300 text-sm text-center leading-relaxed mb-6">Código limpio y optimizado con React, Next.js o Tailwind. Todo probado.</p>
+              <div class="space-y-2 mb-6">
+                <div class="flex items-center gap-2 text-sm text-gray-400">
+                  <svg class="w-4 h-4 text-solaraGreen" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>Sitio funcional</span>
+                </div>
+                <div class="flex items-center gap-2 text-sm text-gray-400">
+                  <svg class="w-4 h-4 text-solaraGreen" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>100% responsive</span>
+                </div>
+              </div>
+              <div class="pt-4 border-t border-white/10 text-center">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-solaraPurple/10 border border-solaraPurple/30">
+                  <svg class="w-4 h-4 text-solaraPurple" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                  <span class="text-sm font-semibold text-solaraPurple">3-10 días</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PASO 4: Entrega -->
+          <div class="group relative">
+            <div class="relative bg-gradient-to-br from-white/[0.08] to-white/[0.02] border-2 border-solaraGreen/30 backdrop-blur-xl rounded-3xl p-8 hover:border-solaraGreen hover:-translate-y-3 transition-all duration-300 hover:shadow-2xl hover:shadow-solaraGreen/20">
+              <div class="absolute -top-6 left-1/2 -translate-x-1/2">
+                <div class="w-14 h-14 rounded-full bg-gradient-to-br from-solaraGreen to-solaraBlue flex items-center justify-center text-white text-2xl font-bold shadow-lg shadow-solaraGreen/50 group-hover:scale-110 transition-transform">✓</div>
+              </div>
+              <div class="mt-8 mb-6 flex justify-center">
+                <div class="w-16 h-16 rounded-2xl bg-gradient-to-br from-solaraGreen/20 to-solaraBlue/20 flex items-center justify-center">
+                  <svg class="w-8 h-8 text-solaraGreen" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                  </svg>
+                </div>
+              </div>
+              <h3 class="text-xl font-bold text-white text-center mb-3">Entrega & Soporte</h3>
+              <p class="text-gray-300 text-sm text-center leading-relaxed mb-6">Despliegue en producción, capacitación y soporte completo por 14 días.</p>
+              <div class="space-y-2 mb-6">
+                <div class="flex items-center gap-2 text-sm text-gray-400">
+                  <svg class="w-4 h-4 text-solaraGreen" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>Sitio en producción</span>
+                </div>
+                <div class="flex items-center gap-2 text-sm text-gray-400">
+                  <svg class="w-4 h-4 text-solaraGreen" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <span>14 días de soporte</span>
+                </div>
+              </div>
+              <div class="pt-4 border-t border-white/10 text-center">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-solaraGreen/10 border border-solaraGreen/30">
+                  <svg class="w-4 h-4 text-solaraGreen" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <span class="text-sm font-semibold text-solaraGreen">¡Listo!</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <!-- Resumen timeline total -->
+        <div class="mt-16 flex flex-col items-center gap-6">
+          <div class="inline-flex items-center gap-4 px-8 py-4 rounded-2xl bg-gradient-to-r from-white/10 to-white/5 border border-white/20 backdrop-blur-lg">
+            <svg class="w-6 h-6 text-solaraGold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+            </svg>
+            <div class="text-left">
+              <div class="text-sm text-gray-400">Tiempo total promedio</div>
+              <div class="text-2xl font-bold bg-gradient-to-r from-solaraOrange to-solaraGold bg-clip-text text-transparent">7-15 días</div>
+            </div>
+            <div class="h-12 w-px bg-white/20"></div>
+            <div class="text-left">
+              <div class="text-sm text-gray-400">Satisfacción del cliente</div>
+              <div class="text-2xl font-bold bg-gradient-to-r from-solaraGreen to-solaraBlue bg-clip-text text-transparent">95%</div>
+            </div>
+          </div>
+          
+          <!-- Botón CTA mejorado -->
+          <a href="#contact" class="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-solaraOrange via-solaraGold to-solaraOrange bg-size-200 bg-pos-0 hover:bg-pos-100 text-black font-bold text-lg shadow-2xl shadow-solaraOrange/40 hover:shadow-solaraOrange/60 hover:-translate-y-1 transition-all duration-300" style="background-size: 200% 100%;">
+            <svg class="w-6 h-6 group-hover:rotate-12 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+            </svg>
+            <span class="group-hover:tracking-wide transition-all">Iniciar Mi Proyecto Ahora</span>
+            <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+            </svg>
+          </a>
+          <p class="text-sm text-gray-400">Sin compromiso • Respuesta en menos de 24 horas</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="max-w-7xl mx-auto px-4 sm:px-6 py-16 bg-gradient-to-b from-transparent via-solaraPurple/5 to-transparent">
+      <div class="text-center mb-12">
+        <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gradient-to-r from-solaraGold/20 to-yellow-500/20 border border-solaraGold/30 text-solaraGold text-sm font-semibold mb-4">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+          </svg>
+          <span>Testimonios Verificados • Rating 4.9/5</span>
+        </div>
+        <h3 class="font-display text-3xl md:text-4xl text-white font-bold">Lo Que Dicen Nuestros Clientes</h3>
+        <p class="text-gray-400 max-w-2xl mx-auto mt-3 text-lg">Opiniones reales de negocios que confiaron en nosotros para su presencia digital</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Testimonio 1 -->
+        <article class="group relative bg-gradient-to-br from-white/[0.05] to-white/[0.02] border border-white/[0.08] backdrop-blur-md p-6 rounded-2xl hover:border-solaraOrange/30 transition-all hover:-translate-y-2 hover:shadow-xl">
+          <div class="flex items-center gap-1 mb-4">
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <blockquote class="mb-6">
+            <p class="text-gray-200 text-base leading-relaxed">"SolaraSites transformó nuestra presencia digital. El diseño es <strong class="text-white">limpio y rápido</strong>, y nuestros clientes ahora reservan online sin problemas. Los <strong class="text-solaraGreen">pedidos aumentaron 40%</strong> en el primer mes."</p>
+          </blockquote>
+          <footer class="flex items-center gap-3 pt-4 border-t border-white/10">
+            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-solaraOrange to-solaraGold flex items-center justify-center text-white font-bold text-lg">PT</div>
+            <div>
+              <div class="text-white font-semibold">Piquitours y Eventos</div>
+              <div class="text-sm text-gray-400">Empresa de Turismo</div>
+            </div>
+          </footer>
+        </article>
+
+        <!-- Testimonio 2 -->
+        <article class="group relative bg-gradient-to-br from-white/[0.05] to-white/[0.02] border border-white/[0.08] backdrop-blur-md p-6 rounded-2xl hover:border-solaraBlue/30 transition-all hover:-translate-y-2 hover:shadow-xl">
+          <div class="flex items-center gap-1 mb-4">
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <blockquote class="mb-6">
+            <p class="text-gray-200 text-base leading-relaxed">"Profesionalismo total. <strong class="text-white">Entrega puntual</strong>, comunicación clara y un sitio que <strong class="text-solaraBlue">carga instantáneamente</strong>. Superaron nuestras expectativas en diseño y funcionalidad."</p>
+          </blockquote>
+          <footer class="flex items-center gap-3 pt-4 border-t border-white/10">
+            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-solaraBlue to-solaraPurple flex items-center justify-center text-white font-bold text-lg">AM</div>
+            <div>
+              <div class="text-white font-semibold">Andrea M.</div>
+              <div class="text-sm text-gray-400">Agencia de Marketing</div>
+            </div>
+          </footer>
+        </article>
+
+        <!-- Testimonio 3 -->
+        <article class="group relative bg-gradient-to-br from-white/[0.05] to-white/[0.02] border border-white/[0.08] backdrop-blur-md p-6 rounded-2xl hover:border-solaraPurple/30 transition-all hover:-translate-y-2 hover:shadow-xl">
+          <div class="flex items-center gap-1 mb-4">
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-5 h-5 text-gray-600" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <blockquote class="mb-6">
+            <p class="text-gray-200 text-base leading-relaxed">"Integraron <strong class="text-white">sistema de reservas y pagos</strong> de forma impecable. El soporte post-entrega fue excelente. Ahora gestionamos todo desde un solo lugar."</p>
+          </blockquote>
+          <footer class="flex items-center gap-3 pt-4 border-t border-white/10">
+            <div class="w-12 h-12 rounded-full bg-gradient-to-br from-solaraPurple to-solaraPink flex items-center justify-center text-white font-bold text-lg">CR</div>
+            <div>
+              <div class="text-white font-semibold">Carlos R.</div>
+              <div class="text-sm text-gray-400">Centro Deportivo</div>
+            </div>
+          </footer>
+        </article>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="relative py-20 overflow-hidden">
+      <!-- Background -->
+      <div class="absolute inset-0 bg-gradient-to-b from-solaraPurple/5 via-transparent to-solaraBlue/5"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+        <div class="text-center mb-16">
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-solaraGreen/20 to-solaraBlue/20 border border-solaraGreen/30 text-solaraGreen text-sm font-semibold mb-6">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+            </svg>
+            <span>Respuesta en menos de 24 horas</span>
+          </div>
+          <h2 class="font-display text-4xl md:text-5xl text-white font-bold mb-4">
+            ¿Listo para <span class="bg-gradient-to-r from-solaraOrange to-solaraGold bg-clip-text text-transparent">Empezar?</span>
+          </h2>
+          <p class="text-gray-300 text-lg max-w-3xl mx-auto">
+            Contáctanos ahora y recibe una propuesta personalizada para tu proyecto
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-5 gap-8">
+          <!-- Columna Izquierda: Info de contacto -->
+          <div class="lg:col-span-2 space-y-6">
+            <div class="bg-gradient-to-br from-white/[0.08] to-white/[0.02] border border-white/10 backdrop-blur-xl rounded-3xl p-8">
+              <h3 class="font-display text-2xl text-white font-bold mb-4">Contáctanos Directamente</h3>
+              <p class="text-gray-400 mb-8">Elige la forma más rápida de comunicarte con nosotros</p>
+              
+              <!-- WhatsApp -->
+              <a href="https://wa.me/+573184961233?text=Hola%20SolaraSites,%20quiero%20información"
+                target="_blank" rel="noopener noreferrer"
+                class="group flex items-center gap-4 p-4 rounded-2xl bg-gradient-to-r from-solaraOrange/10 to-solaraGold/10 border border-solaraOrange/30 hover:border-solaraOrange hover:-translate-y-1 transition-all mb-4">
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-solaraOrange to-solaraGold flex items-center justify-center flex-shrink-0">
+                  <svg class="w-7 h-7 text-black" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.520.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+                  </svg>
+                </div>
+                <div class="flex-1">
+                  <div class="text-white font-bold text-lg">WhatsApp</div>
+                  <div class="text-gray-400 text-sm">Respuesta inmediata</div>
+                </div>
+                <svg class="w-5 h-5 text-solaraOrange group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                </svg>
+              </a>
+              
+              <!-- Email -->
+              <a href="mailto:solarasites.com@gmail.com"
+                class="group flex items-center gap-4 p-4 rounded-2xl bg-gradient-to-r from-solaraBlue/10 to-solaraPurple/10 border border-solaraBlue/30 hover:border-solaraBlue hover:-translate-y-1 transition-all mb-6">
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-solaraBlue to-solaraPurple flex items-center justify-center flex-shrink-0">
+                  <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                  </svg>
+                </div>
+                <div class="flex-1">
+                  <div class="text-white font-bold text-lg">Email</div>
+                  <div class="text-gray-400 text-sm">solarasites.com@gmail.com</div>
+                </div>
+              </a>
+              
+              <!-- Info adicional -->
+              <div class="pt-6 border-t border-white/10">
+                <div class="flex items-start gap-3 mb-4">
+                  <svg class="w-5 h-5 text-solaraGreen mt-1" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <div>
+                    <div class="text-white font-semibold text-sm">Métodos de pago</div>
+                    <div class="text-gray-400 text-sm">Nequi, Daviplata, Transferencia</div>
+                  </div>
+                </div>
+                <div class="flex items-start gap-3">
+                  <svg class="w-5 h-5 text-solaraGreen mt-1" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  <div>
+                    <div class="text-white font-semibold text-sm">Horario</div>
+                    <div class="text-gray-400 text-sm">Lun-Vie: 9AM-7PM, Sáb: 10AM-2PM</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Columna Derecha: Formulario mejorado -->
+          <div class="lg:col-span-3">
+            <form id="contactForm"
+              class="bg-gradient-to-br from-white/[0.08] to-white/[0.02] border border-white/10 backdrop-blur-xl rounded-3xl p-8"
+              onsubmit="handleSubmit(event)">
+              <h3 class="font-display text-2xl text-white font-bold mb-6">Solicita tu Cotización</h3>
+              
+              <div class="grid md:grid-cols-2 gap-6">
+                <!-- Nombre -->
+                <div>
+                  <label class="block text-sm font-semibold text-gray-300 mb-2">Tu nombre *</label>
+                  <input required 
+                    class="w-full rounded-xl bg-white/5 border border-white/10 p-4 text-white placeholder-gray-500 focus:border-solaraOrange focus:ring-2 focus:ring-solaraOrange/20 transition-all"
+                    placeholder="Ej: Carlos Pérez" 
+                    id="name">
+                </div>
+
+                <!-- Teléfono -->
+                <div>
+                  <label class="block text-sm font-semibold text-gray-300 mb-2">Teléfono / WhatsApp *</label>
+                  <input required type="tel"
+                    class="w-full rounded-xl bg-white/5 border border-white/10 p-4 text-white placeholder-gray-500 focus:border-solaraOrange focus:ring-2 focus:ring-solaraOrange/20 transition-all"
+                    placeholder="+57 300 123 4567" 
+                    id="phone">
+                </div>
+              </div>
+
+              <div class="grid md:grid-cols-2 gap-6 mt-6">
+                <!-- Email -->
+                <div>
+                  <label class="block text-sm font-semibold text-gray-300 mb-2">Email *</label>
+                  <input required type="email"
+                    class="w-full rounded-xl bg-white/5 border border-white/10 p-4 text-white placeholder-gray-500 focus:border-solaraOrange focus:ring-2 focus:ring-solaraOrange/20 transition-all"
+                    placeholder="ejemplo@correo.com" 
+                    id="email">
+                </div>
+
+                <!-- Tipo de proyecto -->
+                <div>
+                  <label class="block text-sm font-semibold text-gray-300 mb-2">Tipo de proyecto *</label>
+                  <select required
+                    class="w-full rounded-xl bg-white/5 border border-white/10 p-4 text-white focus:border-solaraOrange focus:ring-2 focus:ring-solaraOrange/20 transition-all"
+                    id="projectType">
+                    <option value="" class="bg-gray-900">Selecciona una opción</option>
+                    <option value="landing" class="bg-gray-900">Landing Page ($350k)</option>
+                    <option value="corporativa" class="bg-gray-900">Web Corporativa ($550k)</option>
+                    <option value="ecommerce" class="bg-gray-900">E-commerce ($900k+)</option>
+                    <option value="otro" class="bg-gray-900">Otro / Personalizado</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Presupuesto -->
+              <div class="mt-6">
+                <label class="block text-sm font-semibold text-gray-300 mb-2">Presupuesto aproximado</label>
+                <select
+                  class="w-full rounded-xl bg-white/5 border border-white/10 p-4 text-white focus:border-solaraOrange focus:ring-2 focus:ring-solaraOrange/20 transition-all"
+                  id="budget">
+                  <option value="" class="bg-gray-900">Opcional</option>
+                  <option value="300-500k" class="bg-gray-900">$300k - $500k COP</option>
+                  <option value="500k-1M" class="bg-gray-900">$500k - $1M COP</option>
+                  <option value="1M+" class="bg-gray-900">Más de $1M COP</option>
+                  <option value="flexible" class="bg-gray-900">Flexible / Por definir</option>
+                </select>
+              </div>
+
+              <!-- Mensaje -->
+              <div class="mt-6">
+                <label class="block text-sm font-semibold text-gray-300 mb-2">Cuéntanos sobre tu proyecto *</label>
+                <textarea required 
+                  class="w-full rounded-xl bg-white/5 border border-white/10 p-4 text-white placeholder-gray-500 h-32 focus:border-solaraOrange focus:ring-2 focus:ring-solaraOrange/20 transition-all"
+                  placeholder="Describe qué necesitas, objetivos, funcionalidades importantes..." 
+                  id="message"></textarea>
+              </div>
+
+              <!-- Botón enviar -->
+              <div class="mt-8 flex items-center gap-4">
+                <button type="submit"
+                  class="group flex-1 flex items-center justify-center gap-3 px-8 py-4 rounded-2xl bg-gradient-to-r from-solaraOrange via-solaraGold to-solaraOrange text-black font-bold shadow-lg shadow-solaraOrange/30 hover:shadow-xl hover:shadow-solaraOrange/50 hover:-translate-y-1 transition-all" style="background-size: 200% 100%;">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
+                  </svg>
+                  <span>Enviar Solicitud</span>
+                  <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                  </svg>
+                </button>
+                <div id="formSpinner" class="hidden text-sm text-gray-400">Enviando…</div>
+              </div>
+
+              <p class="text-xs text-gray-400 mt-4 text-center">
+                <svg class="w-4 h-4 inline-block" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                Responderemos tu solicitud en menos de 24 horas. Para respuesta inmediata, usa WhatsApp.
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="relative py-20 overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-b from-solaraOrange/5 via-transparent to-solaraPurple/5"></div>
+      
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+        <div class="text-center mb-16">
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-solaraPurple/20 to-solaraPink/20 border border-solaraPurple/30 text-solaraPurple text-sm font-semibold mb-6">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+            <span>Preguntas Frecuentes</span>
+          </div>
+          <h2 class="font-display text-4xl md:text-5xl text-white font-bold mb-4">
+            ¿Tienes <span class="bg-gradient-to-r from-solaraPurple to-solaraPink bg-clip-text text-transparent">Dudas?</span>
+          </h2>
+          <p class="text-gray-300 text-lg max-w-3xl mx-auto">
+            Aquí respondemos las preguntas más comunes. Si no encuentras lo que buscas, ¡contáctanos!
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6">
+          <!-- Pregunta 1 -->
+          <details class="group bg-gradient-to-br from-white/[0.08] to-white/[0.02] border border-white/10 backdrop-blur-xl rounded-2xl p-6 hover:border-solaraPurple/40 transition-all">
+            <summary class="cursor-pointer font-bold text-white text-lg flex items-center justify-between">
+              <span class="flex items-center gap-3">
+                <svg class="w-5 h-5 text-solaraOrange" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                </svg>
+                ¿Cuánto tiempo toma un proyecto?
+              </span>
+              <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </summary>
+            <div class="mt-4 text-gray-300 text-sm leading-relaxed space-y-2">
+              <p>Los tiempos de entrega dependen del tipo de proyecto:</p>
+              <ul class="list-disc list-inside space-y-1 ml-2">
+                <li><strong class="text-white">Landing Page:</strong> 3-5 días hábiles</li>
+                <li><strong class="text-white">Web Corporativa:</strong> 7-10 días hábiles</li>
+                <li><strong class="text-white">E-commerce/App:</strong> 10-15 días hábiles</li>
+              </ul>
+              <p class="text-gray-400 text-xs mt-2">*Los tiempos pueden variar según complejidad y requerimientos específicos</p>
+            </div>
+          </details>
+
+          <!-- Pregunta 2 -->
+          <details class="group bg-gradient-to-br from-white/[0.08] to-white/[0.02] border border-white/10 backdrop-blur-xl rounded-2xl p-6 hover:border-solaraPurple/40 transition-all">
+            <summary class="cursor-pointer font-bold text-white text-lg flex items-center justify-between">
+              <span class="flex items-center gap-3">
+                <svg class="w-5 h-5 text-solaraGreen" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z"/>
+                  <path fill-rule="evenodd" d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z" clip-rule="evenodd"/>
+                </svg>
+                ¿Qué métodos de pago aceptan?
+              </span>
+              <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </summary>
+            <div class="mt-4 text-gray-300 text-sm leading-relaxed">
+              <p>Aceptamos múltiples formas de pago:</p>
+              <ul class="list-disc list-inside space-y-1 ml-2 mt-2">
+                <li><strong class="text-white">Nequi</strong> (Recomendado)</li>
+                <li><strong class="text-white">Daviplata</strong></li>
+                <li><strong class="text-white">Transferencia bancaria</strong></li>
+              </ul>
+              <p class="mt-3">Recomendamos un anticipo del <strong class="text-white">30%</strong> para iniciar y el <strong class="text-white">70%</strong> restante al entregar el proyecto.</p>
+            </div>
+          </details>
+
+          <!-- Pregunta 3 -->
+          <details class="group bg-gradient-to-br from-white/[0.08] to-white/[0.02] border border-white/10 backdrop-blur-xl rounded-2xl p-6 hover:border-solaraPurple/40 transition-all">
+            <summary class="cursor-pointer font-bold text-white text-lg flex items-center justify-between">
+              <span class="flex items-center gap-3">
+                <svg class="w-5 h-5 text-solaraBlue" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M5 2a1 1 0 011 1v1h1a1 1 0 010 2H6v1a1 1 0 01-2 0V6H3a1 1 0 010-2h1V3a1 1 0 011-1zm0 10a1 1 0 011 1v1h1a1 1 0 110 2H6v1a1 1 0 11-2 0v-1H3a1 1 0 110-2h1v-1a1 1 0 011-1zM12 2a1 1 0 01.967.744L14.146 7.2 17.5 9.134a1 1 0 010 1.732l-3.354 1.935-1.18 4.455a1 1 0 01-1.933 0L9.854 12.8 6.5 10.866a1 1 0 010-1.732l3.354-1.935 1.18-4.455A1 1 0 0112 2z" clip-rule="evenodd"/>
+                </svg>
+                ¿Incluye hosting y dominio?
+              </span>
+              <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </summary>
+            <div class="mt-4 text-gray-300 text-sm leading-relaxed">
+              <p class="mb-3">Ofrecemos diferentes opciones de hosting:</p>
+              <ul class="space-y-2">
+                <li class="flex items-start gap-2">
+                  <svg class="w-4 h-4 text-solaraGreen mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                  <span><strong class="text-white">Hosting gratuito:</strong> Despliegue en Vercel o Netlify (incluido en el precio)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-4 h-4 text-solaraGreen mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                  <span><strong class="text-white">Tu propio hosting:</strong> Podemos desplegar en tu servidor si ya tienes uno</span>
+                </li>
+              </ul>
+              <p class="mt-3 text-gray-400 text-xs">El dominio (.com, .co) no está incluido, pero te asesoramos en su compra (aprox. $50k COP/año)</p>
+            </div>
+          </details>
+
+          <!-- Pregunta 4 -->
+          <details class="group bg-gradient-to-br from-white/[0.08] to-white/[0.02] border border-white/10 backdrop-blur-xl rounded-2xl p-6 hover:border-solaraPurple/40 transition-all">
+            <summary class="cursor-pointer font-bold text-white text-lg flex items-center justify-between">
+              <span class="flex items-center gap-3">
+                <svg class="w-5 h-5 text-solaraPurple" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 12a2 2 0 100-4 2 2 0 000 4z"/>
+                  <path fill-rule="evenodd" d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z" clip-rule="evenodd"/>
+                </svg>
+                ¿Puedo ver ejemplos de trabajos anteriores?
+              </span>
+              <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </summary>
+            <div class="mt-4 text-gray-300 text-sm leading-relaxed">
+              <p>Sí, tenemos varios proyectos de ejemplo en la sección de <strong class="text-white">Portafolio</strong>. También puedes:</p>
+              <ul class="list-disc list-inside space-y-1 ml-2 mt-2">
+                <li>Ver demos en vivo de nuestros proyectos</li>
+                <li>Solicitar acceso a proyectos privados vía WhatsApp</li>
+                <li>Revisar casos de estudio detallados</li>
+              </ul>
+            </div>
+          </details>
+
+          <!-- Pregunta 5 -->
+          <details class="group bg-gradient-to-br from-white/[0.08] to-white/[0.02] border border-white/10 backdrop-blur-xl rounded-2xl p-6 hover:border-solaraPurple/40 transition-all">
+            <summary class="cursor-pointer font-bold text-white text-lg flex items-center justify-between">
+              <span class="flex items-center gap-3">
+                <svg class="w-5 h-5 text-solaraGold" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
+                </svg>
+                ¿Ofrecen soporte después de la entrega?
+              </span>
+              <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </summary>
+            <div class="mt-4 text-gray-300 text-sm leading-relaxed">
+              <p>¡Sí! Incluimos:</p>
+              <ul class="space-y-2 mt-2">
+                <li class="flex items-start gap-2">
+                  <svg class="w-4 h-4 text-solaraGreen mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                  <span><strong class="text-white">14 días de soporte gratuito</strong> para ajustes menores y bugs</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-4 h-4 text-solaraGreen mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                  <span>Capacitación para que puedas gestionar tu contenido</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-4 h-4 text-solaraGreen mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                  <span>Documentación técnica del proyecto</span>
+                </li>
+              </ul>
+              <p class="mt-3 text-gray-400 text-xs">También ofrecemos planes de mantenimiento mensual para actualizaciones continuas</p>
+            </div>
+          </details>
+
+          <!-- Pregunta 6 -->
+          <details class="group bg-gradient-to-br from-white/[0.08] to-white/[0.02] border border-white/10 backdrop-blur-xl rounded-2xl p-6 hover:border-solaraPurple/40 transition-all">
+            <summary class="cursor-pointer font-bold text-white text-lg flex items-center justify-between">
+              <span class="flex items-center gap-3">
+                <svg class="w-5 h-5 text-solaraOrange" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/>
+                </svg>
+                ¿Qué pasa si quiero hacer cambios?
+              </span>
+              <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+              </svg>
+            </summary>
+            <div class="mt-4 text-gray-300 text-sm leading-relaxed">
+              <p>Nuestro proceso incluye revisiones en cada etapa:</p>
+              <ul class="space-y-2 mt-2">
+                <li class="flex items-start gap-2">
+                  <svg class="w-4 h-4 text-solaraBlue mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                  <span><strong class="text-white">Fase de diseño:</strong> Ajustes ilimitados al prototipo</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-4 h-4 text-solaraBlue mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                  <span><strong class="text-white">Fase de desarrollo:</strong> Hasta 2 rondas de revisión</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <svg class="w-4 h-4 text-solaraBlue mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+                  <span><strong class="text-white">Post-entrega:</strong> 14 días para ajustes menores</span>
+                </li>
+              </ul>
+              <p class="mt-3">Cambios mayores fuera del alcance original se cotizan por separado.</p>
+            </div>
+          </details>
+        </div>
+
+        <!-- CTA final -->
+        <div class="mt-16 text-center">
+          <div class="inline-flex flex-col items-center gap-4 p-8 rounded-3xl bg-gradient-to-br from-white/[0.08] to-white/[0.02] border border-white/10">
+            <p class="text-gray-300 text-lg">¿No encontraste tu respuesta?</p>
+            <a href="#contact" class="group inline-flex items-center gap-3 px-8 py-4 rounded-2xl bg-gradient-to-r from-solaraPurple to-solaraPink text-white font-bold shadow-lg hover:-translate-y-1 transition-all">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+              </svg>
+              <span>Contáctanos Ahora</span>
+              <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="relative border-t border-white/10 bg-gradient-to-b from-transparent to-black/20 mt-24">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6">
+        <!-- Footer principal -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 py-16">
+          <!-- Columna 1: Brand -->
+          <div class="space-y-6">
+            <div class="flex items-center gap-3">
+              <img src="logoV2.png" alt="SolaraSites logo" class="w-12 h-12 object-contain" loading="lazy">
+              <div>
+                <div class="text-white font-bold text-lg">SolaraSites</div>
+                <div class="text-xs text-gray-400">Desarrollo Web Premium</div>
+              </div>
+            </div>
+            <p class="text-gray-400 text-sm leading-relaxed">
+              Creamos sitios web profesionales que <span class="text-white font-semibold">convierten visitantes en clientes</span>. Diseño moderno, velocidad ultrarrrápida y soporte dedicado.
+            </p>
+            <!-- Redes sociales -->
+            <div class="flex items-center gap-4">
+              <a href="https://www.instagram.com/SolaraSites" target="_blank" rel="noopener noreferrer"
+                class="w-10 h-10 rounded-full bg-gradient-to-br from-white/10 to-white/5 border border-white/10 flex items-center justify-center hover:border-solaraOrange/50 hover:bg-solaraOrange/10 transition-all group">
+                <svg class="w-5 h-5 text-gray-400 group-hover:text-solaraOrange transition-colors" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                </svg>
+              </a>
+              <a href="https://wa.me/+573184961233" target="_blank" rel="noopener noreferrer"
+                class="w-10 h-10 rounded-full bg-gradient-to-br from-white/10 to-white/5 border border-white/10 flex items-center justify-center hover:border-solaraGreen/50 hover:bg-solaraGreen/10 transition-all group">
+                <svg class="w-5 h-5 text-gray-400 group-hover:text-solaraGreen transition-colors" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.304-1.654a11.882 11.882 0 005.713 1.456h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Columna 2: Servicios -->
+          <div>
+            <h3 class="text-white font-bold text-sm uppercase tracking-wider mb-6">Servicios</h3>
+            <ul class="space-y-3">
+              <li><a href="#services" class="text-gray-400 text-sm hover:text-solaraOrange transition-colors inline-flex items-center gap-2 group">
+                <svg class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                Landing Pages
+              </a></li>
+              <li><a href="#services" class="text-gray-400 text-sm hover:text-solaraOrange transition-colors inline-flex items-center gap-2 group">
+                <svg class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                Sitios Corporativos
+              </a></li>
+              <li><a href="#services" class="text-gray-400 text-sm hover:text-solaraOrange transition-colors inline-flex items-center gap-2 group">
+                <svg class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                E-commerce
+              </a></li>
+              <li><a href="#services" class="text-gray-400 text-sm hover:text-solaraOrange transition-colors inline-flex items-center gap-2 group">
+                <svg class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                Aplicaciones Web
+              </a></li>
+            </ul>
+          </div>
+
+          <!-- Columna 3: Empresa -->
+          <div>
+            <h3 class="text-white font-bold text-sm uppercase tracking-wider mb-6">Empresa</h3>
+            <ul class="space-y-3">
+              <li><a href="#why-us" class="text-gray-400 text-sm hover:text-solaraOrange transition-colors inline-flex items-center gap-2 group">
+                <svg class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                Nosotros
+              </a></li>
+              <li><a href="#portfolio" class="text-gray-400 text-sm hover:text-solaraOrange transition-colors inline-flex items-center gap-2 group">
+                <svg class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                Portafolio
+              </a></li>
+              <li><a href="#testimonials" class="text-gray-400 text-sm hover:text-solaraOrange transition-colors inline-flex items-center gap-2 group">
+                <svg class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                Testimonios
+              </a></li>
+              <li><a href="#faq" class="text-gray-400 text-sm hover:text-solaraOrange transition-colors inline-flex items-center gap-2 group">
+                <svg class="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                Preguntas Frecuentes
+              </a></li>
+            </ul>
+          </div>
+
+          <!-- Columna 4: Contacto -->
+          <div>
+            <h3 class="text-white font-bold text-sm uppercase tracking-wider mb-6">Contacto</h3>
+            <ul class="space-y-4">
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-solaraOrange flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                <div>
+                  <div class="text-xs text-gray-500 mb-1">Email</div>
+                  <a href="mailto:contacto@solarasites.com" class="text-gray-300 text-sm hover:text-solaraOrange transition-colors">contacto@solarasites.com</a>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-solaraGreen flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.304-1.654a11.882 11.882 0 005.713 1.456h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+                <div>
+                  <div class="text-xs text-gray-500 mb-1">WhatsApp</div>
+                  <a href="https://wa.me/+573184961233" target="_blank" class="text-gray-300 text-sm hover:text-solaraGreen transition-colors">+57 318 496 1233</a>
+                </div>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-solaraBlue flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                <div>
+                  <div class="text-xs text-gray-500 mb-1">Ubicación</div>
+                  <span class="text-gray-300 text-sm">Colombia</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Footer bottom -->
+        <div class="border-t border-white/10 py-8">
+          <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+            <div class="text-sm text-gray-400 text-center md:text-left">
+              © <span id="year"></span> <span class="text-white font-semibold">SolaraSites</span>. Todos los derechos reservados.
+            </div>
+            <div class="flex flex-wrap items-center justify-center gap-6 text-sm text-gray-400">
+              <a href="#" class="hover:text-white transition-colors">Términos de Servicio</a>
+              <span class="text-gray-600">•</span>
+              <a href="#" class="hover:text-white transition-colors">Política de Privacidad</a>
+              <span class="text-gray-600">•</span>
+              <a href="#contact" class="hover:text-white transition-colors">Contacto</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  <!-- Sticky CTA bottom bar -->
+  <div id="stickyCta" class="fixed inset-x-0 bottom-4 z-50">
+    <div class="max-w-3xl mx-auto px-4">
+      <div class="rounded-full border border-white/10 bg-gradient-to-b from-white/10 to-white/5 backdrop-blur-md shadow-xl flex items-center justify-between gap-2 sm:gap-3 px-2.5 py-2 sm:px-3 sm:py-3">
+        <div class="text-xs sm:text-sm text-gray-200 hidden sm:block ml-1">¿Listo para una web que venda? Hablemos hoy.</div>
+        <div class="flex items-center gap-2 w-full sm:w-auto justify-end">
+          <a href="#pricing" class="px-3 py-1.5 text-xs sm:px-4 sm:py-2 sm:text-sm rounded-full border border-white/10 text-gray-100 hover:bg-white/10">Ver precios</a>
+          <a href="https://wa.me/+573184961233?text=Hola%20SolaraSites,%20quiero%20una%20cotizaci%C3%B3n" target="_blank" class="px-3 py-1.5 text-xs sm:px-4 sm:py-2 sm:text-sm rounded-full bg-gradient-to-r from-solaraOrange to-solaraGold text-black font-semibold">WhatsApp</a>
+          <button id="closeStickyCta" aria-label="Cerrar barra" class="shrink-0 inline-flex items-center justify-center w-8 h-8 rounded-full hover:bg-white/10 text-gray-300">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </main>
+
+  <!-- SCRIPTS -->
+  <script>
+    // Header blur on scroll
+    const header = document.getElementById('siteHeader');
+    function onScrollHeader() {
+      if (window.scrollY > 10) {
+        header.classList.add('backdrop-blur-lg', 'bg-[#08080a]/56', 'border-b', 'border-white/[0.04]', 'shadow-[0_6px_30px_rgba(0,0,0,0.6)]');
+      } else {
+        header.classList.remove('backdrop-blur-lg', 'bg-[#08080a]/56', 'border-b', 'border-white/[0.04]', 'shadow-[0_6px_30px_rgba(0,0,0,0.6)]');
+      }
+    }
+    window.addEventListener('scroll', onScrollHeader, { passive: true });
+    onScrollHeader();
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn && menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // contact form dummy
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.getElementById('formSpinner').classList.remove('hidden');
+      const name = document.getElementById('name').value;
+      setTimeout(() => {
+        document.getElementById('formSpinner').classList.add('hidden');
+        alert('Gracias, ' + name + '. Recibimos tu mensaje. Te contactaremos pronto.');
+        e.target.reset();
+      }, 900);
+    }
+
+    // footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        const id = this.getAttribute('href').substring(1);
+        const el = document.getElementById(id);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    // Sticky CTA dismiss (no persist across reload)
+    const stickyCta = document.getElementById('stickyCta');
+    const closeStickyCta = document.getElementById('closeStickyCta');
+    closeStickyCta && closeStickyCta.addEventListener('click', () => {
+      if (stickyCta) stickyCta.style.display = 'none';
+    });
+  </script>
+</body>
+
+</html>
