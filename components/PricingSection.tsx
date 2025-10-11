@@ -7,13 +7,11 @@ const pricingPlans = [
     subtitle: "Perfecto para validar tu idea de negocio",
     price: "$350k",
     currency: "COP",
-    badge: "Ideal para Emprendedores",
-    badgeColor: "bg-solaraOrange/10 border-solaraOrange/30 text-solaraOrange",
-    priceGradient: "from-solaraOrange to-solaraGold",
-    buttonGradient: "from-solaraOrange via-solaraGold to-solaraOrange",
-    buttonText: "text-black",
-    hoverBorder: "hover:border-solaraOrange/40",
-    hoverShadow: "hover:shadow-solaraOrange/10",
+    priceGradient: "from-[#0071e3] to-[#2196F3]",
+    borderColor: "border-[#0071e3]/20",
+    hoverBorder: "hover:border-[#0071e3]/40",
+    hoverShadow: "hover:shadow-[#0071e3]/20",
+    bgGradient: "from-[#0071e3]/5 to-transparent",
     delivery: "3-5 días",
     features: [
       {
@@ -42,12 +40,11 @@ const pricingPlans = [
     price: "$550k",
     currency: "COP",
     isPopular: true,
-    priceGradient: "from-solaraBlue to-solaraPurple",
-    buttonGradient: "from-solaraBlue via-solaraPurple to-solaraBlue",
-    buttonText: "text-white",
-    hoverBorder: "hover:border-solaraBlue",
-    hoverShadow: "hover:shadow-solaraBlue/10",
-    borderColor: "border-solaraBlue/40",
+    priceGradient: "from-[#7C3AED] via-[#A78BFA] to-[#EC4899]",
+    borderColor: "border-[#7C3AED]/30",
+    hoverBorder: "hover:border-[#7C3AED]/50",
+    hoverShadow: "hover:shadow-[#7C3AED]/25",
+    bgGradient: "from-[#7C3AED]/8 to-[#EC4899]/5",
     delivery: "7-10 días",
     features: [
       {
@@ -76,13 +73,13 @@ const pricingPlans = [
     price: "$900k",
     priceExtra: "+",
     extraNote: "Según requerimientos",
-    priceGradient: "from-solaraPurple to-solaraPink",
-    buttonGradient: "from-solaraPurple to-solaraPink",
-    buttonText: "text-white",
-    hoverBorder: "hover:border-solaraPurple/40",
-    hoverShadow: "hover:shadow-solaraPurple/10",
+    priceGradient: "from-[#06B6D4] via-[#0EA5E9] to-[#10B981]",
+    borderColor: "border-[#06B6D4]/20",
+    hoverBorder: "hover:border-[#06B6D4]/40",
+    hoverShadow: "hover:shadow-[#06B6D4]/20",
+    bgGradient: "from-[#06B6D4]/5 to-[#10B981]/5",
     delivery: "10-15 días",
-    buttonLabel: "Solicitar Cotización",
+    buttonLabel: "Consultar",
     features: [
       {
         title: "E-commerce completo",
@@ -109,51 +106,43 @@ export const PricingSection = () => {
   return (
     <section id="pricing" className="relative py-20 overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-solaraBlue/5 via-transparent to-solaraPurple/5"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-secondary/5"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-solaraGold/20 to-solaraOrange/20 border border-solaraGold/30 text-solaraGold text-sm font-semibold mb-6">
-            <DollarSign className="w-5 h-5" />
-            <span>Precios Transparentes • Sin Sorpresas</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.03] border border-white/[0.08] mb-6">
+            <DollarSign className="w-4 h-4 text-primary" />
+            <span className="text-sm font-medium text-textSecondary">Precios transparentes</span>
           </div>
-          <h2 className="font-display text-4xl md:text-5xl text-white font-bold mb-4">
+          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-white font-bold mb-4">
             Planes{" "}
-            <span className="bg-gradient-to-r from-solaraGold to-solaraOrange bg-clip-text text-transparent">
-              Simples y Claros
+            <span 
+              className="bg-gradient-to-r from-[#0071e3] via-[#EC4899] to-[#06B6D4] bg-clip-text text-transparent"
+              style={{ backgroundSize: '200% 200%' }}
+            >
+              flexibles
             </span>
           </h2>
+          <p className="text-textSecondary text-lg max-w-2xl mx-auto font-light">
+            Elige el plan que mejor se adapte a tus necesidades
+          </p>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-8">
           {pricingPlans.map((plan) => (
             <article
               key={plan.id}
-              className={`group relative bg-gradient-to-br ${
-                plan.isPopular ? "from-white/[0.08]" : "from-white/[0.05]"
-              } to-white/[0.02] border-2 ${
-                plan.isPopular ? plan.borderColor : "border-white/[0.08]"
-              } backdrop-blur-xl rounded-3xl p-8 ${plan.hoverBorder} hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl ${
+              className={`group relative bg-gradient-to-br ${plan.bgGradient} border ${
+                plan.isPopular ? plan.borderColor : plan.borderColor
+              } backdrop-blur-xl rounded-2xl p-8 ${plan.hoverBorder} hover:-translate-y-2 transition-all duration-300 hover:shadow-2xl ${
                 plan.hoverShadow
-              }`}
+              } ${plan.isPopular ? 'ring-2 ring-[#FFD700]/30 shadow-[0_0_30px_rgba(255,215,0,0.15)]' : ''}`}
             >
-              {/* Popular badge */}
+              {/* Popular badge con dorado premium */}
               {plan.isPopular && (
-                <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                  <span className="inline-flex px-4 py-2 rounded-full bg-gradient-to-r from-solaraBlue to-solaraPurple text-white text-sm font-bold">
-                    MÁS POPULAR
-                  </span>
-                </div>
-              )}
-
-              {/* Badge */}
-              {plan.badge && (
-                <div className="mb-6">
-                  <span
-                    className={`inline-flex items-center gap-1 px-3 py-1 rounded-full ${plan.badgeColor} text-xs font-semibold`}
-                  >
-                    <Star className="w-3 h-3" />
-                    {plan.badge}
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2">
+                  <span className="inline-flex px-4 py-1.5 rounded-full bg-gradient-to-r from-[#FFD700] via-[#FFC107] to-[#FFD700] text-black text-xs font-bold shadow-lg shadow-[#FFD700]/40 animate-pulse-glow">
+                    ⭐ MÁS POPULAR
                   </span>
                 </div>
               )}
@@ -163,16 +152,14 @@ export const PricingSection = () => {
                 <p className="text-gray-400 text-sm">{plan.subtitle}</p>
               </div>
 
-              {/* Precio */}
+              {/* Precio con gradiente vibrante */}
               <div className="mb-8">
                 <div className="flex items-baseline gap-2">
-                  <span
-                    className={`text-5xl font-bold bg-gradient-to-r ${plan.priceGradient} bg-clip-text text-transparent`}
-                  >
+                  <span className={`text-5xl font-semibold bg-gradient-to-r ${plan.priceGradient} bg-clip-text text-transparent`}>
                     {plan.price}
                   </span>
                   {plan.priceExtra && (
-                    <span className="text-gray-400">{plan.priceExtra}</span>
+                    <span className={`text-2xl bg-gradient-to-r ${plan.priceGradient} bg-clip-text text-transparent`}>{plan.priceExtra}</span>
                   )}
                   {plan.currency && !plan.priceExtra && (
                     <span className="text-gray-400 text-sm">{plan.currency}</span>
@@ -184,13 +171,13 @@ export const PricingSection = () => {
               </div>
 
               {/* Características */}
-              <ul className="space-y-3 mb-8">
+              <ul className="space-y-3.5 mb-8">
                 {plan.features.map((feature, index) => (
                   <li key={index} className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-solaraGreen flex-shrink-0 mt-0.5" />
+                    <Check className="w-4 h-4 text-success flex-shrink-0 mt-0.5" />
                     <div>
-                      <span className="text-white font-semibold">{feature.title}</span>
-                      <p className="text-gray-400 text-sm">{feature.description}</p>
+                      <span className="text-white font-medium text-sm">{feature.title}</span>
+                      <p className="text-textSecondary text-xs">{feature.description}</p>
                     </div>
                   </li>
                 ))}
@@ -200,29 +187,27 @@ export const PricingSection = () => {
                 href={`https://wa.me/+573184961233?text=${plan.whatsappText}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`group/btn block w-full text-center px-6 py-4 rounded-2xl bg-gradient-to-r ${plan.buttonGradient} ${plan.buttonText} font-bold shadow-lg ${plan.hoverShadow} hover:-translate-y-1 transition-all duration-300`}
-                style={{ backgroundSize: "200% 100%" }}
+                className={`group/btn block w-full text-center px-6 py-3.5 rounded-full bg-gradient-to-r ${plan.priceGradient} text-white font-semibold hover:-translate-y-1 hover:shadow-lg transition-all duration-300`}
               >
                 <span className="flex items-center justify-center gap-2">
-                  <span>{plan.buttonLabel || "Solicitar Plan"}</span>
+                  <span>{plan.buttonLabel || "Solicitar"}</span>
                   <ArrowRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
                 </span>
               </a>
-              <p className="text-xs text-gray-400 text-center mt-4">
-                Entrega en {plan.delivery}
+              <p className="text-xs text-textTertiary text-center mt-4">
+                Entrega: {plan.delivery}
               </p>
             </article>
           ))}
         </div>
 
-        {/* Nota adicional */}
-        <div className="mt-12 text-center">
-          <p className="text-gray-400">
-            ¿No encuentras el plan perfecto?{" "}
-            <a href="#contact" className="text-solaraGold hover:underline font-semibold">
+        {/* Nota adicional minimalista */}
+        <div className="mt-16 text-center">
+          <p className="text-textSecondary">
+            ¿Necesitas algo personalizado?{" "}
+            <a href="#contact" className="text-primary hover:text-primaryLight transition-colors font-medium">
               Contáctanos
-            </a>{" "}
-            para una solución personalizada
+            </a>
           </p>
         </div>
       </div>

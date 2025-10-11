@@ -5,107 +5,114 @@ import { WhatsAppIcon } from "./icons/WhatsAppIcon";
 export const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Fondo animado espectacular */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-solaraOrange/5 to-transparent"></div>
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-solaraOrange/20 rounded-full blur-[120px] animate-float"></div>
-      <div className="absolute bottom-0 right-1/4 w-[600px] h-[600px] bg-solaraBlue/20 rounded-full blur-[150px] animate-float" style={{ animationDelay: "2s" }}></div>
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-solaraPurple/10 rounded-full blur-[180px] animate-pulse"></div>
+      {/* Fondo espectacular multicolo */}
+      <div className="absolute inset-0">
+        <div className="absolute top-[20%] left-[10%] w-[600px] h-[600px] bg-[#0071e3]/15 rounded-full blur-[150px] animate-float"></div>
+        <div className="absolute top-[10%] right-[15%] w-[500px] h-[500px] bg-[#7C3AED]/12 rounded-full blur-[160px] animate-float" style={{ animationDelay: "1.5s" }}></div>
+        <div className="absolute bottom-[15%] right-[20%] w-[550px] h-[550px] bg-[#06B6D4]/10 rounded-full blur-[170px] animate-float" style={{ animationDelay: "3s" }}></div>
+        <div className="absolute bottom-[20%] left-[25%] w-[450px] h-[450px] bg-[#EC4899]/8 rounded-full blur-[140px] animate-float" style={{ animationDelay: "4.5s" }}></div>
+      </div>
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/30 to-black"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-32 lg:py-40 relative z-10 w-full">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Columna Izquierda */}
           <div className="space-y-8 animate-fade-in">
-            {/* Badge superior */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-solaraOrange/20 to-solaraGold/20 border border-solaraOrange/40 backdrop-blur-md">
-              <Star className="w-5 h-5 text-solaraOrange fill-solaraOrange" />
-              <span className="text-sm font-bold bg-gradient-to-r from-solaraOrange to-solaraGold bg-clip-text text-transparent">
-                #1 en Desarrollo Web Profesional
+            {/* Badge superior con toque dorado premium */}
+            <div className="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-full bg-gradient-to-r from-[#FFD700]/10 via-[#0071e3]/10 to-[#06B6D4]/10 border border-[#FFD700]/40 backdrop-blur-xl shadow-[0_0_20px_rgba(255,215,0,0.15)]">
+              <div className="w-2 h-2 rounded-full bg-gradient-to-r from-[#FFD700] to-[#FFE55C] animate-pulse shadow-[0_0_10px_rgba(255,215,0,0.6)]"></div>
+              <span className="text-sm font-medium bg-gradient-to-r from-[#FFE55C] to-[#06B6D4] bg-clip-text text-transparent">
+                Desarrollo web profesional en Colombia
               </span>
             </div>
 
-            {/* Título espectacular */}
-            <div className="space-y-4">
-              <h1 className="text-white font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1.1] font-black tracking-tight">
-                Tu{" "}
+            {/* Título elegante */}
+            <div className="space-y-6">
+              <h1 className="text-white font-display text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[1.1] font-bold tracking-tight">
+                Sitios web que{" "}
                 <span className="relative inline-block">
-                  <span className="bg-gradient-to-r from-solaraOrange via-solaraGold to-solaraBlue bg-clip-text text-transparent animate-glow">
-                    Sitio Web
+                  <span 
+                    className="bg-gradient-to-r from-[#0071e3] via-[#06B6D4] to-[#7C3AED] bg-clip-text text-transparent animate-gradient"
+                    style={{ backgroundSize: '200% 200%' }}
+                  >
+                    convierten
                   </span>
-                  <div className="absolute -bottom-2 left-0 right-0 h-2 bg-gradient-to-r from-solaraOrange/40 via-solaraGold/40 to-solaraBlue/40 blur-xl"></div>
                 </span>
-                <br />
-                que <span className="bg-gradient-to-r from-solaraBlue via-solaraPurple to-solaraPink bg-clip-text text-transparent">convierte</span>
               </h1>
-              <p className="text-gray-300 text-lg md:text-xl leading-relaxed max-w-2xl">
-                Diseño <strong className="text-white font-semibold">premium</strong>, velocidad <strong className="text-white font-semibold">ultrarápida</strong> y optimizado para <strong className="text-solaraOrange font-semibold">vender más</strong>.
-                <br />Así de simple.
+              <p className="text-textSecondary text-xl md:text-2xl leading-relaxed max-w-2xl font-light">
+                Diseño profesional, desarrollo ágil y resultados medibles.
+                <br className="hidden sm:block" />
+                <span className="text-white font-medium">Así de simple.</span>
               </p>
             </div>
 
-            {/* Métricas y Social Proof */}
+            {/* Métricas con colores vibrantes */}
             <div className="grid grid-cols-3 gap-4">
-              <div className="bg-gradient-to-br from-white/[0.08] to-white/[0.02] border border-white/[0.1] rounded-2xl p-4 backdrop-blur-md">
-                <div className="text-3xl font-bold bg-gradient-to-r from-solaraOrange to-solaraGold bg-clip-text text-transparent">20+</div>
-                <div className="text-xs text-gray-400 mt-1">Proyectos exitosos</div>
+              <div className="relative group bg-gradient-to-br from-[#0071e3]/10 to-transparent border border-[#0071e3]/20 rounded-xl p-5 backdrop-blur-xl hover:border-[#0071e3]/40 transition-all">
+                <div className="text-4xl font-semibold bg-gradient-to-br from-[#0071e3] to-[#2196F3] bg-clip-text text-transparent mb-1">20+</div>
+                <div className="text-xs text-gray-400 font-medium">Proyectos exitosos</div>
+                <div className="absolute inset-0 bg-[#0071e3]/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
               </div>
-              <div className="bg-gradient-to-br from-white/[0.08] to-white/[0.02] border border-white/[0.1] rounded-2xl p-4 backdrop-blur-md">
-                <div className="text-3xl font-bold bg-gradient-to-r from-solaraBlue to-solaraPurple bg-clip-text text-transparent">7d</div>
-                <div className="text-xs text-gray-400 mt-1">Entrega promedio</div>
+              <div className="relative group bg-gradient-to-br from-[#7C3AED]/10 to-transparent border border-[#7C3AED]/20 rounded-xl p-5 backdrop-blur-xl hover:border-[#7C3AED]/40 transition-all">
+                <div className="text-4xl font-semibold bg-gradient-to-br from-[#7C3AED] to-[#A78BFA] bg-clip-text text-transparent mb-1">7d</div>
+                <div className="text-xs text-gray-400 font-medium">Entrega promedio</div>
+                <div className="absolute inset-0 bg-[#7C3AED]/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
               </div>
-              <div className="bg-gradient-to-br from-white/[0.08] to-white/[0.02] border border-white/[0.1] rounded-2xl p-4 backdrop-blur-md">
-                <div className="flex items-center gap-1">
-                  <span className="text-3xl font-bold text-yellow-400">4.9</span>
-                  <Star className="w-5 h-5 text-yellow-400 fill-yellow-400" />
+              <div className="relative group bg-gradient-to-br from-[#FFD700]/10 to-[#EC4899]/5 border border-[#FFD700]/30 rounded-xl p-5 backdrop-blur-xl hover:border-[#FFD700]/50 transition-all">
+                <div className="flex items-center gap-1.5 mb-1">
+                  <span className="text-4xl font-semibold bg-gradient-to-br from-[#FFD700] to-[#FFE55C] bg-clip-text text-transparent">4.9</span>
+                  <Star className="w-5 h-5 text-[#FFD700] fill-[#FFD700] drop-shadow-[0_0_8px_rgba(255,215,0,0.5)]" />
                 </div>
-                <div className="text-xs text-gray-400 mt-1">Valoración clientes</div>
+                <div className="text-xs text-gray-400 font-medium">Valoración</div>
+                <div className="absolute inset-0 bg-[#FFD700]/5 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
               </div>
             </div>
 
-            {/* CTAs */}
+            {/* CTAs profesionales */}
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
               <a
                 href="https://wa.me/+573184961233?text=Hola%20SolaraSites,%20quiero%20una%20web"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-bold rounded-xl bg-gradient-to-r from-solaraOrange to-solaraGold text-black overflow-hidden transition-all hover:scale-105 hover:shadow-2xl hover:shadow-solaraOrange/50"
+                className="group inline-flex items-center justify-center gap-3 px-8 py-4 text-base font-semibold rounded-full bg-gradient-to-r from-[#0071e3] via-[#06B6D4] to-[#0071e3] hover:from-[#2196F3] hover:to-[#0EA5E9] text-white transition-all hover:shadow-2xl hover:shadow-[#0071e3]/40 hover:scale-105 relative overflow-hidden"
+                style={{ backgroundSize: '200% 100%' }}
               >
-                <WhatsAppIcon className="w-5 h-5" />
-                <span className="relative z-10">🚀 Empezar mi proyecto</span>
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform relative z-10" strokeWidth={3} />
-                <div className="absolute inset-0 bg-gradient-to-r from-solaraGold to-solaraOrange opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[#FFD700]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity animate-shimmer"></div>
+                <WhatsAppIcon className="w-5 h-5 relative z-10" />
+                <span className="relative z-10">Empezar proyecto</span>
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform relative z-10" />
               </a>
 
               <a
                 href="#pricing"
-                className="group inline-flex items-center justify-center gap-2 px-6 py-3 text-base font-semibold rounded-xl border-2 border-white/20 bg-white/5 backdrop-blur-md text-white hover:bg-white/10 hover:border-white/40 transition-all"
+                className="group inline-flex items-center justify-center gap-3 px-8 py-4 text-base font-semibold rounded-full border border-[#7C3AED]/30 bg-gradient-to-r from-[#7C3AED]/10 to-transparent backdrop-blur-xl text-white hover:bg-[#7C3AED]/20 hover:border-[#7C3AED]/50 transition-all"
               >
-                <Eye className="w-5 h-5" />
-                Ver planes y precios
+                <Eye className="w-5 h-5 text-[#7C3AED]" />
+                <span>Ver planes</span>
               </a>
             </div>
 
-            {/* Trust indicators */}
-            <div className="flex flex-wrap items-center gap-6 pt-4">
-              <div className="flex items-center gap-2">
-                <Check className="w-5 h-5 text-solaraGreen" />
-                <span className="text-gray-300 text-sm">Entrega garantizada</span>
+            {/* Trust indicators minimalistas */}
+            <div className="flex flex-wrap items-center gap-8 pt-2">
+              <div className="flex items-center gap-2.5">
+                <Check className="w-4 h-4 text-[#10B981]" />
+                <span className="text-gray-300 text-sm font-medium">Entrega garantizada</span>
               </div>
-              <div className="flex items-center gap-2">
-                <Check className="w-5 h-5 text-solaraGreen" />
-                <span className="text-gray-300 text-sm">Soporte 14 días</span>
+              <div className="flex items-center gap-2.5">
+                <Check className="w-4 h-4 text-[#10B981]" />
+                <span className="text-gray-300 text-sm font-medium">Soporte 14 días</span>
               </div>
-              <div className="flex items-center gap-2">
-                <Check className="w-5 h-5 text-solaraGreen" />
-                <span className="text-gray-300 text-sm">Revisión ilimitada</span>
+              <div className="flex items-center gap-2.5">
+                <Check className="w-4 h-4 text-[#10B981]" />
+                <span className="text-gray-300 text-sm font-medium">Revisiones incluidas</span>
               </div>
             </div>
 
-            {/* Info de pago */}
-            <div className="mt-6 flex items-start gap-3 p-4 rounded-xl bg-gradient-to-r from-solaraOrange/10 to-solaraGold/10 border border-solaraOrange/20">
-              <Info className="w-5 h-5 text-solaraOrange flex-shrink-0 mt-0.5" />
+            {/* Info de pago con acento cyan */}
+            <div className="mt-4 flex items-start gap-3 p-4 rounded-xl bg-gradient-to-r from-[#06B6D4]/5 to-transparent border border-[#06B6D4]/20">
+              <Info className="w-4 h-4 text-[#06B6D4] flex-shrink-0 mt-0.5" />
               <div className="text-sm">
-                <p className="text-gray-200 font-semibold">Pago inicial flexible: Nequi / Daviplata</p>
-                <p className="text-gray-400 mt-1">Después integramos PayU, MercadoPago o Stripe según tu necesidad</p>
+                <p className="text-gray-300">Métodos de pago: <span className="text-white font-medium">Nequi, Daviplata, Transferencia</span></p>
               </div>
             </div>
           </div>
@@ -113,21 +120,21 @@ export const HeroSection = () => {
           {/* Columna Derecha: Visual impactante */}
           <div className="relative lg:pl-8">
             <div className="relative bg-gradient-to-br from-white/[0.08] to-white/[0.02] border border-white/[0.15] rounded-3xl p-6 backdrop-blur-xl shadow-2xl overflow-hidden">
-              {/* Badge flotante */}
+              {/* Badge flotante con dorado premium */}
               <div className="absolute top-2 sm:top-4 lg:top-10 left-1/2 -translate-x-1/2 z-20">
-                <div className="inline-flex items-center gap-1.5 sm:gap-2 px-2 sm:px-3 py-1 sm:py-1.5 rounded-full bg-gradient-to-r from-solaraGreen/30 to-solaraGreen/20 border border-solaraGreen/50 backdrop-blur-md shadow-lg">
-                  <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-solaraGreen animate-pulse"></span>
-                  <span className="text-[10px] sm:text-xs font-bold text-solaraGreen whitespace-nowrap">En producción</span>
+                <div className="inline-flex items-center gap-1.5 sm:gap-2 px-2 sm:px-3 py-1 sm:py-1.5 rounded-full bg-gradient-to-r from-[#10B981]/30 to-[#10B981]/20 border border-[#10B981]/50 backdrop-blur-md shadow-lg shadow-[#10B981]/20">
+                  <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-[#10B981] animate-pulse"></span>
+                  <span className="text-[10px] sm:text-xs font-bold text-[#10B981] whitespace-nowrap">En producción</span>
                 </div>
               </div>
 
               <div className="bg-gradient-to-br from-[#0a0a0b] to-[#0f1214] rounded-2xl p-5 relative z-10">
                 <div className="flex items-center justify-between text-sm text-gray-300 mb-4">
                   <div className="flex items-center gap-3">
-                    <div className="w-3 h-3 rounded-full bg-gradient-to-r from-solaraOrange to-solaraGold"></div>
-                    <span className="font-semibold">Piquitours eventos</span>
+                    <div className="w-3 h-3 rounded-full bg-gradient-to-r from-[#FFD700] to-[#FFC107] shadow-[0_0_10px_rgba(255,215,0,0.4)]"></div>
+                    <span className="font-semibold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">Piquitours eventos</span>
                   </div>
-                  <span className="text-xs text-gray-500 bg-white/5 px-3 py-1 rounded-full">7 días</span>
+                  <span className="text-xs text-gray-400 bg-[#FFD700]/10 border border-[#FFD700]/20 px-3 py-1 rounded-full font-semibold">7 días</span>
                 </div>
 
                 <div className="bg-[#060608] border border-white/3 rounded-lg p-6">

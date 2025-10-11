@@ -32,9 +32,9 @@ export const Header = () => {
 
   return (
     <header
-      className={`fixed w-full z-50 top-0 left-0 transition-all duration-300 ${
+      className={`fixed w-full z-50 top-0 left-0 transition-all duration-500 ${
         isScrolled
-          ? "backdrop-blur-lg bg-[#08080a]/56 border-b border-white/[0.04] shadow-[0_6px_30px_rgba(0,0,0,0.6)]"
+          ? "backdrop-blur-xl bg-black/80 border-b border-white/[0.08] shadow-[0_8px_32px_rgba(0,0,0,0.4)]"
           : ""
       }`}
     >
@@ -52,35 +52,33 @@ export const Header = () => {
         </Link>
 
         {/* Nombre de marca */}
-        <Link href="/" className="flex items-center gap-3" aria-label="SolaraSites — Inicio">
-          <span className="text-lg sm:text-xl font-display font-semibold bg-gradient-to-r from-solaraOrange to-solaraGold bg-clip-text text-transparent tracking-tight">
-            Solara Sites
+        <Link href="/" className="flex items-center gap-3 group" aria-label="SolaraSites — Inicio">
+          <span className="text-lg sm:text-xl font-display font-semibold text-white tracking-tight transition-all group-hover:text-primary">
+            Solara<span className="text-primary">Sites</span>
           </span>
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-6 text-sm text-gray-300">
+        <nav className="hidden md:flex items-center gap-8 text-sm">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="hover:text-white transition-colors"
+              className="text-textSecondary hover:text-white transition-all duration-300 font-medium relative group"
             >
               {link.label}
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-secondary transition-all duration-300 group-hover:w-full"></span>
             </a>
           ))}
           <a
             href="https://wa.me/+573184961233"
             target="_blank"
             rel="noopener noreferrer"
-            className="group ml-4 relative inline-flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-solaraOrange via-solaraGold to-solaraOrange rounded-full text-black font-bold shadow-lg shadow-solaraOrange/30 hover:shadow-xl hover:shadow-solaraOrange/50 hover:-translate-y-0.5 hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-solaraGold"
-            style={{ backgroundSize: "200% 100%", backgroundPosition: "0% 0%" }}
-            onMouseEnter={(e) => (e.currentTarget.style.backgroundPosition = "100% 0%")}
-            onMouseLeave={(e) => (e.currentTarget.style.backgroundPosition = "0% 0%")}
+            className="ml-2 inline-flex items-center gap-2 px-5 py-2.5 bg-primary hover:bg-primaryLight rounded-full text-white font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-primary/30 hover:scale-105"
             aria-label="Contactar por WhatsApp"
           >
-            <WhatsAppIcon />
-            <span className="hidden sm:inline">WhatsApp</span>
+            <WhatsAppIcon className="w-4 h-4" />
+            <span className="hidden sm:inline">Contactar</span>
           </a>
         </nav>
 
@@ -88,13 +86,13 @@ export const Header = () => {
         <div className="md:hidden">
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="p-2 rounded-md bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md"
+            className="p-2.5 rounded-lg bg-surface/50 border border-white/[0.08] backdrop-blur-md hover:bg-surface transition-all"
             aria-label={isMobileMenuOpen ? "Cerrar menú" : "Abrir menú"}
           >
             {isMobileMenuOpen ? (
-              <X className="w-5 h-5 text-gray-200" />
+              <X className="w-5 h-5 text-white" />
             ) : (
-              <Menu className="w-5 h-5 text-gray-200" />
+              <Menu className="w-5 h-5 text-white" />
             )}
           </button>
         </div>
@@ -102,13 +100,13 @@ export const Header = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-[#060608]/80 bg-gradient-to-b from-white/[0.02] to-white/[0.01] border border-white/[0.03] backdrop-blur-md">
-          <div className="px-4 sm:px-6 py-4 flex flex-col gap-3">
+        <div className="md:hidden bg-black/95 backdrop-blur-xl border-t border-white/[0.08]">
+          <div className="px-4 sm:px-6 py-6 flex flex-col gap-2">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="py-2 hover:text-solaraOrange transition-colors"
+                className="py-3 px-4 text-textSecondary hover:text-white hover:bg-surface/50 rounded-lg transition-all font-medium"
                 onClick={closeMobileMenu}
               >
                 {link.label}
@@ -118,11 +116,11 @@ export const Header = () => {
               href="https://wa.me/+573184961233"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center justify-center gap-2 px-4 py-2 text-sm sm:px-5 sm:py-2.5 sm:text-base font-semibold bg-gradient-to-r from-solaraOrange to-solaraGold text-black text-center rounded-full hover:scale-105 transition-transform"
+              className="mt-4 flex items-center justify-center gap-2 px-6 py-3 font-semibold bg-primary hover:bg-primaryLight text-white text-center rounded-full transition-all"
               onClick={closeMobileMenu}
             > 
-              <WhatsAppIcon />
-              WhatsApp
+              <WhatsAppIcon className="w-4 h-4" />
+              Contactar
             </a>
           </div>
         </div>

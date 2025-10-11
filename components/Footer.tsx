@@ -28,7 +28,7 @@ export const Footer = () => {
   };
 
   return (
-    <footer className="relative bg-gradient-to-b from-[#08080a] to-[#060608] border-t border-white/[0.05]">
+    <footer className="relative bg-bgCard border-t border-white/[0.06]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-16 pb-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Columna 1: Logo y descripción */}
@@ -47,10 +47,10 @@ export const Footer = () => {
                 <div className="text-xs text-gray-400">Desarrollo Web Premium</div>
               </div>
             </div>
-            <p className="text-gray-400 text-sm leading-relaxed">
+            <p className="text-textSecondary text-sm leading-relaxed font-light">
               Creamos sitios web profesionales que{" "}
-              <span className="text-white font-semibold">convierten visitantes en clientes</span>. Diseño
-              moderno, velocidad ultrarrrápida y soporte dedicado.
+              <span className="text-white font-medium">convierten visitantes en clientes</span>. Diseño
+              moderno, velocidad ultrarápida y soporte dedicado.
             </p>
             {/* Redes sociales */}
             <div className="flex items-center gap-4">
@@ -58,10 +58,10 @@ export const Footer = () => {
                 href="https://www.instagram.com/SolaraSites"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-gradient-to-br from-white/10 to-white/5 border border-white/10 flex items-center justify-center hover:border-solaraOrange/50 hover:bg-solaraOrange/10 transition-all group"
+                className="w-10 h-10 rounded-lg bg-white/[0.03] border border-white/[0.08] flex items-center justify-center hover:border-primary/50 hover:bg-primary/10 transition-all group"
               >
                 <svg
-                  className="w-5 h-5 text-gray-400 group-hover:text-solaraOrange transition-colors"
+                  className="w-5 h-5 text-textSecondary group-hover:text-primary transition-colors"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -72,10 +72,10 @@ export const Footer = () => {
                 href="https://wa.me/+573184961233"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-full bg-gradient-to-br from-white/10 to-white/5 border border-white/10 flex items-center justify-center hover:border-solaraGreen/50 hover:bg-solaraGreen/10 transition-all group"
+                className="w-10 h-10 rounded-lg bg-white/[0.03] border border-white/[0.08] flex items-center justify-center hover:border-success/50 hover:bg-success/10 transition-all group"
               >
                 <svg
-                  className="w-5 h-5 text-gray-400 group-hover:text-solaraGreen transition-colors"
+                  className="w-5 h-5 text-textSecondary group-hover:text-success transition-colors"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -87,7 +87,7 @@ export const Footer = () => {
 
           {/* Columna 2: Servicios */}
           <div>
-            <h3 className="text-white font-bold text-sm uppercase tracking-wider mb-6">
+            <h3 className="text-white font-semibold text-sm mb-6">
               Servicios
             </h3>
             <ul className="space-y-3">
@@ -95,7 +95,7 @@ export const Footer = () => {
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="text-gray-400 text-sm hover:text-solaraOrange transition-colors inline-flex items-center gap-2 group"
+                    className="text-textSecondary text-sm hover:text-primary transition-colors inline-flex items-center gap-2 group"
                   >
                     <ChevronRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
                     {link.name}
@@ -107,7 +107,7 @@ export const Footer = () => {
 
           {/* Columna 3: Empresa */}
           <div>
-            <h3 className="text-white font-bold text-sm uppercase tracking-wider mb-6">
+            <h3 className="text-white font-semibold text-sm mb-6">
               Empresa
             </h3>
             <ul className="space-y-3">
@@ -115,7 +115,7 @@ export const Footer = () => {
                 <li key={link.name}>
                   <a
                     href={link.href}
-                    className="text-gray-400 text-sm hover:text-solaraOrange transition-colors inline-flex items-center gap-2 group"
+                    className="text-textSecondary text-sm hover:text-primary transition-colors inline-flex items-center gap-2 group"
                   >
                     <ChevronRight className="w-4 h-4 opacity-0 group-hover:opacity-100 transition-opacity" />
                     {link.name}
@@ -127,41 +127,41 @@ export const Footer = () => {
 
           {/* Columna 4: Contacto */}
           <div>
-            <h3 className="text-white font-bold text-sm uppercase tracking-wider mb-6">
+            <h3 className="text-white font-semibold text-sm mb-6">
               Contacto
             </h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
-                <Mail className="w-5 h-5 text-solaraOrange flex-shrink-0 mt-0.5" />
+                <Mail className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                 <div>
-                  <div className="text-xs text-gray-500 mb-1">Email</div>
+                  <div className="text-xs text-textTertiary mb-1">Email</div>
                   <a
                     href="mailto:contacto@solarasites.com"
-                    className="text-gray-300 text-sm hover:text-solaraOrange transition-colors"
+                    className="text-textSecondary text-sm hover:text-primary transition-colors"
                   >
                     contacto@solarasites.com
                   </a>
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <WhatsAppIcon className="w-5 h-5 text-solaraGreen flex-shrink-0 mt-0.5" />
+                <WhatsAppIcon className="w-5 h-5 text-success flex-shrink-0 mt-0.5" />
                 <div>
-                  <div className="text-xs text-gray-500 mb-1">WhatsApp</div>
+                  <div className="text-xs text-textTertiary mb-1">WhatsApp</div>
                   <a
                     href="https://wa.me/+573184961233"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-300 text-sm hover:text-solaraGreen transition-colors"
+                    className="text-textSecondary text-sm hover:text-success transition-colors"
                   >
                     +57 318 496 1233
                   </a>
                 </div>
               </li>
               <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-solaraBlue flex-shrink-0 mt-0.5" />
+                <MapPin className="w-5 h-5 text-secondary flex-shrink-0 mt-0.5" />
                 <div>
-                  <div className="text-xs text-gray-500 mb-1">Ubicación</div>
-                  <span className="text-gray-300 text-sm">Colombia</span>
+                  <div className="text-xs text-textTertiary mb-1">Ubicación</div>
+                  <span className="text-textSecondary text-sm">Colombia</span>
                 </div>
               </li>
             </ul>
@@ -169,21 +169,21 @@ export const Footer = () => {
         </div>
 
         {/* Footer bottom */}
-        <div className="border-t border-white/10 py-8">
+        <div className="border-t border-white/[0.06] py-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <div className="text-sm text-gray-400 text-center md:text-left">
+            <div className="text-sm text-textSecondary text-center md:text-left">
               © <span id="year">{year}</span>{" "}
-              <span className="text-white font-semibold">SolaraSites</span>. Todos los derechos reservados.
+              <span className="text-white font-medium">SolaraSites</span>. Todos los derechos reservados.
             </div>
-            <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-gray-400">
+            <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-textSecondary">
               <a href="#" className="hover:text-white transition-colors">
                 Términos de Servicio
               </a>
-              <span className="text-gray-600">•</span>
+              <span className="text-textTertiary">•</span>
               <a href="#" className="hover:text-white transition-colors">
                 Política de Privacidad
               </a>
-              <span className="text-gray-600">•</span>
+              <span className="text-textTertiary">•</span>
               <a href="#contact" className="hover:text-white transition-colors">
                 Contacto
               </a>

@@ -7,16 +7,15 @@ const services = [
     title: "Landing Page",
     subtitle: "Tu vitrina digital lista para vender",
     image: "/images/services/Landing_Basic_WebSite.png",
-    badge: "⚡ 3-5 DÍAS",
-    badgeColor: "from-solaraOrange/90 to-solaraGold/90",
-    badgeTextColor: "text-black",
+    badge: "3-5 días",
+    badgeColor: "bg-[#0071e3]/15 border-[#0071e3]/40",
+    badgeTextColor: "text-[#2196F3]",
     price: "$350K",
-    priceGradient: "from-solaraOrange to-solaraGold",
-    buttonColor: "from-solaraOrange to-solaraGold",
-    buttonText: "text-black",
-    hoverBorder: "hover:border-solaraOrange/50",
-    hoverShadow: "hover:shadow-solaraOrange/20",
-    checkColor: "text-solaraGold",
+    priceColor: "from-[#0071e3] to-[#2196F3]",
+    hoverBorder: "hover:border-[#0071e3]/40",
+    hoverShadow: "hover:shadow-[#0071e3]/20",
+    checkColor: "text-[#0071e3]",
+    cardBg: "from-[#0071e3]/5 to-transparent",
     features: ["Diseño premium", "SEO optimizado", "Responsive"],
     whatsappText: "Hola,%20quiero%20una%20Landing%20Page",
   },
@@ -25,38 +24,37 @@ const services = [
     title: "Web Corporativa",
     subtitle: "Sitio completo con blog y CMS",
     image: "/images/services/Corporate_Website.png",
-    badge: "⭐ POPULAR",
-    badgeColor: "from-solaraBlue/90 to-solaraPurple/90",
-    badgeTextColor: "text-white",
+    badge: "Más popular",
+    badgeColor: "bg-gradient-to-r from-[#7C3AED]/15 to-[#EC4899]/15 border-[#7C3AED]/40",
+    badgeTextColor: "text-[#A78BFA]",
     price: "$550K",
-    priceGradient: "from-solaraBlue to-solaraPurple",
-    buttonColor: "from-solaraBlue to-solaraPurple",
-    buttonText: "text-white",
-    hoverBorder: "hover:border-solaraBlue/50",
-    hoverShadow: "hover:shadow-solaraBlue/20",
-    checkColor: "text-solaraBlue",
+    priceColor: "from-[#7C3AED] via-[#A78BFA] to-[#EC4899]",
+    hoverBorder: "hover:border-[#7C3AED]/40",
+    hoverShadow: "hover:shadow-[#7C3AED]/20",
+    checkColor: "text-[#A78BFA]",
+    cardBg: "from-[#7C3AED]/5 to-[#EC4899]/5",
     features: ["Múltiples páginas", "Blog + CMS", "SEO avanzado"],
     whatsappText: "Hola,%20quiero%20una%20Web%20Corporativa",
+    isPopular: true,
   },
   {
     id: 3,
     title: "E-commerce / App",
     subtitle: "Tienda online o app a medida",
     image: "/images/services/App_Ecommerce.png",
-    badge: "🚀 ENTERPRISE",
-    badgeColor: "from-solaraPurple/90 to-solaraPink/90",
-    badgeTextColor: "text-white",
+    badge: "Enterprise",
+    badgeColor: "bg-gradient-to-r from-[#06B6D4]/15 to-[#10B981]/15 border-[#06B6D4]/40",
+    badgeTextColor: "text-[#06B6D4]",
     price: "$900K+",
     priceLabel: "Variable",
-    priceGradient: "from-solaraPurple to-solaraPink",
-    buttonColor: "from-solaraPurple to-solaraPink",
-    buttonText: "text-white",
-    hoverBorder: "hover:border-solaraPurple/50",
-    hoverShadow: "hover:shadow-solaraPurple/20",
-    checkColor: "text-solaraPurple",
+    priceColor: "from-[#06B6D4] via-[#0EA5E9] to-[#10B981]",
+    hoverBorder: "hover:border-[#06B6D4]/40",
+    hoverShadow: "hover:shadow-[#06B6D4]/20",
+    checkColor: "text-[#06B6D4]",
+    cardBg: "from-[#06B6D4]/5 to-[#10B981]/5",
     features: ["Usuarios y roles", "Pagos integrados", "Dashboard admin"],
     whatsappText: "Hola,%20quiero%20un%20E-commerce%20o%20App",
-    buttonLabel: "Consultar proyecto",
+    buttonLabel: "Consultar",
   },
 ];
 
@@ -74,23 +72,26 @@ export const ServicesSection = () => {
       ></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
-        {/* Header de sección */}
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-solaraOrange/20 to-solaraBlue/20 border border-solaraOrange/30 mb-4">
-            <Rocket className="w-4 h-4 text-solaraOrange" />
-            <span className="text-xs font-bold bg-gradient-to-r from-solaraOrange to-solaraGold bg-clip-text text-transparent">
-              🚀 SOLUCIONES QUE CONVIERTEN
+        {/* Header de sección minimalista */}
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.03] border border-white/[0.08] mb-6">
+            <Rocket className="w-4 h-4 text-primary" />
+            <span className="text-sm font-medium text-textSecondary">
+              Nuestros servicios
             </span>
           </div>
-          <h2 className="font-display text-3xl md:text-5xl text-white mb-3 leading-tight">
-            Tu negocio merece{" "}
-            <span className="bg-gradient-to-r from-solaraOrange via-solaraGold to-solaraBlue bg-clip-text text-transparent">
-              destacar en línea
+          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-white mb-4 leading-tight font-bold">
+            Soluciones{" "}
+            <span 
+              className="bg-gradient-to-r from-[#0071e3] via-[#7C3AED] to-[#06B6D4] bg-clip-text text-transparent"
+              style={{ backgroundSize: '200% 200%' }}
+            >
+              profesionales
             </span>
           </h2>
-          <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto">
-            Diseño premium, velocidad extrema y resultados medibles.{" "}
-            <strong className="text-white">Todo en un solo lugar.</strong>
+          <p className="text-textSecondary text-lg md:text-xl max-w-2xl mx-auto font-light">
+            Desde landing pages hasta aplicaciones complejas.{" "}
+            <span className="text-white font-medium">Siempre con calidad premium.</span>
           </p>
         </div>
 
@@ -99,57 +100,55 @@ export const ServicesSection = () => {
           {services.map((service) => (
             <article
               key={service.id}
-              className={`group relative bg-gradient-to-br from-white/[0.05] to-white/[0.01] border border-white/[0.08] rounded-2xl overflow-hidden ${service.hoverBorder} hover:-translate-y-2 transition-all duration-500 hover:shadow-2xl ${service.hoverShadow}`}
+              className={`group relative bg-gradient-to-br ${service.cardBg} border border-white/[0.08] rounded-2xl overflow-hidden ${service.hoverBorder} hover:-translate-y-2 transition-all duration-500 hover:shadow-2xl ${service.hoverShadow} ${service.isPopular ? 'ring-2 ring-[#7C3AED]/30' : ''}`}
             >
               {/* Imagen arriba */}
-              <div className="relative w-full aspect-[4/3] overflow-hidden bg-gradient-to-br from-[#0b0b0d] to-[#121214]">
+              <div className="relative w-full aspect-[4/3] overflow-hidden bg-bgCard">
                 <Image
                   src={service.image}
                   alt={service.title}
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="object-cover group-hover:scale-110 transition-transform duration-700"
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
                   loading="lazy"
                 />
-                {/* Badge en la imagen */}
+                {/* Badge minimalista */}
                 <div
-                  className={`absolute top-4 left-4 px-3 py-1.5 rounded-full bg-gradient-to-r ${service.badgeColor} backdrop-blur-md`}
+                  className={`absolute top-4 right-4 px-3 py-1.5 rounded-full ${service.badgeColor} border backdrop-blur-xl`}
                 >
-                  <span className={`text-xs font-bold ${service.badgeTextColor}`}>
+                  <span className={`text-xs font-semibold ${service.badgeTextColor}`}>
                     {service.badge}
                   </span>
                 </div>
               </div>
 
               {/* Contenido abajo */}
-              <div className="p-6 space-y-4">
+              <div className="p-6 space-y-5">
                 <div>
-                  <h3 className="text-2xl font-display text-white mb-2">
+                  <h3 className="text-2xl font-semibold text-white mb-2">
                     {service.title}
                   </h3>
-                  <p className="text-gray-400 text-sm">{service.subtitle}</p>
+                  <p className="text-textSecondary text-sm">{service.subtitle}</p>
                 </div>
 
-                <div className="space-y-2">
+                <div className="space-y-2.5">
                   {service.features.map((feature, index) => (
                     <div
                       key={index}
-                      className="flex items-center gap-2 text-sm text-gray-300"
+                      className="flex items-center gap-2.5 text-sm text-textSecondary"
                     >
-                      <Check className={`w-4 h-4 ${service.checkColor}`} />
+                      <Check className={`w-4 h-4 ${service.checkColor} flex-shrink-0`} />
                       {feature}
                     </div>
                   ))}
                 </div>
 
-                <div className="pt-4 border-t border-white/10">
-                  <div className="flex items-center justify-between mb-3">
-                    <div
-                      className={`text-3xl font-bold bg-gradient-to-r ${service.priceGradient} bg-clip-text text-transparent`}
-                    >
+                <div className="pt-4 border-t border-white/[0.06]">
+                  <div className="flex items-baseline justify-between mb-4">
+                    <div className={`text-3xl font-semibold bg-gradient-to-r ${service.priceColor} bg-clip-text text-transparent`}>
                       {service.price}
                     </div>
-                    <span className="text-xs text-gray-500">
+                    <span className="text-xs text-gray-400">
                       {service.priceLabel || "Pago único"}
                     </span>
                   </div>
@@ -157,9 +156,9 @@ export const ServicesSection = () => {
                     href={`https://wa.me/+573184961233?text=${service.whatsappText}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`block text-center px-4 py-2.5 rounded-xl bg-gradient-to-r ${service.buttonColor} ${service.buttonText} font-bold hover:scale-105 transition-all text-sm`}
+                    className={`block text-center px-4 py-3 rounded-full bg-gradient-to-r ${service.priceColor} text-white font-semibold hover:scale-105 hover:shadow-lg transition-all text-sm`}
                   >
-                    {service.buttonLabel || "Comenzar ahora"}
+                    {service.buttonLabel || "Solicitar"}
                   </a>
                 </div>
               </div>
