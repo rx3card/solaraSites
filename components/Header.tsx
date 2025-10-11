@@ -74,7 +74,7 @@ export const Header = () => {
             href="https://wa.me/+573184961233"
             target="_blank"
             rel="noopener noreferrer"
-            className="ml-2 inline-flex items-center gap-2 px-5 py-2.5 bg-primary hover:bg-primaryLight rounded-full text-white font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-primary/30 hover:scale-105"
+            className="ml-2 inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-[#EC4899] to-[#F472B6] hover:from-[#DB2777] hover:to-[#EC4899] rounded-full text-white font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-[#EC4899]/40 hover:scale-105"
             aria-label="Contactar por WhatsApp"
           >
             <WhatsAppIcon className="w-4 h-4" />
@@ -116,7 +116,7 @@ export const Header = () => {
               href="https://wa.me/+573184961233"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 flex items-center justify-center gap-2 px-6 py-3 font-semibold bg-primary hover:bg-primaryLight text-white text-center rounded-full transition-all"
+              className="mt-4 flex items-center justify-center gap-2 px-6 py-3 font-semibold bg-gradient-to-r from-[#EC4899] to-[#F472B6] hover:from-[#DB2777] hover:to-[#EC4899] text-white text-center rounded-full transition-all"
               onClick={closeMobileMenu}
             > 
               <WhatsAppIcon className="w-4 h-4" />

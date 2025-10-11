@@ -65,13 +65,13 @@ export const ContactSection = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/[0.03] border border-white/[0.08] mb-6">
-            <Mail className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium text-textSecondary">Respuesta rápida garantizada</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#10B981]/10 border border-[#10B981]/30 mb-6">
+            <Mail className="w-4 h-4 text-[#10B981]" />
+            <span className="text-sm font-medium text-[#10B981]">Respuesta rápida garantizada</span>
           </div>
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl text-white font-bold mb-4">
             Hablemos de tu{" "}
-            <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#10B981] to-[#06B6D4] bg-clip-text text-transparent">
               proyecto
             </span>
           </h2>
@@ -96,7 +96,7 @@ export const ContactSection = () => {
                 href="https://wa.me/+573184961233?text=Hola%20SolaraSites,%20quiero%20información"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex items-center gap-4 p-5 rounded-xl bg-primary/5 border border-primary/20 hover:border-primary/40 hover:bg-primary/10 transition-all mb-4"
+                className="group flex items-center gap-4 p-5 rounded-xl bg-[#10B981]/5 border border-[#10B981]/20 hover:border-[#10B981]/40 hover:bg-[#10B981]/10 transition-all mb-4"
               >
                 <div className="w-12 h-12 rounded-lg bg-primary flex items-center justify-center flex-shrink-0">
                   <WhatsAppIcon className="w-6 h-6" />
@@ -202,7 +202,7 @@ export const ContactSection = () => {
                     type="tel"
                     className={`w-full rounded-xl bg-white/5 border ${
                       errors.phone ? 'border-red-500' : 'border-white/[0.08]'
-                    } p-4 text-white placeholder-gray-500 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none`}
+                    } p-4 text-white placeholder-gray-500 focus:border-[#10B981] focus:ring-2 focus:ring-[#10B981]/20 transition-all outline-none`}
                     placeholder="+57 300 123 4567"
                   />
                   {errors.phone && (
@@ -221,7 +221,7 @@ export const ContactSection = () => {
                     type="email"
                     className={`w-full rounded-xl bg-white/5 border ${
                       errors.email ? 'border-red-500' : 'border-white/[0.08]'
-                    } p-4 text-white placeholder-gray-500 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none`}
+                    } p-4 text-white placeholder-gray-500 focus:border-[#10B981] focus:ring-2 focus:ring-[#10B981]/20 transition-all outline-none`}
                     placeholder="ejemplo@correo.com"
                   />
                   {errors.email && (
@@ -237,7 +237,7 @@ export const ContactSection = () => {
                     {...register('projectType')}
                     className={`w-full rounded-xl bg-white/5 border ${
                       errors.projectType ? 'border-red-500' : 'border-white/[0.08]'
-                    } p-4 text-white focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none`}
+                    } p-4 text-white focus:border-[#10B981] focus:ring-2 focus:ring-[#10B981]/20 transition-all outline-none`}
                   >
                     <option value="" className="bg-gray-900">
                       Selecciona una opción
@@ -269,7 +269,7 @@ export const ContactSection = () => {
                   {...register('message')}
                   className={`w-full rounded-xl bg-white/5 border ${
                     errors.message ? 'border-red-500' : 'border-white/[0.08]'
-                  } p-4 text-white placeholder-gray-500 h-32 focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all outline-none resize-none`}
+                  } p-4 text-white placeholder-gray-500 h-32 focus:border-[#10B981] focus:ring-2 focus:ring-[#10B981]/20 transition-all outline-none resize-none`}
                   placeholder="Describe qué necesitas, objetivos, funcionalidades importantes..."
                 ></textarea>
                 {errors.message && (
@@ -281,7 +281,7 @@ export const ContactSection = () => {
                 <button
                   type="submit"
                   disabled={submitState.status === 'submitting'}
-                  className="group w-full flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-primary hover:bg-primaryLight text-white font-semibold hover:shadow-lg hover:shadow-primary/30 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="group w-full flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-[#10B981] to-[#06B6D4] hover:from-[#059669] hover:to-[#0891B2] text-white font-semibold hover:shadow-lg hover:shadow-[#10B981]/40 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {submitState.status === 'submitting' ? (
                     <span>Enviando…</span>

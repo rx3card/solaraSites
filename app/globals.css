@@ -34,6 +34,18 @@
     transform: perspective(1000px) rotateX(60deg) translateZ(-200px);
     animation: grid-3d-flow 40s linear infinite;
     opacity: 0.4;
+    will-change: transform;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+
+  /* Simplificar en móvil */
+  @media (max-width: 768px) {
+    body::before {
+      background-size: 200px 200px, 200px 200px, 80px 80px, 80px 80px;
+      animation: grid-3d-flow-mobile 60s linear infinite;
+      opacity: 0.25;
+    }
   }
 
   /* ==== CAPA 2: Auroras de Color Flotantes ==== */
@@ -54,29 +66,64 @@
       radial-gradient(ellipse 400px 500px at 10% 90%, rgba(236, 72, 153, 0.08) 0%, transparent 50%);
     animation: aurora-flow 25s ease-in-out infinite;
     mix-blend-mode: screen;
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+
+  /* Simplificar auroras en móvil */
+  @media (max-width: 768px) {
+    body::after {
+      background: 
+        radial-gradient(ellipse 500px 400px at 30% 40%, rgba(255, 215, 0, 0.08) 0%, transparent 50%),
+        radial-gradient(ellipse 400px 500px at 70% 60%, rgba(124, 58, 237, 0.10) 0%, transparent 50%);
+      animation: aurora-flow-mobile 35s ease-in-out infinite;
+    }
   }
 
   @keyframes grid-3d-flow {
     0% {
-      transform: perspective(1000px) rotateX(60deg) translateZ(-200px) translateY(0);
+      transform: perspective(1000px) rotateX(60deg) translateZ(-200px) translateY(0) translate3d(0, 0, 0);
     }
     100% {
-      transform: perspective(1000px) rotateX(60deg) translateZ(-200px) translateY(150px);
+      transform: perspective(1000px) rotateX(60deg) translateZ(-200px) translateY(150px) translate3d(0, 0, 0);
+    }
+  }
+
+  /* Animación simplificada para móvil */
+  @keyframes grid-3d-flow-mobile {
+    0% {
+      transform: perspective(1000px) rotateX(60deg) translateZ(-200px) translateY(0) translate3d(0, 0, 0);
+    }
+    100% {
+      transform: perspective(1000px) rotateX(60deg) translateZ(-200px) translateY(100px) translate3d(0, 0, 0);
     }
   }
 
   @keyframes aurora-flow {
     0%, 100% {
       opacity: 0.6;
-      transform: scale(1) rotate(0deg);
+      transform: scale(1) rotate(0deg) translate3d(0, 0, 0);
     }
     33% {
       opacity: 0.8;
-      transform: scale(1.1) rotate(5deg);
+      transform: scale(1.1) rotate(5deg) translate3d(0, 0, 0);
     }
     66% {
       opacity: 0.7;
-      transform: scale(0.95) rotate(-3deg);
+      transform: scale(0.95) rotate(-3deg) translate3d(0, 0, 0);
+    }
+  }
+
+  /* Animación simplificada de auroras para móvil */
+  @keyframes aurora-flow-mobile {
+    0%, 100% {
+      opacity: 0.5;
+      transform: scale(1) translate3d(0, 0, 0);
+    }
+    50% {
+      opacity: 0.7;
+      transform: scale(1.05) translate3d(0, 0, 0);
     }
   }
 }
@@ -106,6 +153,8 @@
     border-radius: 50%;
     box-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
     animation: twinkle 3s ease-in-out infinite;
+    will-change: opacity, transform;
+    backface-visibility: hidden;
   }
 
   /* Estrellas medianas con brillo dorado */
@@ -117,6 +166,8 @@
     border-radius: 50%;
     box-shadow: 0 0 8px rgba(255, 215, 0, 0.6);
     animation: twinkle-gold 4s ease-in-out infinite;
+    will-change: opacity, transform;
+    backface-visibility: hidden;
   }
 
   /* Partículas de polvo estelar */
@@ -127,23 +178,25 @@
     background: rgba(255, 255, 255, 0.4);
     border-radius: 50%;
     animation: float-slow 15s linear infinite;
+    will-change: transform;
+    backface-visibility: hidden;
   }
 
   @keyframes twinkle {
-    0%, 100% { opacity: 0.3; transform: scale(1); }
-    50% { opacity: 1; transform: scale(1.2); }
+    0%, 100% { opacity: 0.3; transform: scale(1) translate3d(0, 0, 0); }
+    50% { opacity: 1; transform: scale(1.2) translate3d(0, 0, 0); }
   }
 
   @keyframes twinkle-gold {
-    0%, 100% { opacity: 0.6; transform: scale(1); filter: brightness(1); }
-    50% { opacity: 1; transform: scale(1.5); filter: brightness(1.5); }
+    0%, 100% { opacity: 0.6; transform: scale(1) translate3d(0, 0, 0); filter: brightness(1); }
+    50% { opacity: 1; transform: scale(1.5) translate3d(0, 0, 0); filter: brightness(1.5); }
   }
 
   @keyframes float-slow {
-    0% { transform: translateY(0) translateX(0); opacity: 0; }
+    0% { transform: translateY(0) translateX(0) translate3d(0, 0, 0); opacity: 0; }
     10% { opacity: 0.4; }
     90% { opacity: 0.4; }
-    100% { transform: translateY(-100vh) translateX(50px); opacity: 0; }
+    100% { transform: translateY(-100vh) translateX(50px) translate3d(0, 0, 0); opacity: 0; }
   }
 
   /* ==== EFECTO DE PROFUNDIDAD 3D PARA COMPONENTES ==== */

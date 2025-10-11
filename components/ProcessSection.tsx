@@ -7,15 +7,16 @@ const processSteps = [
     title: "Consultoría & Brief",
     description: "Llamada de 30-60 min donde entendemos tu negocio, objetivos y público.",
     icon: MessageSquare,
-    iconBg: "from-solaraOrange/20 to-solaraGold/20",
-    iconColor: "text-solaraOrange",
-    numberBg: "from-solaraOrange to-solaraGold",
-    numberText: "text-black",
-    borderColor: "border-solaraOrange/30",
-    hoverBorder: "hover:border-solaraOrange",
-    hoverShadow: "hover:shadow-solaraOrange/20",
-    badgeBg: "bg-solaraOrange/10 border-solaraOrange/30",
-    badgeText: "text-solaraOrange",
+    iconBg: "from-[#0071e3]/20 to-[#2196F3]/20",
+    iconColor: "text-[#0071e3]",
+    numberBg: "from-[#0071e3] to-[#2196F3]",
+    numberText: "text-white",
+    numberShadow: "0 8px 30px rgba(0, 113, 227, 0.4)",
+    borderColor: "border-[#0071e3]/30",
+    hoverBorder: "hover:border-[#0071e3]/50",
+    hoverShadow: "hover:shadow-[#0071e3]/20",
+    badgeBg: "bg-[#0071e3]/10 border-[#0071e3]/30",
+    badgeText: "text-[#0071e3]",
     duration: "1 día",
     deliverables: ["Brief completo", "Roadmap del proyecto"],
   },
@@ -25,15 +26,16 @@ const processSteps = [
     title: "Diseño & Prototipo",
     description: "Creamos mockups interactivos en Figma para que visualices exactamente cómo quedará.",
     icon: Paintbrush,
-    iconBg: "from-solaraBlue/20 to-solaraPurple/20",
-    iconColor: "text-solaraBlue",
-    numberBg: "from-solaraBlue to-solaraPurple",
-    numberText: "text-white",
-    borderColor: "border-solaraBlue/30",
-    hoverBorder: "hover:border-solaraBlue",
-    hoverShadow: "hover:shadow-solaraBlue/20",
-    badgeBg: "bg-solaraBlue/10 border-solaraBlue/30",
-    badgeText: "text-solaraBlue",
+    iconBg: "from-[#FFD700]/15 to-[#FFC107]/15",
+    iconColor: "text-[#FFD700]",
+    numberBg: "from-[#FFD700] to-[#FFC107]",
+    numberText: "text-black",
+    numberShadow: "0 8px 30px rgba(255, 215, 0, 0.35)",
+    borderColor: "border-[#FFD700]/30",
+    hoverBorder: "hover:border-[#FFD700]/50",
+    hoverShadow: "hover:shadow-[#FFD700]/20",
+    badgeBg: "bg-[#FFD700]/10 border-[#FFD700]/30",
+    badgeText: "text-[#FFD700]",
     duration: "2-4 días",
     deliverables: ["Prototipo navegable", "Guía de estilos"],
   },
@@ -43,15 +45,16 @@ const processSteps = [
     title: "Desarrollo",
     description: "Código limpio y optimizado con React, Next.js o Tailwind. Todo probado.",
     icon: Code,
-    iconBg: "from-solaraPurple/20 to-solaraPink/20",
-    iconColor: "text-solaraPurple",
-    numberBg: "from-solaraPurple to-solaraPink",
+    iconBg: "from-[#7C3AED]/20 to-[#A78BFA]/20",
+    iconColor: "text-[#7C3AED]",
+    numberBg: "from-[#7C3AED] to-[#A78BFA]",
     numberText: "text-white",
-    borderColor: "border-solaraPurple/30",
-    hoverBorder: "hover:border-solaraPurple",
-    hoverShadow: "hover:shadow-solaraPurple/20",
-    badgeBg: "bg-solaraPurple/10 border-solaraPurple/30",
-    badgeText: "text-solaraPurple",
+    numberShadow: "0 8px 30px rgba(124, 58, 237, 0.35)",
+    borderColor: "border-[#7C3AED]/30",
+    hoverBorder: "hover:border-[#7C3AED]/50",
+    hoverShadow: "hover:shadow-[#7C3AED]/20",
+    badgeBg: "bg-[#7C3AED]/10 border-[#7C3AED]/30",
+    badgeText: "text-[#7C3AED]",
     duration: "3-10 días",
     deliverables: ["Sitio funcional", "100% responsive"],
   },
@@ -61,15 +64,16 @@ const processSteps = [
     title: "Entrega & Soporte",
     description: "Despliegue en producción, capacitación y soporte completo por 14 días.",
     icon: Sparkles,
-    iconBg: "from-solaraGreen/20 to-solaraBlue/20",
-    iconColor: "text-solaraGreen",
-    numberBg: "from-solaraGreen to-solaraBlue",
+    iconBg: "from-[#10B981]/20 to-[#06B6D4]/20",
+    iconColor: "text-[#10B981]",
+    numberBg: "from-[#10B981] to-[#06B6D4]",
     numberText: "text-white",
-    borderColor: "border-solaraGreen/30",
-    hoverBorder: "hover:border-solaraGreen",
-    hoverShadow: "hover:shadow-solaraGreen/20",
-    badgeBg: "bg-solaraGreen/10 border-solaraGreen/30",
-    badgeText: "text-solaraGreen",
+    numberShadow: "0 8px 30px rgba(16, 185, 129, 0.35)",
+    borderColor: "border-[#10B981]/30",
+    hoverBorder: "hover:border-[#10B981]/50",
+    hoverShadow: "hover:shadow-[#10B981]/20",
+    badgeBg: "bg-[#10B981]/10 border-[#10B981]/30",
+    badgeText: "text-[#10B981]",
     duration: "¡Listo!",
     deliverables: ["Sitio en producción", "14 días de soporte"],
   },
@@ -78,20 +82,20 @@ const processSteps = [
 export const ProcessSection = () => {
   return (
     <section id="process" className="relative py-24 overflow-hidden">
-      {/* Background decorativo */}
-      <div className="absolute inset-0 bg-gradient-to-b from-solaraPurple/5 via-transparent to-solaraOrange/5"></div>
-      <div className="absolute top-1/4 left-0 w-96 h-96 bg-solaraPurple/10 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-solaraOrange/10 rounded-full blur-3xl"></div>
+      {/* Background decorativo sutil */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#7C3AED]/5 via-transparent to-[#FFD700]/5"></div>
+      <div className="absolute top-1/4 left-0 w-96 h-96 bg-[#7C3AED]/8 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-[#FFD700]/8 rounded-full blur-3xl"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
         <div className="text-center mb-16">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-solaraBlue/20 to-solaraPurple/20 border border-solaraBlue/30 text-solaraBlue text-sm font-semibold mb-6">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-[#7C3AED]/15 to-[#06B6D4]/15 border border-[#7C3AED]/30 text-[#A78BFA] text-sm font-semibold mb-6">
             <Zap className="w-5 h-5" />
             <span>Proceso Ágil y Transparente</span>
           </div>
           <h2 className="font-display text-4xl md:text-5xl text-white font-bold mb-4">
             De la Idea al{" "}
-            <span className="bg-gradient-to-r from-solaraOrange via-solaraGold to-solaraBlue bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#0071e3] via-[#FFD700] to-[#10B981] bg-clip-text text-transparent">
               Lanzamiento
             </span>
           </h2>
@@ -102,9 +106,9 @@ export const ProcessSection = () => {
           </p>
         </div>
 
-        {/* Timeline con línea conectora */}
+        {/* Timeline con línea conectora colorida */}
         <div className="relative">
-          <div className="hidden lg:block absolute top-20 left-0 right-0 h-1 bg-gradient-to-r from-solaraOrange via-solaraBlue via-solaraPurple to-solaraGreen"></div>
+          <div className="hidden lg:block absolute top-20 left-0 right-0 h-1 bg-gradient-to-r from-[#0071e3] via-[#FFD700] via-[#7C3AED] to-[#10B981]"></div>
 
           <div className="grid lg:grid-cols-4 gap-8 lg:gap-6">
             {processSteps.map((step) => {
@@ -114,12 +118,12 @@ export const ProcessSection = () => {
                   <div
                     className={`relative bg-gradient-to-br from-white/[0.08] to-white/[0.02] border-2 ${step.borderColor} backdrop-blur-xl rounded-3xl p-8 ${step.hoverBorder} hover:-translate-y-3 transition-all duration-300 hover:shadow-2xl ${step.hoverShadow}`}
                   >
-                    {/* Número flotante */}
+                    {/* Número flotante con sombra personalizada */}
                     <div className="absolute -top-6 left-1/2 -translate-x-1/2">
                       <div
                         className={`w-14 h-14 rounded-full bg-gradient-to-br ${step.numberBg} flex items-center justify-center ${step.numberText} text-xl font-bold shadow-lg group-hover:scale-110 transition-transform`}
                         style={{
-                          boxShadow: `0 10px 40px rgba(255, 140, 41, 0.5)`,
+                          boxShadow: step.numberShadow,
                         }}
                       >
                         {step.number}
@@ -180,26 +184,26 @@ export const ProcessSection = () => {
         {/* Resumen timeline total */}
         <div className="mt-16 flex flex-col items-center gap-6">
           <div className="inline-flex items-center gap-4 px-8 py-4 rounded-2xl bg-gradient-to-r from-white/10 to-white/5 border border-white/20 backdrop-blur-lg">
-            <Zap className="w-6 h-6 text-solaraGold" />
+            <Zap className="w-6 h-6 text-[#FFD700]" />
             <div className="text-left">
               <div className="text-sm text-gray-400">Tiempo total promedio</div>
-              <div className="text-2xl font-bold bg-gradient-to-r from-solaraOrange to-solaraGold bg-clip-text text-transparent">
+              <div className="text-2xl font-bold bg-gradient-to-r from-[#0071e3] to-[#06B6D4] bg-clip-text text-transparent">
                 7-15 días
               </div>
             </div>
             <div className="h-12 w-px bg-white/20"></div>
             <div className="text-left">
               <div className="text-sm text-gray-400">Satisfacción del cliente</div>
-              <div className="text-2xl font-bold bg-gradient-to-r from-solaraGreen to-solaraBlue bg-clip-text text-transparent">
+              <div className="text-2xl font-bold bg-gradient-to-r from-[#10B981] to-[#06B6D4] bg-clip-text text-transparent">
                 95%
               </div>
             </div>
           </div>
 
-          {/* Botón CTA mejorado */}
+          {/* Botón CTA con morado premium */}
           <a
             href="#contact"
-            className="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-solaraOrange via-solaraGold to-solaraOrange text-black font-bold text-lg shadow-2xl shadow-solaraOrange/40 hover:shadow-solaraOrange/60 hover:-translate-y-1 transition-all duration-300"
+            className="group relative inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-[#7C3AED] via-[#A78BFA] to-[#7C3AED] text-white font-bold text-lg shadow-2xl shadow-[#7C3AED]/40 hover:shadow-[#7C3AED]/60 hover:-translate-y-1 transition-all duration-300"
             style={{ backgroundSize: "200% 100%" }}
           >
             <MessageSquare className="w-6 h-6 group-hover:rotate-12 transition-transform" />

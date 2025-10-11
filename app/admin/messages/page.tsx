@@ -178,10 +178,10 @@ export default function AdminMessagesPage() {
             <div className="flex items-center gap-3">
               <button
                 onClick={() => router.push('/admin')}
-                className="flex items-center gap-2 px-4 py-2 bg-white/5 hover:bg-white/10 rounded-full transition-colors"
+                className="flex items-center gap-2 px-4 py-2 bg-[#0071e3] hover:bg-[#0077ED] text-white rounded-full transition-colors font-medium text-sm"
               >
                 <LayoutDashboard className="w-4 h-4" />
-                <span className="hidden sm:inline text-sm font-medium">Dashboard</span>
+                <span className="hidden sm:inline">Dashboard</span>
               </button>
               <button
                 onClick={handleLogout}

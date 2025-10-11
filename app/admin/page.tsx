@@ -197,8 +197,8 @@ export default function AdminDashboard() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
           {/* Timeline Chart */}
           <div className="bg-white/[0.03] border border-white/10 rounded-xl sm:rounded-2xl p-4 sm:p-6">
-            <h3 className="text-lg sm:text-xl font-semibold text-white mb-4 sm:mb-6">Mensajes en el Tiempo</h3>
-            <ResponsiveContainer width="100%" height={250}>
+            <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-white mb-3 sm:mb-4 lg:mb-6">Mensajes en el Tiempo</h3>
+            <ResponsiveContainer width="100%" height={200} className="sm:!h-[250px]">
               <AreaChart data={timelineData}>
                 <defs>
                   <linearGradient id="colorMensajes" x1="0" y1="0" x2="0" y2="1">
@@ -206,9 +206,20 @@ export default function AdminDashboard() {
                     <stop offset="95%" stopColor="#0071e3" stopOpacity={0}/>
                   </linearGradient>
                 </defs>
-                <CartesianGrid strokeDasharray="3 3" stroke="#ffffff10" />
-                <XAxis dataKey="date" stroke="#86868b" style={{ fontSize: '12px' }} />
-                <YAxis stroke="#86868b" style={{ fontSize: '12px' }} />
+                <CartesianGrid strokeDasharray="3 3" stroke="#ffffff10" className="hidden sm:block" />
+                <XAxis 
+                  dataKey="date" 
+                  stroke="#86868b" 
+                  style={{ fontSize: '10px' }} 
+                  className="sm:text-xs"
+                  tick={{ fontSize: 10 }}
+                />
+                <YAxis 
+                  stroke="#86868b" 
+                  style={{ fontSize: '10px' }} 
+                  className="sm:text-xs"
+                  tick={{ fontSize: 10 }}
+                />
                 <Tooltip 
                   contentStyle={{ 
                     background: '#1d1d1f', 
@@ -216,6 +227,17 @@ export default function AdminDashboard() {
                     borderRadius: '12px',
                     color: '#f5f5f7'
                   }} 
+                />
+                <Legend 
+                  verticalAlign="bottom" 
+                  height={36}
+                  iconType="circle"
+                  wrapperStyle={{
+                    paddingTop: '12px',
+                    fontSize: '11px'
+                  }}
+                  iconSize={8}
+                  className="text-xs sm:text-sm"
                 />
                 <Area 
                   type="monotone" 
@@ -231,16 +253,23 @@ export default function AdminDashboard() {
 
           {/* Messages by Type */}
           <div className="bg-white/[0.03] border border-white/10 rounded-xl sm:rounded-2xl p-4 sm:p-6">
-            <h3 className="text-lg sm:text-xl font-semibold text-white mb-4 sm:mb-6">Por Tipo de Proyecto</h3>
-            <ResponsiveContainer width="100%" height={250}>
+            <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-white mb-3 sm:mb-4 lg:mb-6">Mensajes por Tipo</h3>
+            <ResponsiveContainer width="100%" height={200} className="sm:!h-[250px]">
               <PieChart>
                 <Pie
                   data={messagesByType}
                   cx="50%"
                   cy="50%"
                   labelLine={false}
-                  label={({ name, percent }: any) => `${name} ${(percent * 100).toFixed(0)}%`}
-                  outerRadius={100}
+                  label={(entry) => {
+                    // Mostrar labels solo en desktop
+                    if (typeof window !== 'undefined' && window.innerWidth >= 640) {
+                      return `${entry.name}: ${entry.value}`;
+                    }
+                    return '';
+                  }}
+                  outerRadius={60}
+                  innerRadius={0}
                   fill="#8884d8"
                   dataKey="value"
                 >
