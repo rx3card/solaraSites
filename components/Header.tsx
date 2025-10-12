@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { WhatsAppIcon } from "./icons/WhatsAppIcon";
 import { Menu, X } from "lucide-react";
@@ -39,19 +38,7 @@ export const Header = () => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
-        {/* Logo */}
-        <Link href="/" className="flex items-center gap-3" aria-label="SolaraSites — Inicio">
-          <Image
-            src="/logoV2.png"
-            alt="SolaraSites logo"
-            width={104}
-            height={44}
-            className="w-[40px] h-[40px] sm:w-[104px] sm:h-[44px] object-contain drop-shadow-[0_12px_30px_rgba(255,140,41,0.12)]"
-            priority
-          />
-        </Link>
-
-        {/* Nombre de marca */}
+        {/* Brand Text */}
         <Link href="/" className="flex items-center gap-3 group" aria-label="SolaraSites — Inicio">
           <span className="text-lg sm:text-xl font-display font-semibold text-white tracking-tight transition-all group-hover:text-primary">
             Solara<span className="text-primary">Sites</span>

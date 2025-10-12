@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import { StarsBackground } from "@/components/StarsBackground";
+import { FloatingLogo } from "@/components/FloatingLogo";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
     siteName: "SolaraSites",
     images: [
       {
-        url: "https://solarasites.vercel.app/logoV2.png",
+        url: "https://solarasites.vercel.app/logo_solaraSites-dark.svg",
         alt: "Logotipo de SolaraSites",
       },
     ],
@@ -46,11 +47,11 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "SolaraSites — Webs que eclipsan a las demás",
     description: "Diseño web minimalista y profesional que convierte visitantes en clientes.",
-    images: ["https://solarasites.vercel.app/logoV2.png"],
+    images: ["https://solarasites.vercel.app/logo_solaraSites-dark.svg"],
   },
   icons: {
-    icon: "/logoV2.png",
-    apple: "/logoV2.png",
+    icon: "/logo_solaraSites-dark.svg",
+    apple: "/logo_solaraSites-dark.svg",
   },
 };
 
@@ -63,6 +64,7 @@ export default function RootLayout({
     <html lang="es" className={`${inter.variable} ${poppins.variable}`}>
       <body className="font-sans">
         <StarsBackground />
+        <FloatingLogo />
         {children}
       </body>
     </html>

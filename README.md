@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="logoV2.png" alt="SolaraSites Logo" width="200"/>
+  <img src="logo_solaraSites-dark.svg" alt="SolaraSites Logo" width="200"/>
   
   # 🌟 SolaraSites
   
@@ -204,7 +204,7 @@ http://localhost:8000
 **Modificar contenido**:
 - Textos: Buscar y reemplazar en `index.html`
 - Imágenes: Colocar en carpeta `/images/`
-- Logo: Reemplazar `logoV2.png`
+- Logo: Reemplazar `logo_solaraSites-dark.svg`
 
 ---
 
@@ -214,7 +214,7 @@ http://localhost:8000
 solaraSites/
 │
 ├── index.html              # Página principal
-├── logoV2.png              # Logo de la empresa
+├── logo_solaraSites-dark.svg # Logo de la empresa
 ├── README.md               # Este archivo
 ├── MEJORAS_REALIZADAS.md   # Documentación de mejoras
 │

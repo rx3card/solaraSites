@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
 import { Mail, MapPin, ChevronRight } from "lucide-react";
 import { WhatsAppIcon } from "./icons/WhatsAppIcon";
+import { Logo } from "./Logo";
 
 export const Footer = () => {
   const [year, setYear] = useState(2025);
@@ -34,14 +34,7 @@ export const Footer = () => {
           {/* Columna 1: Logo y descripción */}
           <div className="space-y-6">
             <div className="flex items-center gap-3">
-              <Image
-                src="/logoV2.png"
-                alt="SolaraSites logo"
-                width={48}
-                height={48}
-                className="w-12 h-12 object-contain"
-                loading="lazy"
-              />
+              <Logo showText={false} className="w-28 h-28 flex-shrink-0"/>
               <div>
                 <div className="text-white font-bold text-lg">SolaraSites</div>
                 <div className="text-xs text-gray-400">Desarrollo Web Premium</div>
