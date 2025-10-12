@@ -28,7 +28,7 @@ export const Footer = () => {
   };
 
   return (
-    <footer className="relative bg-bgCard border-t border-white/[0.06]">
+    <footer className="relative bg-bgCard border-t border-white/[0.06]" role="contentinfo">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 pt-16 pb-8">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
           {/* Columna 1: Logo y descripción */}
@@ -52,6 +52,7 @@ export const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-lg bg-white/[0.03] border border-white/[0.08] flex items-center justify-center hover:border-primary/50 hover:bg-primary/10 transition-all group"
+                aria-label="Visitar nuestro Instagram"
               >
                 <svg
                   className="w-5 h-5 text-textSecondary group-hover:text-primary transition-colors"
@@ -66,6 +67,7 @@ export const Footer = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-lg bg-white/[0.03] border border-white/[0.08] flex items-center justify-center hover:border-success/50 hover:bg-success/10 transition-all group"
+                aria-label="Contactar por WhatsApp"
               >
                 <svg
                   className="w-5 h-5 text-textSecondary group-hover:text-success transition-colors"
@@ -79,7 +81,7 @@ export const Footer = () => {
           </div>
 
           {/* Columna 2: Servicios */}
-          <div>
+          <nav aria-label="Servicios">
             <h3 className="text-white font-semibold text-sm mb-6">
               Servicios
             </h3>
@@ -96,10 +98,10 @@ export const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </nav>
 
           {/* Columna 3: Empresa */}
-          <div>
+          <nav aria-label="Empresa">
             <h3 className="text-white font-semibold text-sm mb-6">
               Empresa
             </h3>
@@ -116,7 +118,7 @@ export const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </nav>
 
           {/* Columna 4: Contacto */}
           <div>
@@ -131,6 +133,7 @@ export const Footer = () => {
                   <a
                     href="mailto:contacto@solarasites.com"
                     className="text-textSecondary text-sm hover:text-primary transition-colors"
+                    aria-label="Enviar email a contacto@solarasites.com"
                   >
                     contacto@solarasites.com
                   </a>

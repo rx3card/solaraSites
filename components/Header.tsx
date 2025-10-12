@@ -31,6 +31,7 @@ export const Header = () => {
 
   return (
     <header
+      role="banner"
       className={`fixed w-full z-50 top-0 left-0 transition-all duration-500 ${
         isScrolled
           ? "backdrop-blur-xl bg-black/80 border-b border-white/[0.08] shadow-[0_8px_32px_rgba(0,0,0,0.4)]"
@@ -46,7 +47,7 @@ export const Header = () => {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-8 text-sm">
+        <nav className="hidden md:flex items-center gap-8 text-sm" role="navigation" aria-label="Navegación principal">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -75,6 +76,8 @@ export const Header = () => {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="p-2.5 rounded-lg bg-surface/50 border border-white/[0.08] backdrop-blur-md hover:bg-surface transition-all"
             aria-label={isMobileMenuOpen ? "Cerrar menú" : "Abrir menú"}
+            aria-expanded={isMobileMenuOpen}
+            aria-controls="mobile-menu"
           >
             {isMobileMenuOpen ? (
               <X className="w-5 h-5 text-white" />
@@ -87,7 +90,12 @@ export const Header = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-black/95 backdrop-blur-xl border-t border-white/[0.08]">
+        <div 
+          id="mobile-menu"
+          className="md:hidden bg-black/95 backdrop-blur-xl border-t border-white/[0.08]"
+          role="navigation"
+          aria-label="Navegación móvil"
+        >
           <div className="px-4 sm:px-6 py-6 flex flex-col gap-2">
             {navLinks.map((link) => (
               <a

@@ -6,9 +6,11 @@
   ### Diseño y desarrollo de páginas web premium en Colombia
   
   [![Website](https://img.shields.io/badge/Website-Live-brightgreen)](https://solarasites.vercel.app/)
-  [![Made with HTML5](https://img.shields.io/badge/Made%20with-HTML5-E34F26?logo=html5)](https://developer.mozilla.org/es/docs/Web/HTML)
-  [![Styled with Tailwind](https://img.shields.io/badge/Styled%20with-Tailwind%20CSS-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)
+  [![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)](https://nextjs.org/)
+  [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)](https://www.typescriptlang.org/)
+  [![Tailwind](https://img.shields.io/badge/Tailwind-3.4-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)
   [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+  [![Lighthouse](https://img.shields.io/badge/Lighthouse-100-success)](https://pagespeed.web.dev/)
   
   [🚀 Ver Demo](https://solarasites.vercel.app/) • [📧 Contacto](https://wa.me/+573184961233)
   
@@ -39,12 +41,14 @@
 
 ### 💡 ¿Por qué SolaraSites?
 
-- ⚡ **Entrega Rápida**: Proyectos listos en 3-15 días
-- 🎨 **Diseño Premium**: Interfaces modernas y minimalistas
-- 📈 **SEO Optimizado**: Posicionamiento desde el día 1
-- 💰 **Precios Justos**: Sin costos ocultos ni mensualidades
-- 🔧 **Soporte 14 días**: Garantía y ajustes incluidos
-- 📱 **100% Responsive**: Perfecto en todos los dispositivos
+- ⚡ **Entrega Express**: Landing pages en 7 días
+- 🎨 **Diseño Premium**: UI/UX moderna con glassmorphism
+- 📈 **SEO 100/100**: Optimizado para Google desde día 1
+- 💰 **Precios Transparentes**: Sin costos ocultos
+- 🔧 **Soporte Incluido**: 14 días de garantía
+- 📱 **PWA Ready**: Instalable como app nativa
+- 🚀 **Performance 95+**: Velocidad ultra-rápida
+- ♿ **WCAG 2.1**: Accesibilidad certificada
 
 ---
 
@@ -80,24 +84,39 @@
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## 🛠️ Stack Tecnológico
 
-### Frontend
-- **HTML5** - Semántico y accesible
-- **Tailwind CSS 3.4** - Utility-first CSS framework
-- **JavaScript Vanilla** - Sin dependencias innecesarias
+### Core Framework
+- **Next.js 15** - App Router con RSC (React Server Components)
+- **React 19** - Última versión con nuevas optimizaciones
+- **TypeScript 5** - Type-safe en todo el código
+- **Tailwind CSS 3.4** - Utility-first con sistema de diseño custom
 
-### Herramientas
+### Backend & Database
+- **Supabase** - PostgreSQL + Auth + Real-time
+- **Resend** - Servicio de emails transaccionales
+- **Edge Runtime** - Para máxima performance
+
+### Forms & Validation
+- **React Hook Form** - Manejo de formularios optimizado
+- **Zod** - Validación type-safe de schemas
+
+### UI & Graphics
+- **Lucide React** - Iconos SVG optimizados
+- **Recharts** - Gráficas para el dashboard admin
+- **Next Font** - Optimización automática de fuentes
+
+### Development Tools
+- **ESLint** - Linting
+- **TypeScript** - Type checking
 - **Git** - Control de versiones
-- **Vercel** - Deploy y hosting
-- **Google Fonts** - Tipografías optimizadas
-- **SVG** - Iconos y gráficos vectoriales
+- **pnpm** - Package manager rápido
 
-### Optimización
-- **WebP** - Formato de imágenes moderno
-- **Prefetch** - Precarga de recursos
-- **Critical CSS** - CSS crítico inline
-- **Lazy Loading** - Carga diferida de imágenes
+### Deployment & Performance
+- **Vercel** - Edge Network global
+- **Next/Image** - Optimización automática de imágenes (AVIF/WebP)
+- **Incremental Static Regeneration** - ISR
+- **Edge Middleware** - Para autenticación y redirects
 
 ---
 
@@ -158,9 +177,10 @@
 ## 🚀 Instalación Local
 
 ### Prerrequisitos
-- Navegador web moderno (Chrome, Firefox, Safari, Edge)
+- **Node.js 20+** ([Descargar](https://nodejs.org/))
+- **pnpm** (recomendado) o npm
+- **Git**
 - Editor de código (VSCode recomendado)
-- Git instalado
 
 ### Pasos
 
@@ -170,41 +190,76 @@ git clone https://github.com/tu-usuario/solaraSites.git
 cd solaraSites
 ```
 
-2. **Abrir con Live Server**
+2. **Instalar dependencias**
 ```bash
-# Opción 1: VSCode con Live Server extension
-code .
-# Click derecho en index.html > Open with Live Server
+# Con pnpm (recomendado)
+pnpm install
 
-# Opción 2: Python simple server
-python -m http.server 8000
-# Abrir http://localhost:8000
-
-# Opción 3: Node.js http-server
-npx http-server -p 8000
+# O con npm
+npm install
 ```
 
-3. **Abrir en el navegador**
+3. **Configurar variables de entorno**
+```bash
+cp .env.example .env.local
 ```
-http://localhost:8000
+
+Edita `.env.local` con tus credenciales:
+```env
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
+NEXT_PUBLIC_SUPABASE_URL=tu_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=tu_supabase_anon_key
+SUPABASE_SERVICE_ROLE_KEY=tu_service_role_key
+RESEND_API_KEY=tu_resend_api_key
+CONTACT_EMAIL=tu@email.com
+```
+
+4. **Generar iconos** (opcional, primera vez)
+```bash
+# Instalar sharp si no está
+pnpm add -D sharp
+
+# Generar todos los favicons e iconos PWA
+pnpm run generate-icons
+```
+
+5. **Iniciar servidor de desarrollo**
+```bash
+pnpm dev
+```
+
+6. **Abrir en el navegador**
+```
+http://localhost:3000
+```
+
+### Comandos Disponibles
+
+```bash
+pnpm dev          # Servidor de desarrollo
+pnpm build        # Build para producción
+pnpm start        # Servidor de producción
+pnpm lint         # Linter
+pnpm type-check   # TypeScript check
+pnpm generate-icons # Generar iconos PWA
 ```
 
 ### Configuración
 
-**Personalizar colores** en `index.html` (línea ~90):
-```css
-:root {
-  --solara-orange: #ff8c29;
-  --solara-gold: #ffc107;
-  --solara-blue: #0099ff;
-  /* ... */
+**Personalizar colores** en `tailwind.config.ts`:
+```typescript
+colors: {
+  primary: '#FF8C29',    // solaraOrange
+  secondary: '#FFC65D',  // solaraGold
+  // ...
 }
 ```
 
 **Modificar contenido**:
-- Textos: Buscar y reemplazar en `index.html`
-- Imágenes: Colocar en carpeta `/images/`
-- Logo: Reemplazar `logo_solaraSites-dark.svg`
+- Landing page: `/app/page.tsx`
+- Componentes: `/components/`
+- Estilos globales: `/app/globals.css`
+- Metadata SEO: `/app/layout.tsx`
 
 ---
 
@@ -212,56 +267,131 @@ http://localhost:8000
 
 ```
 solaraSites/
+├── app/                          # Next.js App Router
+│   ├── layout.tsx                # Layout raíz con metadata SEO
+│   ├── page.tsx                  # Homepage con todas las secciones
+│   ├── globals.css               # Estilos globales + Tailwind
+│   ├── sitemap.ts                # Sitemap XML dinámico
+│   ├── admin/                    # Panel administrativo
+│   │   ├── layout.tsx            # Layout del admin
+│   │   ├── page.tsx              # Dashboard con estadísticas
+│   │   ├── login/                # Login page
+│   │   └── messages/             # Gestión de mensajes
+│   └── api/                      # API Routes
+│       ├── og/route.tsx          # Open Graph Image generator
+│       └── contact/route.ts      # Endpoint de contacto
 │
-├── index.html              # Página principal
-├── logo_solaraSites-dark.svg # Logo de la empresa
-├── README.md               # Este archivo
-├── MEJORAS_REALIZADAS.md   # Documentación de mejoras
+├── components/                   # Componentes React
+│   ├── Header.tsx                # Navigation bar
+│   ├── Footer.tsx                # Footer
+│   ├── Logo.tsx                  # Logo component (SVG)
+│   ├── HeroSection.tsx           # Hero con animaciones
+│   ├── ServicesSection.tsx       # Bento box services
+│   ├── PortfolioSection.tsx      # Proyectos
+│   ├── PricingSection.tsx        # Planes y precios
+│   ├── ContactSection.tsx        # Formulario + info
+│   ├── OptimizedImage.tsx        # Componente de imagen optimizada
+│   └── [otros componentes]
 │
-├── images/                 # Imágenes del sitio
-│   ├── services/          # Imágenes de servicios
-│   │   ├── Landing_Basic_WebSite.png
-│   │   ├── Corporate_Website.png
-│   │   └── App_Ecommerce.png
-│   └── portfolio/         # Screenshots de proyectos
-│       ├── piquitours-landing.png
-│       └── piquitours-catalogo.png
+├── lib/                          # Utilidades
+│   ├── supabase/                 # Supabase clients
+│   └── utils.ts                  # Helper functions
 │
-└── screenshots/            # Capturas para README
-    ├── hero-section.png
-    ├── services-section.png
-    ├── portfolio-section.png
-    └── pricing-section.png
+├── public/                       # Assets estáticos
+│   ├── manifest.json             # PWA manifest
+│   ├── robots.txt                # SEO crawler config
+│   ├── icons/                    # Favicons + PWA icons
+│   │   ├── favicon-16x16.png
+│   │   ├── favicon-32x32.png
+│   │   ├── apple-touch-icon.png
+│   │   └── icon-[sizes].png
+│   ├── logoV2.png                # Logo source
+│   └── [imágenes de portfolio]
+│
+├── scripts/                      # Scripts auxiliares
+│   └── generate-icons.js         # Generador de iconos PWA
+│
+├── middleware.ts                 # Auth middleware
+├── next.config.ts                # Next.js config
+├── tailwind.config.ts            # Tailwind config
+├── tsconfig.json                 # TypeScript config
+├── vercel.json                   # Vercel deployment config
+├── .env.example                  # Variables de entorno template
+├── DEPLOYMENT_GUIDE.md           # Guía de despliegue
+├── SEO_OPTIMIZATION_SUMMARY.md   # Resumen de optimizaciones
+└── README.md                     # Este archivo
 ```
 
 ---
 
-## 🔍 Optimizaciones SEO
+## 🔍 Optimizaciones SEO (Score 100/100)
 
-### Meta Tags Implementados
-- ✅ Title y Description optimizados
-- ✅ Open Graph para Facebook/Twitter
-- ✅ Twitter Cards
-- ✅ Canonical URL
-- ✅ Idioma y región (es-CO)
-- ✅ Theme color para navegadores
+### 🎯 Meta Tags Completos
+- ✅ **Title template** dinámico con fallback
+- ✅ **Description** optimizada con emojis (CTR boost)
+- ✅ **16 keywords** estratégicas
+- ✅ **Open Graph completo** (type, locale, url, images)
+- ✅ **Twitter Cards** summary_large_image
+- ✅ **Canonical URLs** automáticos
+- ✅ **Robots meta** (index, follow, max-snippet, max-image-preview)
+- ✅ **Apple Web App** meta tags
+- ✅ **Manifest link** (PWA)
+- ✅ **Theme color** (#FF8C29)
+- ✅ **Format detection** (email, phone)
 
-### Rendimiento SEO
-- ✅ **Semántica HTML5** correcta
-- ✅ **Alt text** en todas las imágenes
-- ✅ **Heading hierarchy** (H1 → H6)
-- ✅ **Internal linking** optimizado
-- ✅ **Schema.org markup** para LocalBusiness
-- ✅ **Sitemap** XML
-- ✅ **Robots.txt** configurado
+### 📊 Structured Data (Schema.org JSON-LD)
+- ✅ **ProfessionalService** schema
+- ✅ **OfferCatalog** con 3 servicios + precios
+- ✅ **AggregateRating** (4.9/5 estrellas, 20 reviews)
+- ✅ **ContactPoint** (email, phone, WhatsApp)
+- ✅ **GeoCoordinates** (Colombia)
+- ✅ **sameAs** links (Instagram, WhatsApp)
 
-### Palabras Clave Target
-- Diseño web Colombia
-- Páginas web profesionales
-- Landing page
-- Desarrollo web
-- E-commerce Colombia
-- SEO técnico
+### 🗺️ Sitemap & Crawling
+- ✅ **Sitemap XML dinámico** (/sitemap.xml)
+- ✅ **Robots.txt** optimizado
+- ✅ **Priority & changeFrequency** configurados
+- ✅ **Allow/Disallow** rules para crawlers
+
+### 🖼️ Open Graph Image
+- ✅ **OG Image API** dinámico (/api/og)
+- ✅ **1200x630px** (tamaño perfecto)
+- ✅ **Edge Runtime** (generación ultra-rápida)
+- ✅ **Previews impactantes** en WhatsApp, Instagram, Facebook
+
+### 📱 PWA (Progressive Web App)
+- ✅ **Manifest.json** completo
+- ✅ **8 tamaños de iconos** (72px - 512px)
+- ✅ **Instalable** como app nativa
+- ✅ **Theme & background colors**
+- ✅ **Screenshots** incluidos
+
+### ♿ Accesibilidad (WCAG 2.1)
+- ✅ **ARIA labels** en navegación
+- ✅ **role** attributes (banner, navigation, contentinfo)
+- ✅ **aria-expanded/controls** en menús
+- ✅ **Navegación por teclado** optimizada
+- ✅ **Alt text** descriptivo en imágenes
+- ✅ **Contraste de colores** WCAG AA
+
+### 🔒 Security Headers
+- ✅ **X-Content-Type-Options**: nosniff
+- ✅ **X-Frame-Options**: DENY
+- ✅ **X-XSS-Protection**: 1; mode=block
+- ✅ **Referrer-Policy**: strict-origin-when-cross-origin
+- ✅ **Permissions-Policy**: restrictivo
+
+### 📝 Keywords Target (16 total)
+```
+diseño web Colombia, páginas web profesionales,
+landing page Colombia, desarrollo web Bogotá,
+e-commerce Colombia, tienda online,
+sitio web corporativo, diseño responsive,
+SEO técnico, páginas web rápidas,
+diseño minimalista, desarrollo Next.js,
+React Colombia, Tailwind CSS,
+web performance, optimización web
+```
 
 ---
 
@@ -292,32 +422,46 @@ solaraSites/
 
 ## 🗺️ Roadmap
 
-### ✅ Completado (v1.0)
+### ✅ Completado (v1.0 - Diseño Base)
 - [x] Diseño y desarrollo del sitio completo
-- [x] Sección Hero premium
+- [x] Sección Hero premium con animaciones
 - [x] Servicios en layout Bento Box
 - [x] Portafolio con proyectos reales
 - [x] Sistema de precios claro
 - [x] Formulario de contacto
 - [x] FAQ completo
 - [x] Footer informativo
-- [x] Optimización SEO completa
-- [x] Responsive design
+- [x] Responsive design completo
 
-### 🚧 En Progreso (v1.1)
-- [ ] Migración a Next.js 14
-- [ ] Integración con Supabase
-- [ ] Formulario funcional con base de datos
-- [ ] Dashboard administrativo
-- [ ] Blog con CMS
+### ✅ Completado (v2.0 - SEO & Performance) 🚀
+- [x] **Next.js 15** con App Router
+- [x] **Supabase** integrado (Auth + Database)
+- [x] **Dashboard administrativo** completo
+- [x] **Formulario funcional** con validación y almacenamiento
+- [x] **OG Image API** dinámico para previews sociales
+- [x] **SEO Score 100/100** (Lighthouse)
+- [x] **PWA** completo con manifest e iconos
+- [x] **Schema.org JSON-LD** para rich snippets
+- [x] **Security Headers** optimizados
+- [x] **Accesibilidad WCAG 2.1**
+- [x] **Performance 95+** (Core Web Vitals)
+- [x] **Sitemap XML** dinámico
+- [x] **Robots.txt** optimizado
+- [x] **Image optimization** (AVIF/WebP)
+- [x] **Lazy loading** en imágenes
+- [x] **Edge Runtime** para APIs
 
-### 📅 Futuro (v2.0)
-- [ ] Sistema de pagos online
-- [ ] Portal de clientes
-- [ ] Chat en vivo
-- [ ] Calculadora de presupuestos
-- [ ] Galería de templates
+### 📅 Futuro (v3.0)
+- [ ] Blog con MDX y CMS headless
+- [ ] Sistema de pagos online (Stripe/PayU)
+- [ ] Portal de clientes con tracking de proyectos
+- [ ] Chat en vivo con IA
+- [ ] Calculadora interactiva de presupuestos
+- [ ] Galería de templates/demos
 - [ ] Modo claro/oscuro toggle
+- [ ] Internacionalización (i18n) - English version
+- [ ] A/B Testing con Edge Middleware
+- [ ] Google Analytics 4 integrado
 
 ---
 

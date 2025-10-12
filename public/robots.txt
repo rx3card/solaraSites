@@ -1,0 +1,27 @@
+# Robots.txt para SolaraSites
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /private/
+
+# Sitemaps
+Sitemap: https://solarasites.vercel.app/sitemap.xml
+
+# Crawl-delay for good behavior
+Crawl-delay: 0
+
+# Allow all image crawling
+User-agent: Googlebot-Image
+Allow: /
+
+# Allow all good bots
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /

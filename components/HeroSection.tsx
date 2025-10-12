@@ -144,12 +144,16 @@ export const HeroSection = () => {
                     <div className="flex-1 flex items-center justify-center">
                       <div className="w-full aspect-square bg-gradient-to-br from-[#0b0b0d] to-[#121214] rounded-lg border border-white/4 overflow-hidden flex items-center justify-center">
                         <Image
-                          src="/landing.png"
+                          src="/landing-optimized.webp"
                           alt="Vista landing"
-                          width={400}
-                          height={400}
+                          width={320}
+                          height={320}
                           className="w-full h-full object-cover rounded-lg"
-                          loading="lazy"
+                          priority
+                          quality={75}
+                          sizes="(max-width: 640px) 280px, (max-width: 768px) 300px, (max-width: 1024px) 250px, 320px"
+                          placeholder="blur"
+                          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg=="
                         />
                       </div>
                     </div>
@@ -157,12 +161,16 @@ export const HeroSection = () => {
                     <div className="flex-1 flex items-center justify-center">
                       <div className="w-full aspect-[3/2] bg-gradient-to-br from-[#0b0b0d] to-[#121214] rounded-lg border border-white/4 overflow-hidden flex items-center justify-center">
                         <Image
-                          src="/catalogo.png"
+                          src="/catalogo-optimized.webp"
                           alt="Vista catálogo"
-                          width={400}
-                          height={267}
+                          width={320}
+                          height={213}
                           className="w-full h-full object-cover rounded-lg"
-                          loading="lazy"
+                          priority
+                          quality={75}
+                          sizes="(max-width: 640px) 280px, (max-width: 768px) 300px, (max-width: 1024px) 250px, 320px"
+                          placeholder="blur"
+                          blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/5+hHgAHggJ/PchI7wAAAABJRU5ErkJggg=="
                         />
                       </div>
                     </div>
