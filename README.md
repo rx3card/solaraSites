@@ -513,7 +513,7 @@ Este código es **propiedad privada de SolaraSites**. No está disponible para u
   
   [![WhatsApp](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/+573184961233)
   [![Website](https://img.shields.io/badge/Website-FF8C29?style=for-the-badge&logo=google-chrome&logoColor=white)](https://solarasites.vercel.app/)
-  [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contacto@solarasites.com)
+  [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:solarasites.com@gmail.com)
   
   **📱 WhatsApp:** +57 318 496 1233  
   **🌐 Web:** [solarasites.vercel.app](https://solarasites.vercel.app/)  
