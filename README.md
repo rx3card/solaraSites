@@ -23,7 +23,7 @@
   
   # 🌟 SolaraSites
   
-  ### Diseño y desarrollo de páginas web premium en Colombia
+  ### Diseño y desarrollo de páginas web premium
   
   [![Website](https://img.shields.io/badge/Website-Live-brightgreen)](https://solarasites.vercel.app/)
   [![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)](https://nextjs.org/)
@@ -366,7 +366,7 @@ solaraSites/
 - ✅ **OfferCatalog** con 3 servicios + precios
 - ✅ **AggregateRating** (4.9/5 estrellas, 20 reviews)
 - ✅ **ContactPoint** (email, phone, WhatsApp)
-- ✅ **GeoCoordinates** (Colombia)
+- ✅ **GeoCoordinates** 
 - ✅ **sameAs** links (Instagram, WhatsApp)
 
 ### 🗺️ Sitemap & Crawling
@@ -405,13 +405,13 @@ solaraSites/
 
 ### 📝 Keywords Target (16 total)
 ```
-diseño web Colombia, páginas web profesionales,
-landing page Colombia, desarrollo web Bogotá,
-e-commerce Colombia, tienda online,
+diseño web, páginas web profesionales,
+landing page, desarrollo web Bogotá,
+e-commerce, tienda online,
 sitio web corporativo, diseño responsive,
 SEO técnico, páginas web rápidas,
 diseño minimalista, desarrollo Next.js,
-React Colombia, Tailwind CSS,
+React, Tailwind CSS,
 web performance, optimización web
 ```
 
@@ -489,7 +489,7 @@ web performance, optimización web
 
 ## 💼 Sobre Este Proyecto
 
-**SolaraSites** es el sitio web oficial y plataforma de la agencia de diseño web colombiana.
+**SolaraSites** es el sitio web oficial y plataforma de la agencia de diseño web.
 
 Este repositorio contiene:
 
@@ -517,7 +517,7 @@ Este código es **propiedad privada de SolaraSites**. No está disponible para u
   
   **📱 WhatsApp:** +57 318 496 1233  
   **🌐 Web:** [solarasites.vercel.app](https://solarasites.vercel.app/)  
-  **📍 Ubicación:** Colombia 🇨🇴
+  **📍 Ubicación:** United States
   
 </div>
 
@@ -575,7 +575,7 @@ Este software es propiedad exclusiva de SolaraSites. Ver el archivo `LICENSE` pa
 
 <div align="center">
   
-  **Hecho con ❤️ en Colombia 🇨🇴**
+  **Hecho por [rx3card](https://github.com/rx3card)**
   
   © 2024 SolaraSites. Todos los derechos reservados.
   
