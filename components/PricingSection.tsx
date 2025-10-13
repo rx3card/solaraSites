@@ -5,7 +5,7 @@ const pricingPlans = [
     id: 1,
     name: "Landing Básico",
     subtitle: "Perfecto para validar tu idea de negocio",
-    price: "$350k",
+    price: "$200k",
     currency: "COP",
     priceGradient: "from-[#0071e3] to-[#2196F3]",
     borderColor: "border-[#0071e3]/20",

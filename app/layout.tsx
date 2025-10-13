@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     default: "SolaraSites — Diseño Web Premium en Colombia | Landing Pages & E-commerce",
     template: "%s | SolaraSites",
   },
-  description: "🚀 Creamos páginas web minimalistas, rápidas y profesionales que convierten visitantes en clientes. Landing pages desde $350k, sitios corporativos, e-commerce. ⚡ Entrega en 7 días. ⭐ 4.9/5 rating.",
+  description: "🚀 Creamos páginas web minimalistas, rápidas y profesionales que convierten visitantes en clientes. Landing pages desde $200k, sitios corporativos, e-commerce. ⚡ Entrega en 7 días. ⭐ 4.9/5 rating.",
   keywords: [
     "diseño web Colombia",
     "páginas web profesionales",
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     url: "/",
     siteName: "SolaraSites",
     title: "SolaraSites — Webs que eclipsan a las demás ✨",
-    description: "⚡ Landing pages desde $350k | 🎨 Diseño premium minimalista | 🚀 Entrega en 7 días | ⭐ +20 proyectos exitosos. Haz que tu negocio brille online.",
+    description: "⚡ Landing pages desde $200k | 🎨 Diseño premium minimalista | 🚀 Entrega en 7 días | ⭐ +20 proyectos exitosos. Haz que tu negocio brille online.",
     images: [
       {
         url: "/api/og",
@@ -86,7 +86,7 @@ export const metadata: Metadata = {
     site: "@solarasites",
     creator: "@solarasites",
     title: "SolaraSites — Webs que eclipsan a las demás ✨",
-    description: "⚡ Landing pages desde $350k | 🎨 Diseño premium | 🚀 Entrega en 7 días. Haz que tu negocio brille online.",
+    description: "⚡ Landing pages desde $200k | 🎨 Diseño premium | 🚀 Entrega en 7 días. Haz que tu negocio brille online.",
     images: ["/api/og"],
   },
   icons: {
@@ -146,7 +146,7 @@ export default function RootLayout({
       '@type': 'GeoCoordinates',
       addressCountry: 'CO',
     },
-    priceRange: '$350.000 - $900.000+',
+    priceRange: '$200.000 - $900.000+',
     areaServed: {
       '@type': 'Country',
       name: 'Colombia',
@@ -164,7 +164,7 @@ export default function RootLayout({
             description: 'Página web de una sola página, diseño premium, optimizada para conversiones',
             priceSpecification: {
               '@type': 'PriceSpecification',
-              price: '350000',
+              price: '200000',
               priceCurrency: 'COP',
             },
           },

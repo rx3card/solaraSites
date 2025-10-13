@@ -243,7 +243,7 @@ export const ContactSection = () => {
                       Selecciona una opción
                     </option>
                     <option value="landing" className="bg-gray-900">
-                      Landing Page ($350k)
+                      Landing Page ($200k)
                     </option>
                     <option value="corporativa" className="bg-gray-900">
                       Web Corporativa ($550k)

@@ -10,7 +10,7 @@ const services = [
     badge: "3-5 días",
     badgeColor: "bg-[#0071e3]/15 border-[#0071e3]/40",
     badgeTextColor: "text-[#2196F3]",
-    price: "$350K",
+    price: "$200K",
     priceColor: "from-[#0071e3] to-[#2196F3]",
     hoverBorder: "hover:border-[#0071e3]/40",
     hoverShadow: "hover:shadow-[#0071e3]/20",
