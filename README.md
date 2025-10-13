@@ -1,5 +1,25 @@
 <div align="center">
-  <img src="logo_solaraSites-dark.svg" alt="SolaraSites Logo" width="200"/>
+  
+  <svg width="200" height="200" viewBox="0 0 312.5 311.6879107782287" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <filter id="drop-shadow">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+        <feOffset dx="0" dy="12" result="offsetblur"/>
+        <feFlood flood-color="rgba(255,140,41,0.12)"/>
+        <feComposite in2="offsetblur" operator="in"/>
+        <feMerge>
+          <feMergeNode/>
+          <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+      </filter>
+    </defs>
+    <g filter="url(#drop-shadow)">
+      <circle cx="156.25" cy="155.84395538911435" r="105.6329113924051" fill="#f3cf1b"/>
+      <circle cx="156.25" cy="155.84395538911435" r="84.50632911392405" fill="#ffd500"/>
+      <path d="M 204.81012658227847 91.13924050632911 L 204.81012658227847 141.77215189873417 L 107.68987341772151 141.77215189873417 L 107.68987341772151 91.13924050632911 Z" fill="#060608"/>
+      <path d="M 173.41772151898733 113.92405063291139 L 173.41772151898733 220.54430379746836 L 139.08227848101264 220.54430379746836 L 139.08227848101264 113.92405063291139 Z" fill="#060608"/>
+    </g>
+  </svg>
   
   # 🌟 SolaraSites
   
@@ -9,8 +29,8 @@
   [![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)](https://nextjs.org/)
   [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)](https://www.typescriptlang.org/)
   [![Tailwind](https://img.shields.io/badge/Tailwind-3.4-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)
-  [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-  [![Lighthouse](https://img.shields.io/badge/Lighthouse-100-success)](https://pagespeed.web.dev/)
+  [![License](https://img.shields.io/badge/License-Proprietary-red.svg)](LICENSE)
+  [![Lighthouse](https://img.shields.io/badge/Lighthouse-95%2B-success)](https://pagespeed.web.dev/)
   
   [🚀 Ver Demo](https://solarasites.vercel.app/) • [📧 Contacto](https://wa.me/+573184961233)
   
@@ -176,17 +196,19 @@
 
 ## 🚀 Instalación Local
 
+> ⚠️ **NOTA:** Este es un proyecto privado de SolaraSites. El acceso al código fuente está restringido a empleados autorizados y contratistas bajo NDA.
+
 ### Prerrequisitos
 - **Node.js 20+** ([Descargar](https://nodejs.org/))
 - **pnpm** (recomendado) o npm
 - **Git**
 - Editor de código (VSCode recomendado)
 
-### Pasos
+### Pasos (solo personal autorizado)
 
-1. **Clonar el repositorio**
+1. **Clonar el repositorio** (requiere autenticación)
 ```bash
-git clone https://github.com/tu-usuario/solaraSites.git
+git clone <repository-url>
 cd solaraSites
 ```
 
@@ -465,15 +487,21 @@ web performance, optimización web
 
 ---
 
-## 💬 Casos de Uso
+## 💼 Sobre Este Proyecto
 
-Este proyecto es ideal para:
+**SolaraSites** es el sitio web oficial y plataforma de la agencia de diseño web colombiana.
 
-✅ **Agencias de diseño web** que buscan un sitio moderno  
-✅ **Freelancers** que ofrecen servicios de desarrollo  
-✅ **Startups** que necesitan presencia digital profesional  
-✅ **Emprendedores** que quieren vender servicios online  
-✅ **Portafolios** de desarrolladores front-end  
+Este repositorio contiene:
+
+✅ **Sitio web corporativo** de la agencia  
+✅ **Panel administrativo** para gestión de mensajes  
+✅ **Sistema de contacto** con integración a base de datos  
+✅ **Optimizaciones SEO** avanzadas (Score 95%+)  
+✅ **Performance de clase mundial** (Core Web Vitals optimizados)  
+
+### 🔒 Confidencialidad
+
+Este código es **propiedad privada de SolaraSites**. No está disponible para uso público, distribución o modificación sin autorización expresa.  
 
 ---
 
@@ -495,40 +523,62 @@ Este proyecto es ideal para:
 
 ---
 
-## 🤝 Contribuciones
+## 👥 Equipo de Desarrollo
 
-Las contribuciones son bienvenidas. Si deseas mejorar este proyecto:
+Este proyecto es desarrollado y mantenido internamente por el equipo de SolaraSites.
 
-1. Fork el proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add: Amazing Feature'`)
-4. Push a la rama (`git push origin feature/AmazingFeature`)
-5. Abre un Pull Request
+### Proceso de desarrollo interno:
+
+1. **Branches protegidas:** `main` y `develop`
+2. **Feature branches:** Crear desde `develop` con formato `feature/nombre-feature`
+3. **Code review:** Requerido antes de merge a `develop`
+4. **Testing:** Pruebas manuales y Lighthouse antes de deploy
+5. **Deploy:** Desde `main` a producción en Vercel
+
+### 🔐 Acceso
+
+Solo personal autorizado con credenciales válidas puede contribuir al código.
 
 ---
 
 ## 📄 Licencia
 
-Este proyecto está bajo la Licencia MIT. Ver el archivo `LICENSE` para más detalles.
+**Licencia Propietaria** - Copyright © 2024 SolaraSites. Todos los derechos reservados.
+
+Este software es propiedad exclusiva de SolaraSites. Ver el archivo `LICENSE` para términos completos.
+
+❌ **No está permitido:**
+- Copiar, modificar o distribuir este código
+- Usar comercialmente sin autorización
+- Crear trabajos derivados
+- Publicar o compartir el código fuente
+
+✅ **Uso autorizado solo para:**
+- Empleados de SolaraSites
+- Contratistas bajo NDA
+- Clientes con licencia específica
 
 ---
 
-## 🙏 Agradecimientos
+## 🙏 Stack & Tecnologías
 
-- **Tailwind CSS** - Por el increíble framework
-- **Google Fonts** - Por las tipografías
-- **Heroicons** - Por los iconos SVG
-- **Vercel** - Por el hosting gratuito
-- **Comunidad Open Source** - Por la inspiración continua
+- **Next.js 15** - Framework React de producción
+- **Tailwind CSS** - Framework de estilos utility-first
+- **Supabase** - Backend as a Service (Auth + Database)
+- **Resend** - Servicio de emails transaccionales
+- **Vercel** - Plataforma de deployment
+- **TypeScript** - Type-safe JavaScript
+- **Lucide React** - Iconos SVG optimizados
+- **Recharts** - Gráficas para dashboard
 
 ---
 
 <div align="center">
   
-  ### ⭐ Si te gustó este proyecto, dale una estrella!
-  
-  **Hecho con ❤️ en Colombia por SolaraSites**
+  **Hecho con ❤️ en Colombia 🇨🇴**
   
   © 2024 SolaraSites. Todos los derechos reservados.
+  
+  🔒 **Proyecto Privado** | Propiedad de SolaraSites
   
 </div>

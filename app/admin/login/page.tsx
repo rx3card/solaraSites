@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { useRouter } from "next/navigation";
 import { Lock, AlertCircle, ArrowRight, Shield, Mail } from "lucide-react";
 import { createBrowserSupabaseClient } from "@/lib/supabase";
@@ -12,12 +12,14 @@ export default function AdminLoginPage() {
   const [loading, setLoading] = useState(false);
   const [mounted, setMounted] = useState(false);
   const router = useRouter();
-  const supabase = createBrowserSupabaseClient();
+  // useMemo para evitar múltiples instancias
+  const supabase = useMemo(() => createBrowserSupabaseClient(), []);
 
   useEffect(() => {
     setMounted(true);
     // Verificar si ya hay sesión activa
     checkSession();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const checkSession = async () => {

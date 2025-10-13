@@ -1,8 +1,8 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import { useRouter } from "next/navigation";
-import { supabase, createBrowserSupabaseClient, type ContactMessage } from "@/lib/supabase";
+import { createBrowserSupabaseClient, type ContactMessage } from "@/lib/supabase";
 import { 
   Mail, 
   Phone, 
@@ -28,14 +28,17 @@ export default function AdminMessagesPage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [deleteConfirm, setDeleteConfirm] = useState<string | null>(null);
   const router = useRouter();
-  const supabaseAuth = createBrowserSupabaseClient();
+  // useMemo para evitar múltiples instancias
+  const supabaseAuth = useMemo(() => createBrowserSupabaseClient(), []);
 
   useEffect(() => {
     checkAuth();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
     loadMessages();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [filter]);
 
   const checkAuth = async () => {
@@ -62,7 +65,7 @@ export default function AdminMessagesPage() {
   const loadMessages = async () => {
     setLoading(true);
     try {
-      let query = supabase
+      let query = supabaseAuth
         .from('contact_messages')
         .select('*')
         .order('created_at', { ascending: false });
@@ -87,7 +90,7 @@ export default function AdminMessagesPage() {
   };
 
   const deleteMessage = async (id: string) => {
-    const { error } = await supabase
+    const { error } = await supabaseAuth
       .from('contact_messages')
       .delete()
       .eq('id', id);
@@ -101,7 +104,7 @@ export default function AdminMessagesPage() {
   };
 
   const updateStatus = async (id: string, newStatus: 'new' | 'in-progress' | 'completed') => {
-    const { error } = await supabase
+    const { error } = await supabaseAuth
       .from('contact_messages')
       .update({ status: newStatus })
       .eq('id', id);

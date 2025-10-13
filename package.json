@@ -12,6 +12,8 @@
     "optimize-images": "node scripts/optimize-images.js",
     "optimize-all": "node scripts/optimize-all-images.js",
     "cleanup-images": "node scripts/cleanup-old-images.js",
+    "reorganize": "node scripts/reorganize-project.js",
+    "cleanup-full": "npm run cleanup-images && npm run reorganize",
     "verify": "node scripts/verify-optimizations.js",
     "prebuild": "npm run type-check",
     "analyze": "ANALYZE=true next build"

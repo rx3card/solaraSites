@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
 import { 
   BarChart3, 
@@ -44,7 +44,8 @@ const COLORS = {
 
 export default function AdminDashboard() {
   const router = useRouter();
-  const supabase = createBrowserSupabaseClient();
+  // useMemo para evitar crear múltiples instancias del cliente
+  const supabase = useMemo(() => createBrowserSupabaseClient(), []);
   const [stats, setStats] = useState<DashboardStats>({
     total: 0,
     new: 0,
@@ -60,6 +61,7 @@ export default function AdminDashboard() {
 
   useEffect(() => {
     checkAuth();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const checkAuth = async () => {
@@ -68,16 +70,12 @@ export default function AdminDashboard() {
       router.push('/admin/login');
       return;
     }
-    // Obtener nombre del usuario
-    const { data: adminUser } = await supabase
-      .from('admin_users')
-      .select('name')
-      .eq('id', session.user.id)
-      .single();
     
-    if (adminUser) {
-      setUserName(adminUser.name);
-    }
+    // Obtener nombre del usuario desde la sesión (email)
+    // O usar session.user.user_metadata.name si está disponible
+    const userEmail = session.user.email || '';
+    const userName = userEmail.split('@')[0]; // Usar parte antes del @
+    setUserName(userName.charAt(0).toUpperCase() + userName.slice(1));
     
     fetchDashboardData();
   };
