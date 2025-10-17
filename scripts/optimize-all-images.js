@@ -12,10 +12,8 @@ const imagesToOptimize = [
   { input: 'premium-store.png', output: 'premium-store-optimized.webp', quality: 75 },
   { input: 'gimnasio-premium-gym.png', output: 'gimnasio-premium-gym-optimized.webp', quality: 75 },
   
-  // Services images (NUEVAS - necesitan optimización)
-  { input: 'images/services/Landing_Basic_WebSite.png', output: 'images/services/Landing_Basic_WebSite-optimized.webp', quality: 80 },
-  { input: 'images/services/Corporate_Website.png', output: 'images/services/Corporate_Website-optimized.webp', quality: 80 },
-  { input: 'images/services/App_Ecommerce.png', output: 'images/services/App_Ecommerce-optimized.webp', quality: 80 },
+  // Services images (ya optimizadas manualmente con cwebp)
+  // Las imágenes están ahora en /public/services/ como landing_1-3.webp, corporate_1-3.webp, app_1-3.webp
   
   // Logo
   { input: 'logoV2.png', output: 'logoV2-optimized.webp', quality: 90 },
@@ -69,10 +67,8 @@ async function main() {
   console.log('   /catalogo-optimized.webp');
   console.log('   /premium-store-optimized.webp');
   console.log('   /gimnasio-premium-gym-optimized.webp');
-  console.log('   /images/services/Landing_Basic_WebSite-optimized.webp');
-  console.log('   /images/services/Corporate_Website-optimized.webp');
-  console.log('   /images/services/App_Ecommerce-optimized.webp');
-  console.log('   /logoV2-optimized.webp\n');
+  console.log('   /logoV2-optimized.webp');
+  console.log('   /services/landing_1-3.webp, corporate_1-3.webp, app_1-3.webp (optimizadas manualmente)\n');
 }
 
 main().catch(console.error);

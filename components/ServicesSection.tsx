@@ -1,12 +1,19 @@
+"use client";
+
 import Image from "next/image";
-import { Check, Rocket } from "lucide-react";
+import { Check, Rocket, ChevronLeft, ChevronRight } from "lucide-react";
+import { useState } from "react";
 
 const services = [
   {
     id: 1,
     title: "Landing Page",
     subtitle: "Tu vitrina digital lista para vender",
-    image: "/images/services/Landing_Basic_WebSite-optimized.webp",
+    images: [
+      "/services/landing_1.webp",
+      "/services/landing_2.webp",
+      "/services/landing_3.webp",
+    ],
     badge: "3-5 días",
     badgeColor: "bg-[#0071e3]/15 border-[#0071e3]/40",
     badgeTextColor: "text-[#2196F3]",
@@ -23,7 +30,11 @@ const services = [
     id: 2,
     title: "Web Corporativa",
     subtitle: "Sitio completo con blog y CMS",
-    image: "/images/services/Corporate_Website-optimized.webp",
+    images: [
+      "/services/corporate_1.webp",
+      "/services/corporate_2.webp",
+      "/services/corporate_3.webp",
+    ],
     badge: "Más popular",
     badgeColor: "bg-gradient-to-r from-[#7C3AED]/15 to-[#EC4899]/15 border-[#7C3AED]/40",
     badgeTextColor: "text-[#A78BFA]",
@@ -41,7 +52,11 @@ const services = [
     id: 3,
     title: "E-commerce / App",
     subtitle: "Tienda online o app a medida",
-    image: "/images/services/App_Ecommerce-optimized.webp",
+    images: [
+      "/services/app_1.webp",
+      "/services/app_2.webp",
+      "/services/app_3.webp",
+    ],
     badge: "Enterprise",
     badgeColor: "bg-gradient-to-r from-[#06B6D4]/15 to-[#10B981]/15 border-[#06B6D4]/40",
     badgeTextColor: "text-[#06B6D4]",
@@ -57,6 +72,138 @@ const services = [
     buttonLabel: "Consultar",
   },
 ];
+
+const ServiceCard = ({ service }: { service: typeof services[0] }) => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  const nextImage = () => {
+    setCurrentImageIndex((prev) => (prev + 1) % service.images.length);
+  };
+
+  const prevImage = () => {
+    setCurrentImageIndex(
+      (prev) => (prev - 1 + service.images.length) % service.images.length
+    );
+  };
+
+  return (
+    <article
+      className={`group relative bg-gradient-to-br ${
+        service.cardBg
+      } border border-white/[0.08] rounded-2xl overflow-hidden ${
+        service.hoverBorder
+      } hover:-translate-y-2 transition-all duration-500 hover:shadow-2xl ${
+        service.hoverShadow
+      } ${service.isPopular ? "ring-2 ring-[#7C3AED]/30" : ""}`}
+    >
+      {/* Imagen arriba con carrusel */}
+      <div className="relative w-full aspect-[4/3] overflow-hidden bg-bgCard">
+        <Image
+          src={service.images[currentImageIndex]}
+          alt={`${service.title} - Imagen ${currentImageIndex + 1}`}
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          className="object-cover group-hover:scale-105 transition-transform duration-700"
+          loading="lazy"
+        />
+
+        {/* Controles de navegación */}
+        <div className="absolute inset-0 flex items-center justify-between px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+          <button
+            onClick={prevImage}
+            className="bg-black/50 hover:bg-black/70 text-white rounded-full p-2 backdrop-blur-sm transition-all"
+            aria-label="Imagen anterior"
+          >
+            <ChevronLeft className="w-5 h-5" />
+          </button>
+          <button
+            onClick={nextImage}
+            className="bg-black/50 hover:bg-black/70 text-white rounded-full p-2 backdrop-blur-sm transition-all"
+            aria-label="Siguiente imagen"
+          >
+            <ChevronRight className="w-5 h-5" />
+          </button>
+        </div>
+
+        {/* Indicadores de imagen */}
+        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+          {service.images.map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentImageIndex(index)}
+              className={`w-2 h-2 rounded-full transition-all ${
+                index === currentImageIndex
+                  ? "bg-white w-6"
+                  : "bg-white/50 hover:bg-white/75"
+              }`}
+              aria-label={`Ir a imagen ${index + 1}`}
+            />
+          ))}
+        </div>
+
+        {/* Badge minimalista */}
+        <div
+          className={`absolute top-4 right-4 px-3 py-1.5 rounded-full ${
+            service.badgeColor
+          } border backdrop-blur-xl`}
+        >
+          <span className={`text-xs font-semibold ${service.badgeTextColor}`}>
+            {service.badge}
+          </span>
+        </div>
+      </div>
+
+      {/* Contenido abajo */}
+      <div className="p-6 space-y-5">
+        <div>
+          <h3 className="text-2xl font-semibold text-white mb-2">
+            {service.title}
+          </h3>
+          <p className="text-textSecondary text-sm">{service.subtitle}</p>
+        </div>
+
+        <div className="space-y-2.5">
+          {service.features.map((feature, index) => (
+            <div
+              key={index}
+              className="flex items-center gap-2.5 text-sm text-textSecondary"
+            >
+              <Check
+                className={`w-4 h-4 ${service.checkColor} flex-shrink-0`}
+              />
+              {feature}
+            </div>
+          ))}
+        </div>
+
+        <div className="pt-4 border-t border-white/[0.06]">
+          <div className="flex items-baseline justify-between mb-4">
+            <div
+              className={`text-3xl font-semibold bg-gradient-to-r ${
+                service.priceColor
+              } bg-clip-text text-transparent`}
+            >
+              {service.price}
+            </div>
+            <span className="text-xs text-gray-400">
+              {service.priceLabel || "Pago único"}
+            </span>
+          </div>
+          <a
+            href={`https://wa.me/+573184961233?text=${service.whatsappText}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`block text-center px-4 py-3 rounded-full bg-gradient-to-r ${
+              service.priceColor
+            } text-white font-semibold hover:scale-105 hover:shadow-lg transition-all text-sm`}
+          >
+            {service.buttonLabel || "Solicitar"}
+          </a>
+        </div>
+      </div>
+    </article>
+  );
+};
 
 export const ServicesSection = () => {
   return (
@@ -98,71 +245,7 @@ export const ServicesSection = () => {
         {/* Grid de servicios - Bento Box Layout */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service) => (
-            <article
-              key={service.id}
-              className={`group relative bg-gradient-to-br ${service.cardBg} border border-white/[0.08] rounded-2xl overflow-hidden ${service.hoverBorder} hover:-translate-y-2 transition-all duration-500 hover:shadow-2xl ${service.hoverShadow} ${service.isPopular ? 'ring-2 ring-[#7C3AED]/30' : ''}`}
-            >
-              {/* Imagen arriba */}
-              <div className="relative w-full aspect-[4/3] overflow-hidden bg-bgCard">
-                <Image
-                  src={service.image}
-                  alt={service.title}
-                  fill
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="object-cover group-hover:scale-105 transition-transform duration-700"
-                  loading="lazy"
-                />
-                {/* Badge minimalista */}
-                <div
-                  className={`absolute top-4 right-4 px-3 py-1.5 rounded-full ${service.badgeColor} border backdrop-blur-xl`}
-                >
-                  <span className={`text-xs font-semibold ${service.badgeTextColor}`}>
-                    {service.badge}
-                  </span>
-                </div>
-              </div>
-
-              {/* Contenido abajo */}
-              <div className="p-6 space-y-5">
-                <div>
-                  <h3 className="text-2xl font-semibold text-white mb-2">
-                    {service.title}
-                  </h3>
-                  <p className="text-textSecondary text-sm">{service.subtitle}</p>
-                </div>
-
-                <div className="space-y-2.5">
-                  {service.features.map((feature, index) => (
-                    <div
-                      key={index}
-                      className="flex items-center gap-2.5 text-sm text-textSecondary"
-                    >
-                      <Check className={`w-4 h-4 ${service.checkColor} flex-shrink-0`} />
-                      {feature}
-                    </div>
-                  ))}
-                </div>
-
-                <div className="pt-4 border-t border-white/[0.06]">
-                  <div className="flex items-baseline justify-between mb-4">
-                    <div className={`text-3xl font-semibold bg-gradient-to-r ${service.priceColor} bg-clip-text text-transparent`}>
-                      {service.price}
-                    </div>
-                    <span className="text-xs text-gray-400">
-                      {service.priceLabel || "Pago único"}
-                    </span>
-                  </div>
-                  <a
-                    href={`https://wa.me/+573184961233?text=${service.whatsappText}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`block text-center px-4 py-3 rounded-full bg-gradient-to-r ${service.priceColor} text-white font-semibold hover:scale-105 hover:shadow-lg transition-all text-sm`}
-                  >
-                    {service.buttonLabel || "Solicitar"}
-                  </a>
-                </div>
-              </div>
-            </article>
+            <ServiceCard key={service.id} service={service} />
           ))}
         </div>
       </div>
